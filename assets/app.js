@@ -108,7 +108,7 @@ const FAQ = {
     ["手机能用吗？", "能。手机不用装软件，浏览器打开控制台，登录后就能看到电脑的实时画面，也能直接操作。"],
     ["断网或者断开了怎么办？", "什么都不用做。三层都会自己恢复：被控电脑自己重连、服务器自己恢复、控制软件自动重新连接，不限次数。只要软件还开着，它就一直试到连上为止，不用跑到电脑跟前手动点。"],
     ["被控电脑要挂梯子吗？", "不用。被控电脑上的小组件是主动连回我们自有服务器的，电脑本身上网还是走它自己的网络，不受任何影响，也不用开任何端口。"],
-    ["能给别人用吗？", "可以给熟人用。软件可以随便拷贝，但账号不公开注册：由管理员手动给人开账号，能看什么、能动什么按权限一项项分配；不想给了，把账号收回，对方立刻就用不了了。"],
+    ["能给别人用吗？", "可以给熟人用。软件可以随便拷贝，账号任何人都能自助注册：账号至少 8 位，必须是字母加数字的组合；管理员也可以在后台直接给人开号。能看什么、能动什么按权限一项项分配；不想给了，把账号收回，对方立刻就用不了了。"],
     ["软件怎么更新？", "新版发布后，本页下载区会同步换成最新版，下载新安装包覆盖安装即可，设置和登录状态都会保留。后续版本还会在软件内直接提醒并完成更新。"],
     ["第一次打开弹出 Windows 提示怎么办？", "这是因为软件暂时还没有购买代码签名证书，属正常现象。在提示里点「更多信息 → 仍要运行」即可。安装包请认准本页下载，并可对照本页公布的 SHA-256 校验码确认没被掉包。"]
   ],
@@ -117,7 +117,7 @@ const FAQ = {
     ["Can I use my phone?", "Yes. No app is required: open the console in your phone's browser, sign in, and you can view the computer's live screen and operate it directly."],
     ["What happens if the connection drops?", "Nothing — you do nothing. All three layers recover on their own: the controlled PC reconnects itself, the server restores itself, and the control app reconnects automatically, with unlimited retries. As long as the app stays open, it keeps trying until it is back — no walking to the computer to click anything."],
     ["Does the controlled PC need a VPN?", "No. The component on the controlled PC dials out to our own server by itself. The PC's own internet traffic is completely unaffected, and no ports need to be opened."],
-    ["Can other people use it?", "Yes, for people you know. The software can be copied freely, but accounts are not publicly registered: the administrator creates accounts by hand and assigns permissions item by item. Revoke an account and it stops working immediately."],
+    ["Can other people use it?", "Yes, for people you know. The software can be copied freely, and anyone can register an account on their own — usernames must be at least 8 characters and combine letters and numbers. The administrator can also create accounts directly in the backend. What each account can see and do is assigned item by item; revoke an account and it stops working immediately."],
     ["How do I update the app?", "When a new version is released, the download section on this page is updated at the same time. Download the new package and install it over the old one — your settings and sign-in are kept. Future versions will also offer update prompts inside the app itself."],
     ["Windows shows a warning on first launch. What do I do?", "That is expected for now, because the app does not yet carry a purchased code-signing certificate. Choose \u201CMore info \u2192 Run anyway\u201D. Always download from this page, and compare the SHA-256 checksum published here to be sure the package is genuine."]
   ]
