@@ -16,7 +16,7 @@ QFRemote 官网源码，托管于 GitHub Pages。本站为纯静态站，所有�
 
 ## 留言通道
 
-联系区的留言表单与 QFClash 意见反馈共用同一通道（提交到同一反馈服务，先入库再转发邮箱），留言的 `source` 标记为 `qfremote-website` 以便区分来源。
+联系区的留言表单走 QFRemote 自家留言通道（提交到自家服务器的 `/api/feedback`，接口地址只写在 `product.json` 的 `web.feedbackUrl` 一处；先入库再转发站长邮箱），留言的 `source` 标记为 `qfremote-website` 以便区分来源。
 
 ## 本地预览
 
