@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QFRemote — 自有远程控制 | 官方网站</title>
+<meta name="description" content="QFRemote — 自有远程控制软件：电脑装一次，手机浏览器或电脑软件打开就能连上你的电脑。断开自动重连，权限分项管理。">
+<link rel="icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="assets/icon.png">
+<link rel="stylesheet" href="assets/style.css?v=1">
+</head>
+<body>
+
+<div class="bg-decor" aria-hidden="true">
+  <svg class="arcs arcs-a" viewBox="0 0 300 300" fill="none"><circle cx="300" cy="0" r="120"/><circle cx="300" cy="0" r="190"/><circle cx="300" cy="0" r="260"/></svg>
+  <svg class="arcs arcs-b" viewBox="0 0 300 300" fill="none"><circle cx="0" cy="300" r="140"/><circle cx="0" cy="300" r="220"/></svg>
+  <div class="glow glow-a"></div>
+  <div class="glow glow-b"></div>
+</div>
+
+<header id="topbar">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="QFRemote">
+      <span class="brand-tile"><img src="assets/icon.png" alt=""></span>
+      <span class="brand-name">QFRemote</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#features" data-i18n="nav_features">功能</a>
+      <a href="#reconnect" data-i18n="nav_reconnect">自动重连</a>
+      <a href="#shots" data-i18n="nav_shots">界面</a>
+      <a href="#download" data-i18n="nav_download">下载</a>
+      <a href="#changes" data-i18n="nav_changes">更新日志</a>
+      <a href="#faq" data-i18n="nav_faq">常见问题</a>
+      <a href="#contact" data-i18n="nav_contact">联系</a>
+    </nav>
+    <button class="lang-btn" id="langToggle" type="button" aria-label="Switch language">EN</button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===== 品牌区 ===== -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-text reveal">
+        <div class="hero-badge"><span class="dot-live"></span><span data-i18n="hero_badge">自有服务器 · 自有品牌</span></div>
+        <h1><span data-i18n="hero_h1a">你的电脑，</span><br><span class="grad" data-i18n="hero_h1b">随身打开。</span></h1>
+        <p class="hero-sub" data-i18n="hero_sub">QFRemote 是我们自有的远程控制软件：电脑装一次，之后用电脑软件或手机浏览器打开，就能连上你的电脑看实时画面、动手操作。</p>
+        <div class="hero-btns">
+          <a class="btn btn-primary" href="#download"><span data-i18n="hero_dl">下载 Windows 版</span><span class="btn-ver" data-ver></span></a>
+          <a class="btn btn-glass" href="#reconnect" data-i18n="hero_reconnect">断开？它自己连回来</a>
+        </div>
+        <p class="hero-note" data-i18n="hero_note">手机不用装软件，浏览器就能控制 · 电脑不用挂梯子</p>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="win-frame">
+          <div class="win-bar"><span class="wdot r"></span><span class="wdot y"></span><span class="wdot g"></span><span class="win-title">QFRemote</span><span class="win-light" title="server online"><i></i></span></div>
+          <img src="assets/shots/connecting.png" alt="QFRemote 正在连接的界面" data-i18n-alt="hero_img_alt">
+        </div>
+        <div class="orbit" aria-hidden="true"><span class="orbit-ring"></span><span class="orbit-dot"></span></div>
+        <div class="chip chip-a"><span class="dot-live"></span><span data-i18n="chip_a">连接状态一眼可见</span></div>
+        <div class="chip chip-b"><span data-i18n="chip_b">断开自动重连中…</span><span class="chip-bar"><i></i></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 核心卖点 ===== -->
+  <section id="features" class="section">
+    <div class="wrap">
+      <p class="kicker reveal" data-i18n="feat_kicker">核心功能</p>
+      <h2 class="sec-title reveal" data-i18n="feat_title">一台电脑，装一次，处处可达</h2>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M9 20h6M12 16v4"/></svg></div>
+          <h3 data-i18n="f1t">远程桌面，实时操控</h3>
+          <p data-i18n="f1p">被控电脑的画面实时传到你眼前，鼠标键盘就像坐在它跟前一样用。电脑前没人，也能把事办了。</p>
+        </article>
+        <article class="card reveal">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 8a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M3 10h18"/></svg></div>
+          <h3 data-i18n="f2t">文件管理</h3>
+          <p data-i18n="f2p">远程浏览被控电脑里的文件，上传、下载、整理，不用把人叫回电脑跟前发文件。</p>
+        </article>
+        <article class="card reveal">
+          <div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9l3 3-3 3M12 15h5"/></svg></div>
+          <h3 data-i18n="f3t">远程终端</h3>
+          <p data-i18n="f3p">需要敲命令的时候有终端可用，查状态、跑命令、处理问题，不必事事都开画面。</p>
+        </article>
+        <article class="card reveal">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 6h13M13 3l3 3-3 3M20 18H7M11 15l-3 3 3 3"/></svg></div>
+          <h3 data-i18n="f4t">权限分项管理</h3>
+          <p data-i18n="f4p">给别人开账号时，能看什么、能动什么，一项一项分开管；还有一个总开关，一键全开或全关。账号随时能收回，收回立刻失效。</p>
+        </article>
+        <article class="card reveal">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h3 data-i18n="f5t">安全防护</h3>
+          <p data-i18n="f5p">服务器有专人巡逻：每天自查木马与后门、异常自动处理，系统补丁自动更新；登录有防撞保护，谁在乱试密码，门自己会锁。</p>
+        </article>
+        <article class="card reveal">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.3-5.6M20 3v4h-4"/></svg></div>
+          <h3 data-i18n="f6t">软件内更新</h3>
+          <p data-i18n="f6p">新版本在软件里就能更新，不用再到处找安装包。每次更新改了什么，都会在这里的更新日志里写清。</p>
+        </article>
+        <article class="card reveal">
+          <div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor" stroke="none" opacity=".35"/></svg></div>
+          <h3 data-i18n="f7t">双主题界面</h3>
+          <p data-i18n="f7p">亮蓝与深灰两套主题一键切换，深色用深灰不用纯黑，白天晚上看着都舒服。</p>
+        </article>
+        <article class="card reveal">
+          <div class="ic"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M11 18h2"/></svg></div>
+          <h3 data-i18n="f8t">手机浏览器直接控</h3>
+          <p data-i18n="f8p">手机上不用装任何软件，浏览器打开控制台就能看画面、能操作，临时救急最方便。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 自动重连专题 ===== -->
+  <section id="reconnect" class="section band">
+    <div class="wrap">
+      <p class="kicker reveal" data-i18n="rc_kicker">最在乎的一件事</p>
+      <h2 class="sec-title reveal" data-i18n="rc_title">断开后，不顾一切自己连回来</h2>
+      <p class="sec-lead reveal" data-i18n="rc_lead">远程控制最怕的就是断开——断了还要人跑到电脑跟前手动点，那还不如不用。QFRemote 从三层堵死这件事：只要软件开着，断开就自动重连，不限次数、不弹窗、不把你踢回登录页。</p>
+      <div class="layers">
+        <div class="layer reveal">
+          <div class="layer-num">1</div>
+          <h3 data-i18n="rc1t">被控端自己往回连</h3>
+          <p data-i18n="rc1p">装在电脑上的小组件是个系统服务：电脑重启、系统更新、服务器重启，它开机就自己上班、自己连回来。实测：服务器重启后，它几秒内就以新连接自己报到，全程没人碰电脑。</p>
+        </div>
+        <div class="layer reveal">
+          <div class="layer-num">2</div>
+          <h3 data-i18n="rc2t">服务器自己爬起来</h3>
+          <p data-i18n="rc2p">服务器上的服务设了崩溃自动拉起与开机自启，另外每小时还有一次自检，蔫了先自救。实测受控重启一次，网页 6 秒恢复。</p>
+        </div>
+        <div class="layer reveal">
+          <div class="layer-num">3</div>
+          <h3 data-i18n="rc3t">控制端自己重点连</h3>
+          <p data-i18n="rc3p">软件里有个连接看护：认出「已断线」就自己点重连，一直试到连上为止；整页断开则换成自家页面倒计时自动重试。中间只在工具栏挂一行小字，你什么都不用做。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 截图区 ===== -->
+  <section id="shots" class="section">
+    <div class="wrap">
+      <p class="kicker reveal" data-i18n="shot_kicker">真实界面</p>
+      <h2 class="sec-title reveal" data-i18n="shot_title">软件长这样</h2>
+      <p class="sec-lead reveal" data-i18n="shot_lead">以下图片均为软件实际运行画面，不是效果图。</p>
+      <div class="gallery reveal" id="gallery"><!-- 由 product.json 渲染 --></div>
+    </div>
+  </section>
+
+  <!-- ===== 下载区 ===== -->
+  <section id="download" class="section band">
+    <div class="wrap">
+      <p class="kicker reveal" data-i18n="dl_kicker">下载</p>
+      <h2 class="sec-title reveal" data-i18n="dl_title">下载 QFRemote</h2>
+      <div class="dl-card reveal">
+        <div class="dl-left">
+          <div class="dl-plat">
+            <svg viewBox="0 0 24 24" class="win-logo"><path d="M0 3.4L9.7 2.1v9.4H0zM10.9 1.9L24 0v11.5H10.9zM0 12.6h9.7v9.4L0 20.6zM10.9 12.6H24V24L10.9 22.1z"/></svg>
+            <div>
+              <h3 data-i18n="dl_win">Windows 版</h3>
+              <p class="dl-req" id="dlReq">Windows 10 / 11（64 位）</p>
+            </div>
+          </div>
+          <ul class="dl-meta">
+            <li><span data-i18n="dl_ver">当前版本</span><strong data-ver>—</strong></li>
+            <li><span data-i18n="dl_date">发布日期</span><strong data-date>—</strong></li>
+            <li><span data-i18n="dl_size">安装包大小</span><strong data-size>—</strong></li>
+            <li><span data-i18n="dl_file">文件名</span><strong data-file class="mono">—</strong></li>
+          </ul>
+          <div class="sha">
+            <span class="sha-label">SHA-256</span>
+            <code id="shaCode">—</code>
+            <button type="button" class="copy-btn" id="copySha" data-i18n="dl_copy">复制</button>
+          </div>
+          <p class="dl-tip" data-i18n="dl_tip">下载后可对照上面的校验码，确认安装包完整、没有被掉包。首次打开若出现 Windows 提示，点「更多信息 → 仍要运行」即可（软件暂未购买签名证书）。</p>
+        </div>
+        <div class="dl-right">
+          <img class="dl-icon" src="assets/icon.png" alt="QFRemote">
+          <a class="btn btn-primary btn-big" id="dlBtn" href="#" rel="noopener" data-i18n="dl_btn">下载最新版</a>
+          <a class="dl-history" id="dlHistory" href="#" target="_blank" rel="noopener" data-i18n="dl_history">查看全部历史版本</a>
+          <p class="dl-note" data-i18n="dl_note">请仅通过本页面下载 QFRemote，确保安装包完整可靠。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 更新日志 ===== -->
+  <section id="changes" class="section">
+    <div class="wrap narrow">
+      <p class="kicker reveal" data-i18n="cl_kicker">更新日志</p>
+      <h2 class="sec-title reveal" data-i18n="cl_title">一路走来的变化</h2>
+      <div class="timeline" id="timeline"><!-- 由 product.json 渲染 --></div>
+    </div>
+  </section>
+
+  <!-- ===== 常见问题 ===== -->
+  <section id="faq" class="section band">
+    <div class="wrap narrow">
+      <p class="kicker reveal" data-i18n="faq_kicker">常见问题</p>
+      <h2 class="sec-title reveal" data-i18n="faq_title">先问清楚，再上手</h2>
+      <div class="faq-list" id="faqList"><!-- 由 app.js 按语言渲染 --></div>
+    </div>
+  </section>
+
+  <!-- ===== 联系区 ===== -->
+  <section id="contact" class="section">
+    <div class="wrap narrow">
+      <p class="kicker reveal" data-i18n="ct_kicker">联系我们</p>
+      <h2 class="sec-title reveal" data-i18n="ct_title">有话直说</h2>
+      <div class="contact-card reveal">
+        <p><span data-i18n="ct_mail_label">联系邮箱：</span><a class="mail" href="mailto:a718983610@gmail.com">a718983610@gmail.com</a></p>
+        <p class="ct-sub" data-i18n="ct_sub">也可以直接在下面留言，提交后会自动转到我们的邮箱，我们会认真阅读并处理。</p>
+        <form id="feedbackForm" novalidate>
+          <textarea id="fbContent" rows="5" maxlength="2000" data-i18n-ph="fb_content_ph" placeholder="请填写您的意见或建议（必填，最多 2000 字）"></textarea>
+          <input id="fbContact" type="text" maxlength="200" data-i18n-ph="fb_contact_ph" placeholder="联系方式（选填，方便我们与您联系）">
+          <button class="btn btn-primary" type="submit" id="fbSubmit" data-i18n="fb_submit">提交留言</button>
+          <p class="fb-status" id="fbStatus" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div class="foot-brand"><img src="assets/icon.png" alt=""><span>QFRemote</span></div>
+    <p class="foot-note" data-i18n="foot_note">QFRemote 基于开源项目 MeshCentral（Apache-2.0 许可证）构建，MeshCentral 的权利归其原作者所有。</p>
+    <p class="foot-copy">© 2026 QFRemote</p>
+  </div>
+</footer>
+
+<script src="assets/app.js?v=1"></script>
+</body>
+</html>
