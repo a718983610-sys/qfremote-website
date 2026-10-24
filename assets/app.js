@@ -1,6 +1,6 @@
 // QFRemote 官网脚本：
 // 1) 产品信息全部从 product.json 渲染（版本号/下载/校验码/日志/截图只维护那一处）；
-// 2) 中英切换；3) 留言表单（与 QFClash 同一反馈通道）；4) 动效与下载直链解析。
+// 2) 中英切换；3) 留言表单（QFRemote 自家留言通道）；4) 动效与下载直链解析。
 "use strict";
 
 const I18N = {
@@ -284,11 +284,16 @@ applyLang();
   });
 })();
 
-/* ===== 留言表单：与 QFClash 意见反馈同一通道（POST /feedback，先入库再转发邮箱） ===== */
+/* ===== 留言表单：QFRemote 自家通道（POST 到 product.json 的 web.feedbackUrl，先入库再转发站长邮箱） ===== */
 (function () {
   const form = document.getElementById("feedbackForm");
   if (!form) return;
-  const API = "https://qfclash-account.a718983610.workers.dev";
+  function feedbackEndpoint() {
+    if (typeof PRODUCT !== "undefined" && PRODUCT && PRODUCT.web && PRODUCT.web.feedbackUrl) return Promise.resolve(PRODUCT.web.feedbackUrl);
+    return fetch("product.json", { cache: "no-cache" }).then(function (r) { return r.json(); }).then(function (j) {
+      return (j && j.web && j.web.feedbackUrl) || null;
+    }).catch(function () { return null; });
+  }
   function deviceId() {
     try {
       let id = localStorage.getItem("qfr_web_id");
@@ -309,7 +314,9 @@ applyLang();
     if (!content) { status.textContent = t("fb_empty"); status.classList.add("err"); return; }
     btn.disabled = true;
     status.textContent = t("fb_sending");
-    fetch(API + "/feedback", {
+    feedbackEndpoint().then(function (ep) {
+      if (!ep) { status.textContent = t("fb_fail"); status.classList.add("err"); btn.disabled = false; return; }
+      return fetch(ep, {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({
@@ -335,6 +342,7 @@ applyLang();
       status.textContent = t("fb_fail");
       status.classList.add("err");
     }).finally(function () { btn.disabled = false; });
+    });
   });
 })();
 
