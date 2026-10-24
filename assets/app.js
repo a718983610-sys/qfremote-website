@@ -6,11 +6,11 @@
 const I18N = {
   zh: {
     nav_features: "功能", nav_reconnect: "自动重连", nav_shots: "界面", nav_download: "下载",
-    nav_changes: "更新日志", nav_faq: "常见问题", nav_contact: "联系", nav_login: "网页登录",
+    nav_changes: "更新日志", nav_faq: "常见问题", nav_contact: "联系", nav_login: "网页版登录", nav_register: "注册",
     hero_badge: "自有服务器 · 自有品牌",
     hero_h1a: "你的电脑，", hero_h1b: "随身打开。",
     hero_sub: "QFRemote 是我们自有的远程控制软件：电脑装一次，之后用电脑软件或手机浏览器打开，就能连上你的电脑看实时画面、动手操作。",
-    hero_dl: "下载 Windows 版", hero_reconnect: "断开？它自己连回来",
+    hero_dl: "下载 Windows 版", hero_dl_a: "下载 Android 版", hero_reconnect: "断开？它自己连回来",
     hero_weblogin: "网页版登录", hero_register: "注册账号",
     hero_note: "手机不用装软件，浏览器就能控制 · 电脑不用挂梯子",
     hero_img_alt: "QFRemote 正在连接的界面",
@@ -24,6 +24,10 @@ const I18N = {
     f6t: "软件内更新", f6p: "新版本在软件里就能更新，不用再到处找安装包。每次更新改了什么，都会在这里的更新日志里写清。",
     f7t: "双主题界面", f7p: "亮蓝与深灰两套主题一键切换，深色用深灰不用纯黑，白天晚上看着都舒服。",
     f8t: "手机浏览器直接控", f8p: "手机上不用装任何软件，浏览器打开控制台就能看画面、能操作，临时救急最方便。",
+    f9t: "好友与共享", f9p: "按账号搜到人、发申请，对方同意后成为好友；把自己的一组电脑共享给他请他帮忙，只看还是能操作由你选，删好友自动收回。好友之间还能加密聊天。",
+    f9link: "打开好友页 →",
+    f10t: "官方论坛", f10p: "使用求助、建议反馈、综合讨论与官方公告；用 QFRemote 账号登录即可发帖，游客可浏览。内容经机器初审与人工复核，广告引流与违规内容会被直接驳回。",
+    f10link: "进入论坛 →",
     rc_kicker: "最在乎的一件事", rc_title: "断开后，不顾一切自己连回来",
     rc_lead: "远程控制最怕的就是断开——断了还要人跑到电脑跟前手动点，那还不如不用。QFRemote 从三层堵死这件事：只要软件开着，断开就自动重连，不限次数、不弹窗、不把你踢回登录页。",
     rc1t: "被控端自己往回连", rc1p: "装在电脑上的小组件是个系统服务：电脑重启、系统更新、服务器重启，它开机就自己上班、自己连回来。实测：服务器重启后，它几秒内就以新连接自己报到，全程没人碰电脑。",
@@ -35,7 +39,7 @@ const I18N = {
     dl_copy: "复制", dl_copied: "已复制",
     dl_tip: "下载后可对照上面的校验码，确认安装包完整、没有被掉包。首次打开若出现 Windows 提示，点「更多信息 → 仍要运行」即可（软件暂未购买签名证书）。",
     dl_btn: "下载最新版", dl_history: "查看全部历史版本",
-    dl_android: "安卓版", dl_reg_link: "没有账号？先注册一个",
+    dl_android: "Android 版", dl_btn_a: "下载 Android 版", dl_reg_link: "没有账号？先注册一个",
     dl_tip_a: "下载后可对照上面的校验码，确认安装包完整、没有被掉包。首次安装若被系统拦截，请允许本次安装后继续（软件暂未上架应用商店）。",
     dl_note: "请仅通过本页面下载 QFRemote，确保安装包完整可靠。",
     cl_kicker: "更新日志", cl_title: "一路走来的变化", cl_latest: "最新",
@@ -54,11 +58,11 @@ const I18N = {
   },
   en: {
     nav_features: "Features", nav_reconnect: "Auto-Reconnect", nav_shots: "Interface", nav_download: "Download",
-    nav_changes: "Changelog", nav_faq: "FAQ", nav_contact: "Contact", nav_login: "Web Login",
+    nav_changes: "Changelog", nav_faq: "FAQ", nav_contact: "Contact", nav_login: "Web Login", nav_register: "Sign Up",
     hero_badge: "Our own server · Our own brand",
     hero_h1a: "Your computer,", hero_h1b: "always within reach.",
     hero_sub: "QFRemote is our own remote-control software. Install it on a computer once, then open the desktop app or your phone's browser to see its live screen and operate it from anywhere.",
-    hero_dl: "Download for Windows", hero_reconnect: "Dropped? It reconnects itself",
+    hero_dl: "Download for Windows", hero_dl_a: "Download for Android", hero_reconnect: "Dropped? It reconnects itself",
     hero_weblogin: "Open Web Console", hero_register: "Create Account",
     hero_note: "No app needed on your phone — the browser is enough · No VPN needed on the PC",
     hero_img_alt: "QFRemote connecting screen",
@@ -72,6 +76,10 @@ const I18N = {
     f6t: "In-App Updates", f6p: "New versions arrive inside the app — no hunting for installers. What changed in each release is written up in the changelog here.",
     f7t: "Dual Themes", f7p: "Bright blue and deep gray themes switch in one click. The dark theme uses deep gray, never pure black — comfortable day and night.",
     f8t: "Phone Browser Control", f8p: "No app to install on your phone: open the console in the browser to view and operate. Perfect for a quick rescue.",
+    f9t: "Friends & Sharing", f9p: "Search by account name, send a request, and you are friends once accepted. Share a group of your computers with a friend for help — view-only or full control is your choice — and removing the friend withdraws the sharing automatically. Friends can also chat, end-to-end encrypted.",
+    f9link: "Open the Friends page →",
+    f10t: "Official Forum", f10p: "Help, suggestions, general discussion and official announcements. Sign in with your QFRemote account to post; guests can browse. Posts pass a machine check plus human review — ads and rule-breaking content are rejected outright.",
+    f10link: "Visit the forum →",
     rc_kicker: "The One Thing We Care About Most", rc_title: "Disconnected? It fights its way back — by itself",
     rc_lead: "The biggest fear in remote control is a dropped connection: if someone has to walk to the computer and click, remote control is pointless. QFRemote seals this off at three layers: while the app is open, a drop means automatic reconnection — unlimited retries, no pop-ups, never bounced back to the sign-in page.",
     rc1t: "The agent reconnects itself", rc1p: "The small component on the controlled PC runs as a system service: after a reboot, a system update, or a server restart, it starts on boot and dials back in on its own. Measured: after a server restart it reported back on a fresh connection within seconds — nobody touched the PC.",
@@ -83,7 +91,7 @@ const I18N = {
     dl_copy: "Copy", dl_copied: "Copied",
     dl_tip: "After downloading, compare the checksum above to make sure the package is complete and untampered. On first launch, if Windows shows a prompt, choose \u201CMore info \u2192 Run anyway\u201D (the app is not code-signed yet).",
     dl_btn: "Download Latest", dl_history: "See all previous versions",
-    dl_android: "Android", dl_reg_link: "No account yet? Register first",
+    dl_android: "Android", dl_btn_a: "Download for Android", dl_reg_link: "No account yet? Register first",
     dl_tip_a: "After downloading, compare the checksum above to make sure the package is complete and untampered. If your phone blocks the first install, allow this install to continue (the app is not on an app store yet).",
     dl_note: "Please download QFRemote only from this page to keep your package genuine and intact.",
     cl_kicker: "Changelog", cl_title: "How it evolved", cl_latest: "Latest",
@@ -109,7 +117,7 @@ const FAQ = {
     ["断网或者断开了怎么办？", "什么都不用做。三层都会自己恢复：被控电脑自己重连、服务器自己恢复、控制软件自动重新连接，不限次数。只要软件还开着，它就一直试到连上为止，不用跑到电脑跟前手动点。"],
     ["被控电脑要挂梯子吗？", "不用。被控电脑上的小组件是主动连回我们自有服务器的，电脑本身上网还是走它自己的网络，不受任何影响，也不用开任何端口。"],
     ["能给别人用吗？", "可以给熟人用。软件可以随便拷贝，账号任何人都能自助注册：账号至少 8 位，必须是字母加数字的组合；管理员也可以在后台直接给人开号。能看什么、能动什么按权限一项项分配；不想给了，把账号收回，对方立刻就用不了了。"],
-    ["软件怎么更新？", "新版发布后，本页下载区会同步换成最新版，下载新安装包覆盖安装即可，设置和登录状态都会保留。后续版本还会在软件内直接提醒并完成更新。"],
+    ["软件怎么更新？", "软件自己会更新：开着的时候发现新版只提醒、不打断你用；等你关掉软件、下次再打开，会先把新版装好再进，装的时候有进度条，装完自动核对完整性。打开软件时要是连不上服务器，照样先进去用，不锁软件。本页下载区也一直是最新版。"],
     ["第一次打开弹出 Windows 提示怎么办？", "这是因为软件暂时还没有购买代码签名证书，属正常现象。在提示里点「更多信息 → 仍要运行」即可。安装包请认准本页下载，并可对照本页公布的 SHA-256 校验码确认没被掉包。"]
   ],
   en: [
@@ -118,7 +126,7 @@ const FAQ = {
     ["What happens if the connection drops?", "Nothing — you do nothing. All three layers recover on their own: the controlled PC reconnects itself, the server restores itself, and the control app reconnects automatically, with unlimited retries. As long as the app stays open, it keeps trying until it is back — no walking to the computer to click anything."],
     ["Does the controlled PC need a VPN?", "No. The component on the controlled PC dials out to our own server by itself. The PC's own internet traffic is completely unaffected, and no ports need to be opened."],
     ["Can other people use it?", "Yes, for people you know. The software can be copied freely, and anyone can register an account on their own — usernames must be at least 8 characters and combine letters and numbers. The administrator can also create accounts directly in the backend. What each account can see and do is assigned item by item; revoke an account and it stops working immediately."],
-    ["How do I update the app?", "When a new version is released, the download section on this page is updated at the same time. Download the new package and install it over the old one — your settings and sign-in are kept. Future versions will also offer update prompts inside the app itself."],
+    ["How do I update the app?", "The app updates itself: while it is running, a new version only shows a reminder and never interrupts you. The next time you reopen the app after closing it, the new version is installed first — with a progress bar and an automatic integrity check. If the server is unreachable when you open the app, you can still get in and use it; it never locks you out. The download section on this page always carries the latest version too."],
     ["Windows shows a warning on first launch. What do I do?", "That is expected for now, because the app does not yet carry a purchased code-signing certificate. Choose \u201CMore info \u2192 Run anyway\u201D. Always download from this page, and compare the SHA-256 checksum published here to be sure the package is genuine."]
   ]
 };
@@ -172,17 +180,20 @@ function renderDynamic() {
 
   /* 网页版登录 / 注册入口：网址在 product.json 的 web 字段（临时通道网址变更时由同步脚本统一改这一处） */
   const WEB = P.web || {};
-  [["webLoginBtn", WEB.loginUrl], ["navLogin", WEB.loginUrl],
-   ["webRegisterBtn", WEB.registerUrl], ["dlRegister", WEB.registerUrl]].forEach(function (pair) {
+  [["navLogin", WEB.loginUrl],
+   ["navRegister", WEB.registerUrl], ["dlRegister", WEB.registerUrl],
+   ["featFriendsLink", WEB.friendsUrl], ["featForumLink", WEB.forumUrl]].forEach(function (pair) {
     const el = document.getElementById(pair[0]);
     if (el && pair[1]) el.href = pair[1];
   });
 
-  /* 安卓卡：product.json 里有 platforms.android 且带直链时才显示，没就绪不摆假卡 */
+  /* 安卓卡＋首屏安卓按钮：product.json 里有 platforms.android 且带直链时才显示，没就绪不摆假入口 */
   const A = (P.platforms || {}).android || null;
   const cardA = document.getElementById("dlCardAndroid");
+  const heroA = document.getElementById("heroDlA");
   if (cardA && A && A.downloadUrl) {
     cardA.style.display = "";
+    if (heroA) heroA.style.display = "";
     document.querySelectorAll("[data-ver-a]").forEach(function (el) { el.textContent = "v" + (A.version || P.version); });
     document.querySelectorAll("[data-date-a]").forEach(function (el) { el.textContent = A.releaseDate || P.releaseDate || "—"; });
     document.querySelectorAll("[data-size-a]").forEach(function (el) { el.textContent = A.sizeText || "—"; });
@@ -315,6 +326,24 @@ applyLang();
       status.textContent = t("fb_fail");
       status.classList.add("err");
     }).finally(function () { btn.disabled = false; });
+  });
+})();
+
+/* ===== 移动端菜单：汉堡展开/收起 ===== */
+(function () {
+  const burger = document.getElementById("navBurger");
+  const header = document.querySelector("header");
+  const panel = document.getElementById("navPanel");
+  if (!burger || !header || !panel) return;
+  burger.addEventListener("click", function () {
+    const open = header.classList.toggle("menu-open");
+    burger.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  panel.querySelectorAll("a").forEach(function (a) {
+    a.addEventListener("click", function () {
+      header.classList.remove("menu-open");
+      burger.setAttribute("aria-expanded", "false");
+    });
   });
 })();
 

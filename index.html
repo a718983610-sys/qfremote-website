@@ -7,7 +7,7 @@
 <meta name="description" content="QFRemote — 自有远程控制软件：电脑装一次，手机浏览器或电脑软件打开就能连上你的电脑。断开自动重连，权限分项管理。">
 <link rel="icon" href="favicon.ico">
 <link rel="apple-touch-icon" href="assets/icon.png">
-<link rel="stylesheet" href="assets/style.css?v=1">
+<link rel="stylesheet" href="assets/style.css?v=3">
 </head>
 <body>
 
@@ -24,7 +24,7 @@
       <span class="brand-tile"><img src="assets/icon.png" alt=""></span>
       <span class="brand-name">QFRemote</span>
     </a>
-    <nav class="nav-links">
+    <nav class="nav-links" aria-label="主导航">
       <a href="#features" data-i18n="nav_features">功能</a>
       <a href="#reconnect" data-i18n="nav_reconnect">自动重连</a>
       <a href="#shots" data-i18n="nav_shots">界面</a>
@@ -32,10 +32,23 @@
       <a href="#changes" data-i18n="nav_changes">更新日志</a>
       <a href="#faq" data-i18n="nav_faq">常见问题</a>
       <a href="#contact" data-i18n="nav_contact">联系</a>
-      <a id="navLogin" href="#" target="_blank" rel="noopener" data-i18n="nav_login">网页登录</a>
     </nav>
-    <button class="lang-btn" id="langToggle" type="button" aria-label="Switch language">EN</button>
+    <div class="nav-actions">
+      <button class="lang-btn" id="langToggle" type="button" aria-label="Switch language">EN</button>
+      <a class="btn-nav-ghost" id="navRegister" href="#" target="_blank" rel="noopener" data-i18n="nav_register">注册</a>
+      <a class="btn-nav-primary" id="navLogin" href="#" target="_blank" rel="noopener" data-i18n="nav_login">网页版登录</a>
+      <button class="nav-burger" id="navBurger" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="navPanel"><span></span><span></span><span></span></button>
+    </div>
   </div>
+  <nav class="nav-panel" id="navPanel" aria-label="移动端导航">
+    <a href="#features" data-i18n="nav_features">功能</a>
+    <a href="#reconnect" data-i18n="nav_reconnect">自动重连</a>
+    <a href="#shots" data-i18n="nav_shots">界面</a>
+    <a href="#download" data-i18n="nav_download">下载</a>
+    <a href="#changes" data-i18n="nav_changes">更新日志</a>
+    <a href="#faq" data-i18n="nav_faq">常见问题</a>
+    <a href="#contact" data-i18n="nav_contact">联系</a>
+  </nav>
 </header>
 
 <main id="top">
@@ -48,10 +61,11 @@
         <h1><span data-i18n="hero_h1a">你的电脑，</span><br><span class="grad" data-i18n="hero_h1b">随身打开。</span></h1>
         <p class="hero-sub" data-i18n="hero_sub">QFRemote 是我们自有的远程控制软件：电脑装一次，之后用电脑软件或手机浏览器打开，就能连上你的电脑看实时画面、动手操作。</p>
         <div class="hero-btns">
-          <a class="btn btn-primary" href="#download"><span data-i18n="hero_dl">下载 Windows 版</span><span class="btn-ver" data-ver></span></a>
+          <div class="hero-dl-stack">
+            <a class="btn btn-primary" href="#download"><span data-i18n="hero_dl">下载 Windows 版</span><span class="btn-ver" data-ver></span></a>
+            <a class="btn btn-primary" id="heroDlA" href="#download" style="display:none"><span data-i18n="hero_dl_a">下载 Android 版</span></a>
+          </div>
           <a class="btn btn-glass" href="#reconnect" data-i18n="hero_reconnect">断开？它自己连回来</a>
-          <a class="btn btn-glass" id="webLoginBtn" href="#" target="_blank" rel="noopener" data-i18n="hero_weblogin">网页版登录</a>
-          <a class="btn btn-glass" id="webRegisterBtn" href="#" target="_blank" rel="noopener" data-i18n="hero_register">注册账号</a>
         </div>
         <p class="hero-note" data-i18n="hero_note">手机不用装软件，浏览器就能控制 · 电脑不用挂梯子</p>
       </div>
@@ -113,12 +127,24 @@
           <h3 data-i18n="f8t">手机浏览器直接控</h3>
           <p data-i18n="f8p">手机上不用装任何软件，浏览器打开控制台就能看画面、能操作，临时救急最方便。</p>
         </article>
+        <article class="card reveal">
+          <div class="ic"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c.6-3 2.8-4.5 5.5-4.5s5 1.5 5.6 4.5"/><path d="M15.8 5.3a3.2 3.2 0 0 1 0 5.8M17.7 14.9c1.6.6 2.5 1.9 2.8 4.1"/></svg></div>
+          <h3 data-i18n="f9t">好友与共享</h3>
+          <p data-i18n="f9p">按账号搜到人、发申请，对方同意后成为好友；把自己的一组电脑共享给他请他帮忙，只看还是能操作由你选，删好友自动收回。好友之间还能加密聊天。</p>
+          <a class="card-link" id="featFriendsLink" href="#" target="_blank" rel="noopener" data-i18n="f9link">打开好友页 →</a>
+        </article>
+        <article class="card reveal">
+          <div class="ic"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-8 8H4l2-3a8 8 0 1 1 15-5z"/><path d="M8.5 11h.01M12.5 11h.01M16.5 11h.01"/></svg></div>
+          <h3 data-i18n="f10t">官方论坛</h3>
+          <p data-i18n="f10p">使用求助、建议反馈、综合讨论与官方公告；用 QFRemote 账号登录即可发帖，游客可浏览。内容经机器初审与人工复核，广告引流与违规内容会被直接驳回。</p>
+          <a class="card-link" id="featForumLink" href="#" target="_blank" rel="noopener" data-i18n="f10link">进入论坛 →</a>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- ===== 自动重连专题 ===== -->
-  <section id="reconnect" class="section band">
+  <section id="reconnect" class="section band-dark">
     <div class="wrap">
       <p class="kicker reveal" data-i18n="rc_kicker">最在乎的一件事</p>
       <h2 class="sec-title reveal" data-i18n="rc_title">断开后，不顾一切自己连回来</h2>
@@ -161,7 +187,7 @@
       <div class="dl-card reveal">
         <div class="dl-left">
           <div class="dl-plat">
-            <svg viewBox="0 0 24 24" class="win-logo"><path d="M0 3.4L9.7 2.1v9.4H0zM10.9 1.9L24 0v11.5H10.9zM0 12.6h9.7v9.4L0 20.6zM10.9 12.6H24V24L10.9 22.1z"/></svg>
+            <svg viewBox="0 0 24 24" class="win-logo" aria-hidden="true"><path fill="#0078D4" d="M0 0h11.377v11.372H0zM12.623 0H24v11.372H12.623zM0 12.623h11.377V24H0zM12.623 12.623H24V24H12.623z"/></svg>
             <div>
               <h3 data-i18n="dl_win">Windows 版</h3>
               <p class="dl-req" id="dlReq">Windows 10 / 11（64 位）</p>
@@ -181,7 +207,7 @@
           <p class="dl-tip" data-i18n="dl_tip">下载后可对照上面的校验码，确认安装包完整、没有被掉包。首次打开若出现 Windows 提示，点「更多信息 → 仍要运行」即可（软件暂未购买签名证书）。</p>
         </div>
         <div class="dl-right">
-          <img class="dl-icon" src="assets/icon.png" alt="QFRemote">
+          <svg viewBox="0 0 24 24" class="dl-logo-big dl-logo-win" role="img" aria-label="Windows"><path fill="#0078D4" d="M0 0h11.377v11.372H0zM12.623 0H24v11.372H12.623zM0 12.623h11.377V24H0zM12.623 12.623H24V24H12.623z"/></svg>
           <a class="btn btn-primary btn-big" id="dlBtn" href="#" rel="noopener" data-i18n="dl_btn">下载最新版</a>
           <a class="dl-history" id="dlHistory" href="#" rel="noopener" data-i18n="dl_history">查看全部历史版本</a>
           <a class="dl-history" id="dlRegister" href="#" target="_blank" rel="noopener" data-i18n="dl_reg_link">没有账号？先注册一个</a>
@@ -191,7 +217,7 @@
       <div class="dl-card reveal" id="dlCardAndroid" style="display:none;margin-top:18px">
         <div class="dl-left">
           <div class="dl-plat">
-            <svg viewBox="0 0 24 24" class="win-logo"><path d="M7 2h10a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm4 17h2v2h-2z" fill-rule="evenodd"/></svg>
+            <svg viewBox="4.2 2.75 15.6 9.55" class="android-logo" aria-hidden="true"><g fill="none" stroke="#3DDC84" stroke-width="1.5" stroke-linecap="round"><path d="M7.4 5.7 6 3.5"/><path d="M16.6 5.7 18 3.5"/></g><path fill="#3DDC84" d="M12 5.2c-4.3 0-7.8 2.9-7.8 6.6 0 .3.2.5.5.5h14.6c.3 0 .5-.2.5-.5 0-3.7-3.5-6.6-7.8-6.6z"/><circle cx="8.7" cy="9.4" r="1.05" fill="#fff"/><circle cx="15.3" cy="9.4" r="1.05" fill="#fff"/></svg>
             <div>
               <h3 data-i18n="dl_android">安卓版</h3>
               <p class="dl-req" id="dlReqA">Android</p>
@@ -211,8 +237,8 @@
           <p class="dl-tip" data-i18n="dl_tip_a">下载后可对照上面的校验码，确认安装包完整、没有被掉包。首次安装若被系统拦截，请允许本次安装后继续（软件暂未上架应用商店）。</p>
         </div>
         <div class="dl-right">
-          <img class="dl-icon" src="assets/icon.png" alt="QFRemote">
-          <a class="btn btn-primary btn-big" id="dlBtnA" href="#" rel="noopener" data-i18n="dl_btn">下载最新版</a>
+          <svg viewBox="4.2 2.75 15.6 9.55" class="dl-logo-big dl-logo-android" role="img" aria-label="Android"><g fill="none" stroke="#3DDC84" stroke-width="1.5" stroke-linecap="round"><path d="M7.4 5.7 6 3.5"/><path d="M16.6 5.7 18 3.5"/></g><path fill="#3DDC84" d="M12 5.2c-4.3 0-7.8 2.9-7.8 6.6 0 .3.2.5.5.5h14.6c.3 0 .5-.2.5-.5 0-3.7-3.5-6.6-7.8-6.6z"/><circle cx="8.7" cy="9.4" r="1.05" fill="#fff"/><circle cx="15.3" cy="9.4" r="1.05" fill="#fff"/></svg>
+          <a class="btn btn-primary btn-big" id="dlBtnA" href="#" rel="noopener" data-i18n="dl_btn_a">下载 Android 版</a>
           <p class="dl-note" data-i18n="dl_note">请仅通过本页面下载 QFRemote，确保安装包完整可靠。</p>
         </div>
       </div>
@@ -265,6 +291,6 @@
   </div>
 </footer>
 
-<script src="assets/app.js?v=1"></script>
+<script src="assets/app.js?v=3"></script>
 </body>
 </html>
