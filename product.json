@@ -1,1 +1,242 @@
-{"changelog":[{"date":"2026-10-24","en":["A fresh new look: the web console, the Windows app and the Android app now share one clean visual style — same colors, cards and buttons everywhere.","Friends are wired in: sign in once, then tap “Friends” in the app or the web console and you are right there — no second sign-in.","Dark mode and the fine details got the same treatment: the reconnect, About and update screens have all been polished."],"version":"2.1.0","zh":["界面全面焕新：网页版、电脑版、手机版换上同一套清爽新样式，配色、卡片、按钮全都统一了。","好友入口打通：登录一次，在软件和网页里点「好友」直接打开，不用再单独登录一次。","深色模式与细节一起优化：断线重连、关于、更新这些页面都重新打磨，用起来更顺手。"]},{"date":"2026-10-24","en":["New Register entry: you can now create a new account right from the sign-in screen."],"version":"2.0.1","zh":["新增注册入口：登录界面就能注册新账号。"]},{"date":"2026-10-24","en":["Version 2.0.0: a new Forum entry in the app — tap “Forum” in the toolbar to open it.","The device page gains a privacy-lock switch: it works once the companion component on the controlled computer is deployed (the component is rolling out with this release).","A batch of prompts has been shortened and smoothed out, so everything reads more clearly."],"version":"2.0.0","zh":["大版本 2.0.0：软件里新增论坛入口，点工具栏的「论坛」就能进论坛。","设备页新增隐私锁开关：被控电脑组件部署完成后即可使用（组件正在随版下发）。","一批提示文案改短改顺，读起来更清楚。"]},{"date":"2026-10-24","en":["A brand-new logo: a blue broken ring with an orange dot, now the same on the Windows app, the Android app and the console.","No functional changes in this release."],"version":"1.0.6","zh":["换上了全新品牌标志——蓝色断环加一个橙色圆点的新图标，电脑版、手机版、网页控制台都统一换新。","这一版功能和之前完全一样，没有变化。"]},{"date":"2026-10-24","en":["Friends are here: tap “Friends” in the toolbar, search by account name and send a request — once the other side accepts, you are friends.","Share a group of your computers with a friend for help: view-only by default (see the screen, no control); whether to allow control is your choice when you share. Remove the friend and the sharing is withdrawn automatically, right away.","Friends can chat with end-to-end encryption — the server never sees the plaintext. The friends list also carries an official support contact, answered by the site owner in person.","Android is updated to 1.0.5 in step: friends, sharing and chat included, and in-app update checks are wired up.","Everything from before is still here: in-app updates, relentless auto-reconnect, one-click diagnostics copy, and all the shortcuts."],"version":"1.0.5","zh":["软件里多了「好友」：工具栏点「好友」就能打开，按对方账号搜到人、发申请，对方同意后就是好友。","把自己的一组电脑共享给好友请他帮忙：默认「只看」（能看屏幕、不能动手），要不要给「能操作」，由你分享的时候自己选；删掉好友，共享立刻自动收回。","好友之间可以聊天，内容全程加密，服务器上也看不到原文；好友列表里还有官方客服，站长本人回复。","安卓版同步更新到 1.0.5：好友、共享、聊天都有，软件内更新检查也已接通。","之前的功能都在：软件内更新、断线自动重连、诊断信息一键复制、快捷键照旧。"]},{"date":"2026-10-24","en":["New update rules: while the app is running, a new version only shows a reminder and never interrupts you. The next time you reopen the app after closing it, the new version installs first, with a progress bar and an automatic integrity check. If the server is unreachable when you open the app, you can still get in and use it; the app never locks you out.","The About panel now has a Register New Account button and a short explanation of the update rules.","Everything from before is still here: in-app update checks with verified downloads, one-click diagnostics copy, shortcuts (F5 refresh, F9 screenshot, F10 always-on-top, F11 fullscreen), and relentless auto-reconnect."],"version":"1.0.4","zh":["更新规矩变了：软件开着的时候查到新版只提醒、不打断你用；等你关掉软件下次再打开，会先把新版装好再进。装的时候有进度条，装完自动核对完整性。要是打开软件时连不上服务器，照样先进去用，不锁软件。","「关于」里多了「注册新账号」按钮和一段更新规矩说明，注册账号更方便。","之前的功能都在：软件内检查更新、下载核对、诊断信息一键复制、快捷键（F5 刷新、F9 截图、F10 置顶、F11 全屏）、断线自动重连。"]},{"date":"2026-10-24","en":["In-app updates are here: the app checks for new versions on launch and from the About panel; a download is verified before you are asked to install it.","About panel: copy diagnostics in one click, so a problem report carries everything needed.","New shortcuts: F5 refresh, F9 screenshot, F10 always-on-top, F11 fullscreen."],"version":"1.0.3","zh":["软件内更新上线：打开软件自动检查新版本，「关于」里也能手动检查；新版下载后先核对完整性，对得上才提示安装。","「关于」新增一键复制诊断信息，出了问题把诊断发过来就能定位。","快捷键补齐：F5 刷新、F9 截图、F10 置顶、F11 全屏。"]},{"date":"2026-10-24","en":["Dual toolbar themes: switch between bright blue and deep gray in one click — splash, loading and offline screens follow.","New server status light in the toolbar: see at a glance whether the server is reachable, with the latest check result and time.","One-click screenshot: save the current console view as an image.","Completed About panel: version, build date, and a server status self-check button."],"version":"1.0.2","zh":["工具栏新增双主题：亮蓝与深灰一键切换，启动、加载、断线页面跟随变色。","工具栏新增服务器状态灯：服务器通不通一眼可见，点开可看最近一次检测结果与时间。","新增一键截图：当前控制台画面一键存成图片。","「关于」面板补全：版本号、构建日期、服务器状态自检按钮。"]},{"date":"2026-10-24","en":["Full visual redesign: new icon, bright-blue gradient toolbar, glass-card screens.","Two-layer auto-reconnect: full-page drops retry on a countdown; session drops reconnect automatically — unlimited retries, no pop-ups, never bounced back to the sign-in page.","New fullscreen mode, page zoom with percentage display, and always-on-top.","The app remembers window size and position; launching it again just brings the existing window forward."],"version":"1.0.1","zh":["界面整体重做：新图标、亮蓝渐变工具栏、玻璃卡片式页面。","断线自动重连双保险：整页断开自动倒计时重试；会话断开自动重新连接，不限次数、不弹窗打扰、不踢回登录页。","新增全屏、页面缩放（带百分比显示）、窗口置顶。","软件会记住窗口大小与位置；重复打开只唤起已有窗口，不再开一堆。"]},{"date":"2026-10-24","en":["The first QFRemote Windows app: double-click to open the console directly — no browser, no certificate warnings.","Sign in once and it is remembered; later launches go straight in.","Own brand icon and toolbar; the server address is baked into the app, so it only ever connects to our own server — much harder to spoof."],"version":"1.0.0","zh":["QFRemote 首个 Windows 软件版：双击打开直接进入控制台，不用再开浏览器、不用再点证书警告。","登录一次即可记住，之后打开免登录。","自家品牌图标与工具栏；服务器地址写死在软件里，只连自家服务器，更防假冒。"]}],"platforms":{"android":{"downloadUrl":"https://bookmarks-hunting-rendering-atlas.trycloudflare.com/dl/QFRemote-v2.1.0.apk","fileName":"QFRemote-v2.1.0.apk","releaseDate":"2026-10-24","requirements":{"en":"Android phone or tablet","zh":"Android 手机或平板"},"sha256":"b6136b3730d83291d323b6a699f628de56afd4dac94ac0c88f703350516b6ab6","sizeBytes":23318632,"sizeText":"22.2 MB","version":"2.1.0"},"windows":{"downloadUrl":"https://bookmarks-hunting-rendering-atlas.trycloudflare.com/dl/QFRemote-Setup-v2.1.0.exe","fileName":"QFRemote-Setup-v2.1.0.exe","releaseDate":"2026-10-24","releasePageUrl":"#changes","requirements":{"en":"Windows 10 / 11 (64-bit)","zh":"Windows 10 / 11（64 位）"},"sha256":"7cab9917726e0a19d54f88ae318f657571bc1c85b46a7893d7519419493a6262","sizeBytes":83644292,"sizeText":"79.8 MB","version":"2.1.0"}},"product":"QFRemote","releaseDate":"2026-10-24","screenshots":[{"en":"Web console · devices page","src":"assets/shots/console-desktop.png","zh":"网页控制台 · 设备页"},{"en":"Connecting · loading screen","src":"assets/shots/connecting.png","zh":"连接中 · 加载页"},{"en":"Friends · mobile","src":"assets/shots/friends-mobile.png","zh":"好友 · 手机版"},{"en":"Offline · auto-reconnect screen","src":"assets/shots/offline-dark.png","zh":"断线自动重连页"},{"en":"Splash screen","src":"assets/shots/splash-dark.png","zh":"启动画面"},{"en":"Toolbar · server status light","src":"assets/shots/status-light.png","zh":"工具栏 · 服务器状态灯"}],"version":"2.1.0","web":{"feedbackUrl":"https://bookmarks-hunting-rendering-atlas.trycloudflare.com/api/feedback","forumUrl":"https://bookmarks-hunting-rendering-atlas.trycloudflare.com/forum","friendsUrl":"https://bookmarks-hunting-rendering-atlas.trycloudflare.com/friends","loginUrl":"https://bookmarks-hunting-rendering-atlas.trycloudflare.com","registerUrl":"https://bookmarks-hunting-rendering-atlas.trycloudflare.com/register","termsUrl":"https://bookmarks-hunting-rendering-atlas.trycloudflare.com/terms"}}
+{
+  "changelog": [
+    {
+      "version": "2.2.0",
+      "date": "2026-10-25",
+      "zh": [
+        "安装时可以自己选安装位置了；以后升级也会装回你选的位置，不会跑偏。",
+        "新增使用时长和积分：用满 2 小时积 1 分，在「关于」里能看到自己已经用了多少天、有多少分。",
+        "站长新增管理页：管账号、处理申诉，在页面上自己就能办。",
+        "电脑上点好友更顺了：登录一次点开直接进；之前点开是空白页、显示 404 的一批入口也一起修好了。",
+        "服务器重启或断线恢复后，好友这些页面能马上认回你的登录，不再卡住转圈。",
+        "隐私锁可以用了：给电脑打开开关、设一次密码，就能锁住本地屏幕。",
+        "界面对照大厂桌面软件的规矩重新收拾：电脑、手机、网页三端一个样，按钮、卡片、间距全统一。"
+      ],
+      "en": [
+        "You can now choose where to install; upgrades will return to the folder you picked.",
+        "New usage time and points: earn 1 point for every 2 hours of use, and see your days of use and points in About.",
+        "A new admin page for the site owner: manage accounts and handle appeals right on the page.",
+        "Friends on desktop open straight away after one sign-in; a batch of entries that showed blank or 404 pages is fixed too.",
+        "After a server restart or a dropped connection, the friends pages recognize your sign-in again right away instead of spinning.",
+        "The privacy lock is ready: turn it on for a computer and set a one-time password to lock its local screen.",
+        "The interface has been reworked to big-name desktop standards: the same buttons, cards and spacing on Windows, Android and the web."
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "en": [
+        "A fresh new look: the web console, the Windows app and the Android app now share one clean visual style — same colors, cards and buttons everywhere.",
+        "Friends are wired in: sign in once, then tap “Friends” in the app or the web console and you are right there — no second sign-in.",
+        "Dark mode and the fine details got the same treatment: the reconnect, About and update screens have all been polished."
+      ],
+      "version": "2.1.0",
+      "zh": [
+        "界面全面焕新：网页版、电脑版、手机版换上同一套清爽新样式，配色、卡片、按钮全都统一了。",
+        "好友入口打通：登录一次，在软件和网页里点「好友」直接打开，不用再单独登录一次。",
+        "深色模式与细节一起优化：断线重连、关于、更新这些页面都重新打磨，用起来更顺手。"
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "en": [
+        "New Register entry: you can now create a new account right from the sign-in screen."
+      ],
+      "version": "2.0.1",
+      "zh": [
+        "新增注册入口：登录界面就能注册新账号。"
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "en": [
+        "Version 2.0.0: a new Forum entry in the app — tap “Forum” in the toolbar to open it.",
+        "The device page gains a privacy-lock switch: it works once the companion component on the controlled computer is deployed (the component is rolling out with this release).",
+        "A batch of prompts has been shortened and smoothed out, so everything reads more clearly."
+      ],
+      "version": "2.0.0",
+      "zh": [
+        "大版本 2.0.0：软件里新增论坛入口，点工具栏的「论坛」就能进论坛。",
+        "设备页新增隐私锁开关：被控电脑组件部署完成后即可使用（组件正在随版下发）。",
+        "一批提示文案改短改顺，读起来更清楚。"
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "en": [
+        "A brand-new logo: a blue broken ring with an orange dot, now the same on the Windows app, the Android app and the console.",
+        "No functional changes in this release."
+      ],
+      "version": "1.0.6",
+      "zh": [
+        "换上了全新品牌标志——蓝色断环加一个橙色圆点的新图标，电脑版、手机版、网页控制台都统一换新。",
+        "这一版功能和之前完全一样，没有变化。"
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "en": [
+        "Friends are here: tap “Friends” in the toolbar, search by account name and send a request — once the other side accepts, you are friends.",
+        "Share a group of your computers with a friend for help: view-only by default (see the screen, no control); whether to allow control is your choice when you share. Remove the friend and the sharing is withdrawn automatically, right away.",
+        "Friends can chat with end-to-end encryption — the server never sees the plaintext. The friends list also carries an official support contact, answered by the site owner in person.",
+        "Android is updated to 1.0.5 in step: friends, sharing and chat included, and in-app update checks are wired up.",
+        "Everything from before is still here: in-app updates, relentless auto-reconnect, one-click diagnostics copy, and all the shortcuts."
+      ],
+      "version": "1.0.5",
+      "zh": [
+        "软件里多了「好友」：工具栏点「好友」就能打开，按对方账号搜到人、发申请，对方同意后就是好友。",
+        "把自己的一组电脑共享给好友请他帮忙：默认「只看」（能看屏幕、不能动手），要不要给「能操作」，由你分享的时候自己选；删掉好友，共享立刻自动收回。",
+        "好友之间可以聊天，内容全程加密，服务器上也看不到原文；好友列表里还有官方客服，站长本人回复。",
+        "安卓版同步更新到 1.0.5：好友、共享、聊天都有，软件内更新检查也已接通。",
+        "之前的功能都在：软件内更新、断线自动重连、诊断信息一键复制、快捷键照旧。"
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "en": [
+        "New update rules: while the app is running, a new version only shows a reminder and never interrupts you. The next time you reopen the app after closing it, the new version installs first, with a progress bar and an automatic integrity check. If the server is unreachable when you open the app, you can still get in and use it; the app never locks you out.",
+        "The About panel now has a Register New Account button and a short explanation of the update rules.",
+        "Everything from before is still here: in-app update checks with verified downloads, one-click diagnostics copy, shortcuts (F5 refresh, F9 screenshot, F10 always-on-top, F11 fullscreen), and relentless auto-reconnect."
+      ],
+      "version": "1.0.4",
+      "zh": [
+        "更新规矩变了：软件开着的时候查到新版只提醒、不打断你用；等你关掉软件下次再打开，会先把新版装好再进。装的时候有进度条，装完自动核对完整性。要是打开软件时连不上服务器，照样先进去用，不锁软件。",
+        "「关于」里多了「注册新账号」按钮和一段更新规矩说明，注册账号更方便。",
+        "之前的功能都在：软件内检查更新、下载核对、诊断信息一键复制、快捷键（F5 刷新、F9 截图、F10 置顶、F11 全屏）、断线自动重连。"
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "en": [
+        "In-app updates are here: the app checks for new versions on launch and from the About panel; a download is verified before you are asked to install it.",
+        "About panel: copy diagnostics in one click, so a problem report carries everything needed.",
+        "New shortcuts: F5 refresh, F9 screenshot, F10 always-on-top, F11 fullscreen."
+      ],
+      "version": "1.0.3",
+      "zh": [
+        "软件内更新上线：打开软件自动检查新版本，「关于」里也能手动检查；新版下载后先核对完整性，对得上才提示安装。",
+        "「关于」新增一键复制诊断信息，出了问题把诊断发过来就能定位。",
+        "快捷键补齐：F5 刷新、F9 截图、F10 置顶、F11 全屏。"
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "en": [
+        "Dual toolbar themes: switch between bright blue and deep gray in one click — splash, loading and offline screens follow.",
+        "New server status light in the toolbar: see at a glance whether the server is reachable, with the latest check result and time.",
+        "One-click screenshot: save the current console view as an image.",
+        "Completed About panel: version, build date, and a server status self-check button."
+      ],
+      "version": "1.0.2",
+      "zh": [
+        "工具栏新增双主题：亮蓝与深灰一键切换，启动、加载、断线页面跟随变色。",
+        "工具栏新增服务器状态灯：服务器通不通一眼可见，点开可看最近一次检测结果与时间。",
+        "新增一键截图：当前控制台画面一键存成图片。",
+        "「关于」面板补全：版本号、构建日期、服务器状态自检按钮。"
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "en": [
+        "Full visual redesign: new icon, bright-blue gradient toolbar, glass-card screens.",
+        "Two-layer auto-reconnect: full-page drops retry on a countdown; session drops reconnect automatically — unlimited retries, no pop-ups, never bounced back to the sign-in page.",
+        "New fullscreen mode, page zoom with percentage display, and always-on-top.",
+        "The app remembers window size and position; launching it again just brings the existing window forward."
+      ],
+      "version": "1.0.1",
+      "zh": [
+        "界面整体重做：新图标、亮蓝渐变工具栏、玻璃卡片式页面。",
+        "断线自动重连双保险：整页断开自动倒计时重试；会话断开自动重新连接，不限次数、不弹窗打扰、不踢回登录页。",
+        "新增全屏、页面缩放（带百分比显示）、窗口置顶。",
+        "软件会记住窗口大小与位置；重复打开只唤起已有窗口，不再开一堆。"
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "en": [
+        "The first QFRemote Windows app: double-click to open the console directly — no browser, no certificate warnings.",
+        "Sign in once and it is remembered; later launches go straight in.",
+        "Own brand icon and toolbar; the server address is baked into the app, so it only ever connects to our own server — much harder to spoof."
+      ],
+      "version": "1.0.0",
+      "zh": [
+        "QFRemote 首个 Windows 软件版：双击打开直接进入控制台，不用再开浏览器、不用再点证书警告。",
+        "登录一次即可记住，之后打开免登录。",
+        "自家品牌图标与工具栏；服务器地址写死在软件里，只连自家服务器，更防假冒。"
+      ]
+    }
+  ],
+  "platforms": {
+    "android": {
+      "downloadUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/dl/QFRemote-v2.2.0.apk",
+      "fileName": "QFRemote-v2.2.0.apk",
+      "releaseDate": "2026-10-25",
+      "requirements": {
+        "en": "Android phone or tablet",
+        "zh": "Android 手机或平板"
+      },
+      "sha256": "48a82941325a6321843c159b0e6f6c3f458ea3626328b6eb179b6beae400e9b4",
+      "sizeBytes": 23341624,
+      "sizeText": "22.3 MB",
+      "version": "2.2.0"
+    },
+    "windows": {
+      "downloadUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/dl/QFRemote-Setup-v2.2.0.exe",
+      "fileName": "QFRemote-Setup-v2.2.0.exe",
+      "releaseDate": "2026-10-25",
+      "releasePageUrl": "#changes",
+      "requirements": {
+        "en": "Windows 10 / 11 (64-bit)",
+        "zh": "Windows 10 / 11（64 位）"
+      },
+      "sha256": "d5b7d408068cebd18c1b878c1485686ea5ce3c8467b1cde6ce130750049031b8",
+      "sizeBytes": 83487011,
+      "sizeText": "79.6 MB",
+      "version": "2.2.0"
+    }
+  },
+  "product": "QFRemote",
+  "releaseDate": "2026-10-25",
+  "screenshots": [
+    {
+      "en": "Web console · devices page",
+      "src": "assets/shots/console-desktop.png",
+      "zh": "网页控制台 · 设备页"
+    },
+    {
+      "en": "Connecting · loading screen",
+      "src": "assets/shots/connecting.png",
+      "zh": "连接中 · 加载页"
+    },
+    {
+      "en": "Friends · mobile",
+      "src": "assets/shots/friends-mobile.png",
+      "zh": "好友 · 手机版"
+    },
+    {
+      "en": "Offline · auto-reconnect screen",
+      "src": "assets/shots/offline-dark.png",
+      "zh": "断线自动重连页"
+    },
+    {
+      "en": "Splash screen",
+      "src": "assets/shots/splash-dark.png",
+      "zh": "启动画面"
+    },
+    {
+      "en": "Toolbar · server status light",
+      "src": "assets/shots/status-light.png",
+      "zh": "工具栏 · 服务器状态灯"
+    }
+  ],
+  "version": "2.2.0",
+  "web": {
+    "feedbackUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/api/feedback",
+    "forumUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/forum",
+    "friendsUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/friends",
+    "loginUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com",
+    "registerUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/register",
+    "termsUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/terms",
+    "adminUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/admin",
+    "pointsUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/points"
+  }
+}
