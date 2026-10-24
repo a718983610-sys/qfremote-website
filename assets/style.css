@@ -305,6 +305,10 @@ footer{background:linear-gradient(180deg,var(--navy1),var(--navy0));padding:44px
 .foot-brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:16.5px;color:#fff}
 .foot-brand img{width:28px;height:28px;border-radius:8px}
 .foot-note{color:#8fa5c9;font-size:13.5px;max-width:60em}
+.foot-links{color:#8fa5c9;font-size:13.5px}
+.foot-links a{color:#cfe0fa;text-decoration:none}
+.foot-links a:hover{text-decoration:underline}
+.foot-sep{margin:0 8px;color:#5f779e}
 .foot-copy{color:#8fa5c9;font-size:13.5px}
 
 /* 滚动渐入 */

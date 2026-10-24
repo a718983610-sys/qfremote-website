@@ -54,7 +54,9 @@ const I18N = {
     fb_success: "提交成功，感谢您的反馈，我们会认真阅读并处理。",
     fb_fail: "提交失败，请稍后重试，或直接发送邮件至 a718983610@gmail.com。",
     fb_empty: "请先填写留言内容后再提交。",
-    foot_note: "QFRemote 基于开源项目 MeshCentral（Apache-2.0 许可证）构建，MeshCentral 的权利归其原作者所有。"
+    foot_note: "QFRemote 基于开源项目 MeshCentral（Apache-2.0 许可证）构建，MeshCentral 的权利归其原作者所有。",
+    foot_terms: "用户协议",
+    foot_privacy: "隐私说明"
   },
   en: {
     nav_features: "Features", nav_reconnect: "Auto-Reconnect", nav_shots: "Interface", nav_download: "Download",
@@ -106,7 +108,9 @@ const I18N = {
     fb_success: "Submitted successfully. Thank you — we will read it and handle it with care.",
     fb_fail: "Submission failed. Please try again later, or email us directly at a718983610@gmail.com.",
     fb_empty: "Please enter your message before submitting.",
-    foot_note: "QFRemote is built on the open-source MeshCentral project (Apache-2.0 License). MeshCentral remains the property of its original author."
+    foot_note: "QFRemote is built on the open-source MeshCentral project (Apache-2.0 License). MeshCentral remains the property of its original author.",
+    foot_terms: "User Agreement",
+    foot_privacy: "Privacy Notice"
   }
 };
 
@@ -186,6 +190,11 @@ function renderDynamic() {
     const el = document.getElementById(pair[0]);
     if (el && pair[1]) el.href = pair[1];
   });
+  /* 页脚协议入口：与登录页「条款与隐私」同一页（/terms），两条链接分别定位到协议与隐私两篇 */
+  const footTerms = document.getElementById("footTerms");
+  if (footTerms && WEB.termsUrl) footTerms.href = WEB.termsUrl + "#agreement";
+  const footPrivacy = document.getElementById("footPrivacy");
+  if (footPrivacy && WEB.termsUrl) footPrivacy.href = WEB.termsUrl + "#privacy";
 
   /* 安卓卡＋首屏安卓按钮：product.json 里有 platforms.android 且带直链时才显示，没就绪不摆假入口 */
   const A = (P.platforms || {}).android || null;
