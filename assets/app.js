@@ -6,11 +6,12 @@
 const I18N = {
   zh: {
     nav_features: "功能", nav_reconnect: "自动重连", nav_shots: "界面", nav_download: "下载",
-    nav_changes: "更新日志", nav_faq: "常见问题", nav_contact: "联系",
+    nav_changes: "更新日志", nav_faq: "常见问题", nav_contact: "联系", nav_login: "网页登录",
     hero_badge: "自有服务器 · 自有品牌",
     hero_h1a: "你的电脑，", hero_h1b: "随身打开。",
     hero_sub: "QFRemote 是我们自有的远程控制软件：电脑装一次，之后用电脑软件或手机浏览器打开，就能连上你的电脑看实时画面、动手操作。",
     hero_dl: "下载 Windows 版", hero_reconnect: "断开？它自己连回来",
+    hero_weblogin: "网页版登录", hero_register: "注册账号",
     hero_note: "手机不用装软件，浏览器就能控制 · 电脑不用挂梯子",
     hero_img_alt: "QFRemote 正在连接的界面",
     chip_a: "连接状态一眼可见", chip_b: "断开自动重连中…",
@@ -34,6 +35,8 @@ const I18N = {
     dl_copy: "复制", dl_copied: "已复制",
     dl_tip: "下载后可对照上面的校验码，确认安装包完整、没有被掉包。首次打开若出现 Windows 提示，点「更多信息 → 仍要运行」即可（软件暂未购买签名证书）。",
     dl_btn: "下载最新版", dl_history: "查看全部历史版本",
+    dl_android: "安卓版", dl_reg_link: "没有账号？先注册一个",
+    dl_tip_a: "下载后可对照上面的校验码，确认安装包完整、没有被掉包。首次安装若被系统拦截，请允许本次安装后继续（软件暂未上架应用商店）。",
     dl_note: "请仅通过本页面下载 QFRemote，确保安装包完整可靠。",
     cl_kicker: "更新日志", cl_title: "一路走来的变化", cl_latest: "最新",
     faq_kicker: "常见问题", faq_title: "先问清楚，再上手",
@@ -51,11 +54,12 @@ const I18N = {
   },
   en: {
     nav_features: "Features", nav_reconnect: "Auto-Reconnect", nav_shots: "Interface", nav_download: "Download",
-    nav_changes: "Changelog", nav_faq: "FAQ", nav_contact: "Contact",
+    nav_changes: "Changelog", nav_faq: "FAQ", nav_contact: "Contact", nav_login: "Web Login",
     hero_badge: "Our own server · Our own brand",
     hero_h1a: "Your computer,", hero_h1b: "always within reach.",
     hero_sub: "QFRemote is our own remote-control software. Install it on a computer once, then open the desktop app or your phone's browser to see its live screen and operate it from anywhere.",
     hero_dl: "Download for Windows", hero_reconnect: "Dropped? It reconnects itself",
+    hero_weblogin: "Open Web Console", hero_register: "Create Account",
     hero_note: "No app needed on your phone — the browser is enough · No VPN needed on the PC",
     hero_img_alt: "QFRemote connecting screen",
     chip_a: "Connection status at a glance", chip_b: "Reconnecting automatically…",
@@ -79,6 +83,8 @@ const I18N = {
     dl_copy: "Copy", dl_copied: "Copied",
     dl_tip: "After downloading, compare the checksum above to make sure the package is complete and untampered. On first launch, if Windows shows a prompt, choose \u201CMore info \u2192 Run anyway\u201D (the app is not code-signed yet).",
     dl_btn: "Download Latest", dl_history: "See all previous versions",
+    dl_android: "Android", dl_reg_link: "No account yet? Register first",
+    dl_tip_a: "After downloading, compare the checksum above to make sure the package is complete and untampered. If your phone blocks the first install, allow this install to continue (the app is not on an app store yet).",
     dl_note: "Please download QFRemote only from this page to keep your package genuine and intact.",
     cl_kicker: "Changelog", cl_title: "How it evolved", cl_latest: "Latest",
     faq_kicker: "FAQ", faq_title: "Questions, answered first",
@@ -162,7 +168,34 @@ function renderDynamic() {
   const dlBtn = document.getElementById("dlBtn");
   if (dlBtn && W.downloadUrl) dlBtn.href = W.downloadUrl;
   const hist = document.getElementById("dlHistory");
-  if (hist) hist.href = W.releasePageUrl || "https://github.com/a718983610-sys/qfremote-app/releases";
+  if (hist) hist.href = W.releasePageUrl || "#changes";
+
+  /* 网页版登录 / 注册入口：网址在 product.json 的 web 字段（临时通道网址变更时由同步脚本统一改这一处） */
+  const WEB = P.web || {};
+  [["webLoginBtn", WEB.loginUrl], ["navLogin", WEB.loginUrl],
+   ["webRegisterBtn", WEB.registerUrl], ["dlRegister", WEB.registerUrl]].forEach(function (pair) {
+    const el = document.getElementById(pair[0]);
+    if (el && pair[1]) el.href = pair[1];
+  });
+
+  /* 安卓卡：product.json 里有 platforms.android 且带直链时才显示，没就绪不摆假卡 */
+  const A = (P.platforms || {}).android || null;
+  const cardA = document.getElementById("dlCardAndroid");
+  if (cardA && A && A.downloadUrl) {
+    cardA.style.display = "";
+    document.querySelectorAll("[data-ver-a]").forEach(function (el) { el.textContent = "v" + (A.version || P.version); });
+    document.querySelectorAll("[data-date-a]").forEach(function (el) { el.textContent = A.releaseDate || P.releaseDate || "—"; });
+    document.querySelectorAll("[data-size-a]").forEach(function (el) { el.textContent = A.sizeText || "—"; });
+    document.querySelectorAll("[data-file-a]").forEach(function (el) { el.textContent = A.fileName || "—"; });
+    const reqA = document.getElementById("dlReqA");
+    if (reqA && A.requirements) reqA.textContent = A.requirements[LANG] || A.requirements.zh || "";
+    const shaA = document.getElementById("shaCodeA");
+    if (shaA) shaA.textContent = A.sha256 || "—";
+    const dlBtnA = document.getElementById("dlBtnA");
+    if (dlBtnA) dlBtnA.href = A.downloadUrl;
+  } else if (cardA) {
+    cardA.style.display = "none";
+  }
 
   const gal = document.getElementById("gallery");
   if (gal) {
@@ -304,25 +337,19 @@ applyLang();
   }
 })();
 
-/* ===== 下载直链：向 GitHub API 解析最新正式版安装包，失败时保留 product.json 的直链兜底 ===== */
+/* ===== 复制 SHA-256（安卓卡） ===== */
 (function () {
-  fetch("https://api.github.com/repos/a718983610-sys/qfremote-app/releases?per_page=20", {
-    headers: { "Accept": "application/vnd.github+json" }
-  }).then(function (res) {
-    if (!res.ok) throw new Error("github api " + res.status);
-    return res.json();
-  }).then(function (list) {
-    for (let i = 0; i < list.length; i++) {
-      const r = list[i];
-      if (r.draft || r.prerelease) continue;
-      for (let a = 0; a < (r.assets || []).length; a++) {
-        const name = (r.assets[a].name || "").toLowerCase();
-        if (name.slice(-4) === ".exe") {
-          const btn = document.getElementById("dlBtn");
-          if (btn) btn.href = r.assets[a].browser_download_url;
-          return;
-        }
-      }
+  const btn = document.getElementById("copyShaA");
+  if (!btn) return;
+  btn.addEventListener("click", function () {
+    const code = document.getElementById("shaCodeA").textContent.trim();
+    function done() {
+      const old = btn.textContent;
+      btn.textContent = t("dl_copied");
+      setTimeout(function () { btn.textContent = old; }, 1600);
     }
-  }).catch(function () { /* 保留 product.json 兜底链接 */ });
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(code).then(done).catch(done);
+    } else { done(); }
+  });
 })();

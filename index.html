@@ -32,6 +32,7 @@
       <a href="#changes" data-i18n="nav_changes">更新日志</a>
       <a href="#faq" data-i18n="nav_faq">常见问题</a>
       <a href="#contact" data-i18n="nav_contact">联系</a>
+      <a id="navLogin" href="#" target="_blank" rel="noopener" data-i18n="nav_login">网页登录</a>
     </nav>
     <button class="lang-btn" id="langToggle" type="button" aria-label="Switch language">EN</button>
   </div>
@@ -49,6 +50,8 @@
         <div class="hero-btns">
           <a class="btn btn-primary" href="#download"><span data-i18n="hero_dl">下载 Windows 版</span><span class="btn-ver" data-ver></span></a>
           <a class="btn btn-glass" href="#reconnect" data-i18n="hero_reconnect">断开？它自己连回来</a>
+          <a class="btn btn-glass" id="webLoginBtn" href="#" target="_blank" rel="noopener" data-i18n="hero_weblogin">网页版登录</a>
+          <a class="btn btn-glass" id="webRegisterBtn" href="#" target="_blank" rel="noopener" data-i18n="hero_register">注册账号</a>
         </div>
         <p class="hero-note" data-i18n="hero_note">手机不用装软件，浏览器就能控制 · 电脑不用挂梯子</p>
       </div>
@@ -180,7 +183,36 @@
         <div class="dl-right">
           <img class="dl-icon" src="assets/icon.png" alt="QFRemote">
           <a class="btn btn-primary btn-big" id="dlBtn" href="#" rel="noopener" data-i18n="dl_btn">下载最新版</a>
-          <a class="dl-history" id="dlHistory" href="#" target="_blank" rel="noopener" data-i18n="dl_history">查看全部历史版本</a>
+          <a class="dl-history" id="dlHistory" href="#" rel="noopener" data-i18n="dl_history">查看全部历史版本</a>
+          <a class="dl-history" id="dlRegister" href="#" target="_blank" rel="noopener" data-i18n="dl_reg_link">没有账号？先注册一个</a>
+          <p class="dl-note" data-i18n="dl_note">请仅通过本页面下载 QFRemote，确保安装包完整可靠。</p>
+        </div>
+      </div>
+      <div class="dl-card reveal" id="dlCardAndroid" style="display:none;margin-top:18px">
+        <div class="dl-left">
+          <div class="dl-plat">
+            <svg viewBox="0 0 24 24" class="win-logo"><path d="M7 2h10a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm4 17h2v2h-2z" fill-rule="evenodd"/></svg>
+            <div>
+              <h3 data-i18n="dl_android">安卓版</h3>
+              <p class="dl-req" id="dlReqA">Android</p>
+            </div>
+          </div>
+          <ul class="dl-meta">
+            <li><span data-i18n="dl_ver">当前版本</span><strong data-ver-a>—</strong></li>
+            <li><span data-i18n="dl_date">发布日期</span><strong data-date-a>—</strong></li>
+            <li><span data-i18n="dl_size">安装包大小</span><strong data-size-a>—</strong></li>
+            <li><span data-i18n="dl_file">文件名</span><strong data-file-a class="mono">—</strong></li>
+          </ul>
+          <div class="sha">
+            <span class="sha-label">SHA-256</span>
+            <code id="shaCodeA">—</code>
+            <button type="button" class="copy-btn" id="copyShaA" data-i18n="dl_copy">复制</button>
+          </div>
+          <p class="dl-tip" data-i18n="dl_tip_a">下载后可对照上面的校验码，确认安装包完整、没有被掉包。首次安装若被系统拦截，请允许本次安装后继续（软件暂未上架应用商店）。</p>
+        </div>
+        <div class="dl-right">
+          <img class="dl-icon" src="assets/icon.png" alt="QFRemote">
+          <a class="btn btn-primary btn-big" id="dlBtnA" href="#" rel="noopener" data-i18n="dl_btn">下载最新版</a>
           <p class="dl-note" data-i18n="dl_note">请仅通过本页面下载 QFRemote，确保安装包完整可靠。</p>
         </div>
       </div>
