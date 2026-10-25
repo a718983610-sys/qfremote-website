@@ -1,31 +1,47 @@
 {
   "changelog": [
     {
-      "version": "2.3.0",
       "date": "2026-10-25",
-      "zh": [
-        "好友、聊天与论坛改为在软件框架内直接打开，页面切换更连贯；打开聊天记录时不再要求再次输入密码。",
-        "新增智能客服：可自助查询常见问题，也可转接人工客服处理。"
-      ],
       "en": [
-        "Friends, chat and the forum now open directly inside the app frame with smoother transitions; opening chat history no longer asks for your password again.",
-        "New smart support: look up common questions on your own, or transfer to a human support agent."
+        "New paid license keys: four plans (1 day, 7 days, 30 days and permanent), with a free 3-day trial for new accounts; keys support gifting, renewal stacking, device rebinding and self-service status lookup, and day-plan time pauses during an account ban.",
+        "A fully rebuilt web console: sign-in lands directly on the home page, with devices, friends, chat, the forum and support switching inside one frame; navigation and menus are unified across all three ends.",
+        "Smarter support: an AI question-answering engine now handles product questions and everyday questions alike, with hand-off to a human agent when needed.",
+        "New points and rewards centre: daily check-ins and usage time earn points that can be exchanged for usage time; a Redeem KEY entry and order management have been added."
+      ],
+      "version": "2.3.1",
+      "zh": [
+        "新增付费密钥体系：提供 1 日、7 日、30 日与永久四档套餐，新用户注册可免费试用 3 天；支持密钥转赠、续购叠加、设备换绑与账户状态自助查询，封禁期间按天套餐暂停计时。",
+        "网页控制台全新改版：登录后直接进入首页，设备、好友、聊天、论坛与客服在同一界面内切换；三端导航与菜单同步统一。",
+        "智能客服升级：接入智能问答引擎，产品使用问题与日常问题均可直接咨询，需要时可转人工客服。",
+        "新增积分与福利中心：每日签到与使用时长积累积分，积分可兑换使用时长；新增「兑换 KEY」入口与我的订单管理。"
       ]
     },
     {
-      "version": "2.2.0",
       "date": "2026-10-25",
-      "zh": [
-        "安装时可选择安装位置；后续升级将自动沿用所选位置进行安装。",
-        "新增使用时长与积分功能：累计使用满 2 小时积 1 分，可在「关于」页面查看已使用天数与当前积分。",
-        "新增站长管理页面，支持账号管理与申诉处理。",
-        "新增隐私锁功能：为电脑开启隐私锁并设置一次性密码后，即可锁定该电脑的本地屏幕。"
+      "en": [
+        "Friends, chat and the forum now open directly inside the app frame with smoother transitions; opening chat history no longer asks for your password again.",
+        "New smart support: look up common questions on your own, or transfer to a human support agent."
       ],
+      "version": "2.3.0",
+      "zh": [
+        "好友、聊天与论坛改为在软件框架内直接打开，页面切换更连贯；打开聊天记录时不再要求再次输入密码。",
+        "新增智能客服：可自助查询常见问题，也可转接人工客服处理。"
+      ]
+    },
+    {
+      "date": "2026-10-25",
       "en": [
         "The installation location can now be selected during setup; subsequent upgrades will automatically use the selected location.",
         "Added usage time and points: 1 point is earned for every 2 hours of cumulative use. Days of use and the current points balance can be viewed on the About page.",
         "Added an administrator page for the site owner, supporting account management and appeal handling.",
         "Added the privacy lock: after enabling it for a computer and setting a one-time password, the computer's local screen can be locked."
+      ],
+      "version": "2.2.0",
+      "zh": [
+        "安装时可选择安装位置；后续升级将自动沿用所选位置进行安装。",
+        "新增使用时长与积分功能：累计使用满 2 小时积 1 分，可在「关于」页面查看已使用天数与当前积分。",
+        "新增站长管理页面，支持账号管理与申诉处理。",
+        "新增隐私锁功能：为电脑开启隐私锁并设置一次性密码后，即可锁定该电脑的本地屏幕。"
       ]
     },
     {
@@ -139,31 +155,31 @@
   ],
   "platforms": {
     "android": {
-      "downloadUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/dl/QFRemote-v2.3.0.apk",
-      "fileName": "QFRemote-v2.3.0.apk",
+      "downloadUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/dl/QFRemote-v2.3.1.apk",
+      "fileName": "QFRemote-v2.3.1.apk",
       "releaseDate": "2026-10-25",
       "requirements": {
         "en": "Android phone or tablet",
         "zh": "Android 手机或平板"
       },
-      "sha256": "7939409ea6cb768cd47555e83acc5f3fb49512894a1e2925422ca3fcf266a8ba",
-      "sizeBytes": 53687539,
-      "sizeText": "51.2 MB",
-      "version": "2.3.0"
+      "sha256": "f9caeff0d0ab09ebe508a949cddf89b26125097c8f66da93d86a1f68c3e26b43",
+      "sizeBytes": 54080719,
+      "sizeText": "51.6 MB",
+      "version": "2.3.1"
     },
     "windows": {
-      "downloadUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/dl/QFRemote-Setup-v2.3.0.exe",
-      "fileName": "QFRemote-Setup-v2.3.0.exe",
+      "downloadUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/dl/QFRemote-Setup-v2.3.1.exe",
+      "fileName": "QFRemote-Setup-v2.3.1.exe",
       "releaseDate": "2026-10-25",
       "releasePageUrl": "#changes",
       "requirements": {
         "en": "Windows 10 / 11 (64-bit)",
         "zh": "Windows 10 / 11（64 位）"
       },
-      "sha256": "33587ba486318e9cc9fbbef1c1a02ace0feaec05c0e3978f6736580c832ecef1",
-      "sizeBytes": 120739949,
-      "sizeText": "115.2 MB",
-      "version": "2.3.0"
+      "sha256": "4496800e1adfb65070c23eff4a044df578c881af53e61b9466a8a080723ff06f",
+      "sizeBytes": 100729278,
+      "sizeText": "96.1 MB",
+      "version": "2.3.1"
     }
   },
   "product": "QFRemote",
@@ -171,44 +187,44 @@
   "screenshots": [
     {
       "en": "Web console — Devices page",
-      "src": "assets/shots/console-desktop.png?v=230",
+      "src": "assets/shots/console-desktop.png?v=231",
       "zh": "网页控制台设备页面"
     },
     {
       "en": "Connection screen",
-      "src": "assets/shots/connecting.png?v=230",
+      "src": "assets/shots/connecting.png?v=231",
       "zh": "连接中界面"
     },
     {
       "en": "Friends page (mobile)",
-      "src": "assets/shots/friends-mobile.png?v=230",
+      "src": "assets/shots/friends-mobile.png?v=231",
       "zh": "好友页面（手机版）"
     },
     {
       "en": "Disconnection and automatic reconnection screen",
-      "src": "assets/shots/offline-dark.png?v=230",
+      "src": "assets/shots/offline-dark.png?v=231",
       "zh": "断线自动重连界面"
     },
     {
       "en": "Startup screen",
-      "src": "assets/shots/splash-dark.png?v=230",
+      "src": "assets/shots/splash-dark.png?v=231",
       "zh": "启动画面"
     },
     {
       "en": "Toolbar and server status light",
-      "src": "assets/shots/status-light.png?v=230",
+      "src": "assets/shots/status-light.png?v=231",
       "zh": "工具栏与服务器状态指示灯"
     }
   ],
-  "version": "2.3.0",
+  "version": "2.3.1",
   "web": {
+    "adminUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/admin",
     "feedbackUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/api/feedback",
     "forumUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/forum",
     "friendsUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/friends",
     "loginUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com",
+    "pointsUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/points",
     "registerUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/register",
-    "termsUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/terms",
-    "adminUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/admin",
-    "pointsUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/points"
+    "termsUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/terms"
   }
 }

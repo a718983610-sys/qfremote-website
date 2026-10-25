@@ -146,3 +146,13 @@ html[lang="en"] .bt-key svg{height:1.14em}
 /* 主题 03 媒体：工具栏条展示面板 */
 .theme-shot-strip{height:200px;display:flex;align-items:center;justify-content:center;background:#fff}
 .theme-shot-strip img{width:92%;height:auto;object-fit:contain}
+
+/* ===== 价格与套餐（2.3.1 付费模式） ===== */
+.price-table { width:100%; border-collapse:collapse; margin:26px 0 8px; background:#fff; border:1px solid #DFE7F2; border-radius:14px; overflow:hidden; }
+.price-table th, .price-table td { padding:13px 18px; text-align:left; font-size:15px; color:#1F2D47; border-bottom:1px solid #DFE7F2; }
+.price-table thead th { background:#F4F7FB; color:#0B2B5B; font-weight:700; }
+.price-table tbody tr:last-child td { border-bottom:none; }
+.price-note { color:#3D4E6B; font-size:15px; line-height:1.85; margin:14px 0 0; max-width:880px; }
+.price-h3 { color:#0B2B5B; font-size:20px; margin:34px 0 4px; }
+.rule-list { margin:12px 0 0; padding-left:22px; max-width:880px; }
+.rule-list li { color:#3D4E6B; font-size:15px; line-height:1.85; margin:7px 0; }
