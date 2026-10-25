@@ -4,164 +4,164 @@
       "version": "2.2.0",
       "date": "2026-10-25",
       "zh": [
-        "安装时可以自己选安装位置了；以后升级也会装回你选的位置，不会跑偏。",
-        "新增使用时长和积分：用满 2 小时积 1 分，在「关于」里能看到自己已经用了多少天、有多少分。",
-        "站长新增管理页：管账号、处理申诉，在页面上自己就能办。",
-        "电脑上点好友更顺了：登录一次点开直接进；之前点开是空白页、显示 404 的一批入口也一起修好了。",
-        "服务器重启或断线恢复后，好友这些页面能马上认回你的登录，不再卡住转圈。",
-        "隐私锁可以用了：给电脑打开开关、设一次密码，就能锁住本地屏幕。",
-        "界面对照大厂桌面软件的规矩重新收拾：电脑、手机、网页三端一个样，按钮、卡片、间距全统一。"
+        "安装时可选择安装位置；后续升级将自动沿用所选位置进行安装。",
+        "新增使用时长与积分功能：累计使用满 2 小时积 1 分，可在「关于」页面查看已使用天数与当前积分。",
+        "新增站长管理页面，支持账号管理与申诉处理。",
+        "优化电脑端好友功能：登录后点开即可直接进入；同时修复一批入口打开为空白或显示 404 的问题。",
+        "修复服务器重启或连接恢复后，好友等页面无法识别已有登录状态、长时间无响应的问题。",
+        "新增隐私锁功能：为电脑开启隐私锁并设置一次性密码后，即可锁定该电脑的本地屏幕。",
+        "依据主流桌面软件的设计规范统一界面：电脑、手机、网页三端的按钮、卡片与间距采用同一标准。"
       ],
       "en": [
-        "You can now choose where to install; upgrades will return to the folder you picked.",
-        "New usage time and points: earn 1 point for every 2 hours of use, and see your days of use and points in About.",
-        "A new admin page for the site owner: manage accounts and handle appeals right on the page.",
-        "Friends on desktop open straight away after one sign-in; a batch of entries that showed blank or 404 pages is fixed too.",
-        "After a server restart or a dropped connection, the friends pages recognize your sign-in again right away instead of spinning.",
-        "The privacy lock is ready: turn it on for a computer and set a one-time password to lock its local screen.",
-        "The interface has been reworked to big-name desktop standards: the same buttons, cards and spacing on Windows, Android and the web."
+        "The installation location can now be selected during setup; subsequent upgrades will automatically use the selected location.",
+        "Added usage time and points: 1 point is earned for every 2 hours of cumulative use. Days of use and the current points balance can be viewed on the About page.",
+        "Added an administrator page for the site owner, supporting account management and appeal handling.",
+        "Improved the friends feature on desktop: after signing in, it opens directly. Also fixed a group of entries that opened blank pages or returned 404.",
+        "Fixed an issue where, after a server restart or connection recovery, pages such as Friends failed to recognize the existing sign-in state and remained unresponsive.",
+        "Added the privacy lock: after enabling it for a computer and setting a one-time password, the computer's local screen can be locked.",
+        "Unified the interface according to mainstream desktop software design standards: buttons, cards, and spacing now follow one standard across Windows, Android, and the web."
       ]
     },
     {
       "date": "2026-10-24",
       "en": [
-        "A fresh new look: the web console, the Windows app and the Android app now share one clean visual style — same colors, cards and buttons everywhere.",
-        "Friends are wired in: sign in once, then tap “Friends” in the app or the web console and you are right there — no second sign-in.",
-        "Dark mode and the fine details got the same treatment: the reconnect, About and update screens have all been polished."
+        "The interface has been fully refreshed: the web console, the Windows app, and the Android app now share one visual style, with consistent colors, cards, and buttons.",
+        "The friends feature is connected: after signing in once, selecting “Friends” in the app or the web console opens it directly, with no second sign-in.",
+        "Dark mode and related details have been refined, including the reconnection, About, and update pages."
       ],
       "version": "2.1.0",
       "zh": [
-        "界面全面焕新：网页版、电脑版、手机版换上同一套清爽新样式，配色、卡片、按钮全都统一了。",
-        "好友入口打通：登录一次，在软件和网页里点「好友」直接打开，不用再单独登录一次。",
-        "深色模式与细节一起优化：断线重连、关于、更新这些页面都重新打磨，用起来更顺手。"
+        "界面全面更新：网页版、电脑版与手机版采用统一的视觉样式，配色、卡片与按钮保持一致。",
+        "好友功能打通：登录一次后，在软件与网页中点「好友」即可直接打开，无需再次登录。",
+        "优化深色模式与相关细节：断线重连、关于与更新等页面均已调整，使用更顺畅。"
       ]
     },
     {
       "date": "2026-10-24",
       "en": [
-        "New Register entry: you can now create a new account right from the sign-in screen."
+        "A registration entry has been added: new accounts can now be created directly from the sign-in screen."
       ],
       "version": "2.0.1",
       "zh": [
-        "新增注册入口：登录界面就能注册新账号。"
+        "新增注册入口：可在登录界面直接注册新账号。"
       ]
     },
     {
       "date": "2026-10-24",
       "en": [
-        "Version 2.0.0: a new Forum entry in the app — tap “Forum” in the toolbar to open it.",
-        "The device page gains a privacy-lock switch: it works once the companion component on the controlled computer is deployed (the component is rolling out with this release).",
-        "A batch of prompts has been shortened and smoothed out, so everything reads more clearly."
+        "Version 2.0.0: a Forum entry has been added to the app; select “Forum” in the toolbar to open it.",
+        "The device page has gained a privacy-lock switch, available once the companion component on the controlled computer is deployed (the component is distributed with this release).",
+        "A group of prompts has been shortened and refined for clarity."
       ],
       "version": "2.0.0",
       "zh": [
-        "大版本 2.0.0：软件里新增论坛入口，点工具栏的「论坛」就能进论坛。",
-        "设备页新增隐私锁开关：被控电脑组件部署完成后即可使用（组件正在随版下发）。",
-        "一批提示文案改短改顺，读起来更清楚。"
+        "发布 2.0.0 版本：软件内新增论坛入口，点工具栏的「论坛」即可进入。",
+        "设备页面新增隐私锁开关：被控电脑上的配套组件部署完成后即可使用（组件随本版本一同下发）。",
+        "精简并优化了一批提示文案，表述更清晰。"
       ]
     },
     {
       "date": "2026-10-24",
       "en": [
-        "A brand-new logo: a blue broken ring with an orange dot, now the same on the Windows app, the Android app and the console.",
+        "A new brand mark has been adopted — a blue broken ring with an orange dot — now used consistently in the Windows app, the Android app, and the console.",
         "No functional changes in this release."
       ],
       "version": "1.0.6",
       "zh": [
-        "换上了全新品牌标志——蓝色断环加一个橙色圆点的新图标，电脑版、手机版、网页控制台都统一换新。",
-        "这一版功能和之前完全一样，没有变化。"
+        "启用全新品牌标志：蓝色断环加橙色圆点，电脑版、手机版与网页控制台统一采用。",
+        "本版本无功能变化。"
       ]
     },
     {
       "date": "2026-10-24",
       "en": [
-        "Friends are here: tap “Friends” in the toolbar, search by account name and send a request — once the other side accepts, you are friends.",
-        "Share a group of your computers with a friend for help: view-only by default (see the screen, no control); whether to allow control is your choice when you share. Remove the friend and the sharing is withdrawn automatically, right away.",
-        "Friends can chat with end-to-end encryption — the server never sees the plaintext. The friends list also carries an official support contact, answered by the site owner in person.",
-        "Android is updated to 1.0.5 in step: friends, sharing and chat included, and in-app update checks are wired up.",
-        "Everything from before is still here: in-app updates, relentless auto-reconnect, one-click diagnostics copy, and all the shortcuts."
+        "Friends have been added: select “Friends” in the toolbar, search by the other party's account name, and send a request; once accepted, you are friends.",
+        "A group of your computers can be shared with a friend for assistance: view-only by default (the screen can be viewed but not operated); whether operation is allowed is chosen at sharing time. Removing the friend withdraws the sharing automatically and immediately.",
+        "Friends can chat with end-to-end encryption throughout; the server stores no plaintext. The friends list also includes official support, answered by the site owner personally.",
+        "The Android app has been updated to 1.0.5 in step, including friends, sharing, and chat, with in-app update checks connected.",
+        "All previous features remain: in-app updates, automatic reconnection after disconnection, one-click copying of diagnostics, and all shortcuts."
       ],
       "version": "1.0.5",
       "zh": [
-        "软件里多了「好友」：工具栏点「好友」就能打开，按对方账号搜到人、发申请，对方同意后就是好友。",
-        "把自己的一组电脑共享给好友请他帮忙：默认「只看」（能看屏幕、不能动手），要不要给「能操作」，由你分享的时候自己选；删掉好友，共享立刻自动收回。",
-        "好友之间可以聊天，内容全程加密，服务器上也看不到原文；好友列表里还有官方客服，站长本人回复。",
-        "安卓版同步更新到 1.0.5：好友、共享、聊天都有，软件内更新检查也已接通。",
-        "之前的功能都在：软件内更新、断线自动重连、诊断信息一键复制、快捷键照旧。"
+        "新增好友功能：可在工具栏点「好友」打开，按对方账号搜索并发送申请，对方同意后即成为好友。",
+        "支持将自己的一组电脑共享给好友协助处理：默认仅可查看（可看屏幕、不可操作），是否允许操作由共享时选择；删除好友后，共享立即自动收回。",
+        "好友之间支持聊天，内容全程端到端加密，服务器不保存明文；好友列表中设有官方客服，由站长本人回复。",
+        "安卓版同步更新至 1.0.5：包含好友、共享与聊天功能，并已接入软件内更新检查。",
+        "此前功能保持不变：软件内更新、断线自动重连、诊断信息一键复制与各项快捷键。"
       ]
     },
     {
       "date": "2026-10-24",
       "en": [
-        "New update rules: while the app is running, a new version only shows a reminder and never interrupts you. The next time you reopen the app after closing it, the new version installs first, with a progress bar and an automatic integrity check. If the server is unreachable when you open the app, you can still get in and use it; the app never locks you out.",
-        "The About panel now has a Register New Account button and a short explanation of the update rules.",
-        "Everything from before is still here: in-app update checks with verified downloads, one-click diagnostics copy, shortcuts (F5 refresh, F9 screenshot, F10 always-on-top, F11 fullscreen), and relentless auto-reconnect."
+        "Update rules have changed: while the app is running, a new version is announced by a reminder only and never interrupts use. The next time the app is reopened after being closed, the new version is installed first, with a progress bar shown and an automatic integrity check afterwards. If the server is unreachable when the app is opened, it can still be entered and used; the app is never locked.",
+        "The About panel has gained a Register New Account button and a brief explanation of the update rules, for easier registration.",
+        "All previous features remain: in-app update checks with verified downloads, one-click copying of diagnostics, shortcuts (F5 refresh, F9 screenshot, F10 always-on-top, F11 fullscreen), and automatic reconnection after disconnection."
       ],
       "version": "1.0.4",
       "zh": [
-        "更新规矩变了：软件开着的时候查到新版只提醒、不打断你用；等你关掉软件下次再打开，会先把新版装好再进。装的时候有进度条，装完自动核对完整性。要是打开软件时连不上服务器，照样先进去用，不锁软件。",
-        "「关于」里多了「注册新账号」按钮和一段更新规矩说明，注册账号更方便。",
-        "之前的功能都在：软件内检查更新、下载核对、诊断信息一键复制、快捷键（F5 刷新、F9 截图、F10 置顶、F11 全屏）、断线自动重连。"
+        "更新规则调整：软件运行期间发现新版本时仅作提醒，不中断使用；退出后下次打开时，先完成新版本安装再进入，安装过程显示进度条，完成后自动校验完整性。若打开软件时无法连接服务器，仍可进入使用，不会锁定软件。",
+        "「关于」面板新增「注册新账号」按钮与更新规则说明，便于注册新账号。",
+        "此前功能保持不变：软件内检查更新、下载校验、诊断信息一键复制、快捷键（F5 刷新、F9 截图、F10 置顶、F11 全屏）与断线自动重连。"
       ]
     },
     {
       "date": "2026-10-24",
       "en": [
-        "In-app updates are here: the app checks for new versions on launch and from the About panel; a download is verified before you are asked to install it.",
-        "About panel: copy diagnostics in one click, so a problem report carries everything needed.",
-        "New shortcuts: F5 refresh, F9 screenshot, F10 always-on-top, F11 fullscreen."
+        "In-app updates have been added: the app checks for new versions on launch and can be checked manually from the About panel; a download is verified for integrity before installation is offered.",
+        "The About panel has gained one-click copying of diagnostics, so a problem report carries all information needed for diagnosis.",
+        "Shortcuts have been completed: F5 refresh, F9 screenshot, F10 always-on-top, F11 fullscreen."
       ],
       "version": "1.0.3",
       "zh": [
-        "软件内更新上线：打开软件自动检查新版本，「关于」里也能手动检查；新版下载后先核对完整性，对得上才提示安装。",
-        "「关于」新增一键复制诊断信息，出了问题把诊断发过来就能定位。",
-        "快捷键补齐：F5 刷新、F9 截图、F10 置顶、F11 全屏。"
+        "新增软件内更新：打开软件时自动检查新版本，「关于」中也可手动检查；下载完成后先校验完整性，确认无误才提示安装。",
+        "「关于」新增一键复制诊断信息功能，便于出现问题时提交完整的定位信息。",
+        "补齐快捷键：F5 刷新、F9 截图、F10 置顶、F11 全屏。"
       ]
     },
     {
       "date": "2026-10-24",
       "en": [
-        "Dual toolbar themes: switch between bright blue and deep gray in one click — splash, loading and offline screens follow.",
-        "New server status light in the toolbar: see at a glance whether the server is reachable, with the latest check result and time.",
-        "One-click screenshot: save the current console view as an image.",
-        "Completed About panel: version, build date, and a server status self-check button."
+        "Dual toolbar themes have been added: bright blue and deep gray can be switched with one click, and the splash, loading, and offline screens follow.",
+        "A server status light has been added to the toolbar, showing at a glance whether the server is reachable, with the latest check result and time available on selection.",
+        "One-click screenshot has been added: the current console view can be saved as an image.",
+        "The About panel has been completed: version number, build date, and a server status self-check button."
       ],
       "version": "1.0.2",
       "zh": [
-        "工具栏新增双主题：亮蓝与深灰一键切换，启动、加载、断线页面跟随变色。",
-        "工具栏新增服务器状态灯：服务器通不通一眼可见，点开可看最近一次检测结果与时间。",
-        "新增一键截图：当前控制台画面一键存成图片。",
-        "「关于」面板补全：版本号、构建日期、服务器状态自检按钮。"
+        "工具栏新增双主题：亮蓝与深灰可一键切换，启动、加载与断线页面随之变色。",
+        "工具栏新增服务器状态指示灯：可直观查看服务器是否可达，点开可查看最近一次检测结果与时间。",
+        "新增一键截图：可将当前控制台画面保存为图片。",
+        "补全「关于」面板：包含版本号、构建日期与服务器状态自检按钮。"
       ]
     },
     {
       "date": "2026-10-24",
       "en": [
-        "Full visual redesign: new icon, bright-blue gradient toolbar, glass-card screens.",
-        "Two-layer auto-reconnect: full-page drops retry on a countdown; session drops reconnect automatically — unlimited retries, no pop-ups, never bounced back to the sign-in page.",
-        "New fullscreen mode, page zoom with percentage display, and always-on-top.",
-        "The app remembers window size and position; launching it again just brings the existing window forward."
+        "The interface has been fully redesigned: new icon, a bright-blue gradient toolbar, and glass-style card pages.",
+        "Two-layer automatic reconnection: full-page drops retry automatically on a countdown; session drops reconnect automatically — unlimited retries, no pop-ups, and no return to the sign-in page.",
+        "Fullscreen mode, page zoom with a percentage display, and always-on-top have been added.",
+        "The app remembers window size and position; launching it again brings the existing window forward instead of opening another."
       ],
       "version": "1.0.1",
       "zh": [
-        "界面整体重做：新图标、亮蓝渐变工具栏、玻璃卡片式页面。",
-        "断线自动重连双保险：整页断开自动倒计时重试；会话断开自动重新连接，不限次数、不弹窗打扰、不踢回登录页。",
-        "新增全屏、页面缩放（带百分比显示）、窗口置顶。",
-        "软件会记住窗口大小与位置；重复打开只唤起已有窗口，不再开一堆。"
+        "界面整体重新设计：新图标、亮蓝渐变工具栏、玻璃质感卡片页面。",
+        "断线自动重连双重保障：整页断开时按倒计时自动重试；会话断开时自动重新连接，不限次数、不弹窗打扰、不退出登录。",
+        "新增全屏、页面缩放（带百分比显示）与窗口置顶功能。",
+        "软件可记住窗口大小与位置；重复打开时仅唤起已有窗口，不再重复开启。"
       ]
     },
     {
       "date": "2026-10-24",
       "en": [
-        "The first QFRemote Windows app: double-click to open the console directly — no browser, no certificate warnings.",
-        "Sign in once and it is remembered; later launches go straight in.",
-        "Own brand icon and toolbar; the server address is baked into the app, so it only ever connects to our own server — much harder to spoof."
+        "The first QFRemote Windows app: double-click to open the console directly — no browser and no certificate prompts.",
+        "Sign in once and the state is remembered; later launches enter directly.",
+        "Own brand icon and toolbar; the server address is built into the app, which connects only to the official server, reducing the risk of spoofing."
       ],
       "version": "1.0.0",
       "zh": [
-        "QFRemote 首个 Windows 软件版：双击打开直接进入控制台，不用再开浏览器、不用再点证书警告。",
-        "登录一次即可记住，之后打开免登录。",
-        "自家品牌图标与工具栏；服务器地址写死在软件里，只连自家服务器，更防假冒。"
+        "QFRemote 首个 Windows 软件版发布：双击即可打开并直接进入控制台，无需再开浏览器或处理证书提示。",
+        "登录一次后可保持登录状态，后续打开无需再次登录。",
+        "采用自有品牌图标与工具栏；服务器地址内置于软件中，仅连接官方服务器，降低被假冒的风险。"
       ]
     }
   ],
@@ -198,34 +198,34 @@
   "releaseDate": "2026-10-25",
   "screenshots": [
     {
-      "en": "Web console · devices page",
+      "en": "Web console — Devices page",
       "src": "assets/shots/console-desktop.png",
-      "zh": "网页控制台 · 设备页"
+      "zh": "网页控制台设备页面"
     },
     {
-      "en": "Connecting · loading screen",
+      "en": "Connection screen",
       "src": "assets/shots/connecting.png",
-      "zh": "连接中 · 加载页"
+      "zh": "连接中界面"
     },
     {
-      "en": "Friends · mobile",
+      "en": "Friends page (mobile)",
       "src": "assets/shots/friends-mobile.png",
-      "zh": "好友 · 手机版"
+      "zh": "好友页面（手机版）"
     },
     {
-      "en": "Offline · auto-reconnect screen",
+      "en": "Disconnection and automatic reconnection screen",
       "src": "assets/shots/offline-dark.png",
-      "zh": "断线自动重连页"
+      "zh": "断线自动重连界面"
     },
     {
-      "en": "Splash screen",
+      "en": "Startup screen",
       "src": "assets/shots/splash-dark.png",
       "zh": "启动画面"
     },
     {
-      "en": "Toolbar · server status light",
+      "en": "Toolbar and server status light",
       "src": "assets/shots/status-light.png",
-      "zh": "工具栏 · 服务器状态灯"
+      "zh": "工具栏与服务器状态指示灯"
     }
   ],
   "version": "2.2.0",
