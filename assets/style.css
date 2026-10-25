@@ -15,7 +15,7 @@
   --shadow-btn:0 10px 22px rgba(20,90,220,.35);
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:88px}
+html{scroll-behavior:smooth;scroll-padding-top:88px;overflow-x:clip;-webkit-text-size-adjust:100%;text-size-adjust:100%}
 body{
   font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,-apple-system,"Segoe UI",sans-serif;
   color:var(--txt); line-height:1.7; overflow-x:hidden; background:var(--bg);
@@ -101,12 +101,17 @@ header.menu-open .nav-burger span:nth-child(3){transform:translateY(-7px) rotate
 }
 @media (max-width:560px){
   .wrap{padding:0 16px}
-  .nav{gap:12px}
+  .nav{gap:10px}
+  .nav-actions{gap:8px}
+  .brand{gap:9px}
   .brand-name{font-size:17px}
   .brand-tile{width:32px;height:32px}
-  .btn-nav-primary{padding:0 15px;height:38px;font-size:14px}
+  .btn-nav-primary{padding:0 14px;height:38px;font-size:13.5px}
   .btn-nav-ghost{display:none}
-  .lang-btn{padding:5px 11px}
+  .lang-btn{padding:5px 10px}
+}
+@media (max-width:400px){
+  .brand-name{display:none}
 }
 
 /* ===== 品牌区 ===== */
@@ -225,8 +230,8 @@ header.menu-open .nav-burger span:nth-child(3){transform:translateY(-7px) rotate
 .gallery::-webkit-scrollbar{height:8px}
 .gallery::-webkit-scrollbar-thumb{background:#c9d9f2;border-radius:4px}
 .shot{flex:0 0 min(520px,84vw);scroll-snap-align:start}
-.shot figure{border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 18px 44px rgba(13,49,112,.14);background:#fff}
-.shot img{width:100%;height:auto}
+.shot figure{border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 18px 44px rgba(13,49,112,.14);background:var(--bg-soft);height:320px}
+.shot img{width:100%;height:100%;object-fit:contain}
 .shot figcaption{margin-top:12px;color:var(--txt2);font-size:14px;text-align:center}
 
 /* 下载（结构与行为保持不变，仅视觉融入新设计） */
@@ -300,7 +305,7 @@ header.menu-open .nav-burger span:nth-child(3){transform:translateY(-7px) rotate
 .fb-status.err{color:#d92d20}
 
 /* 页脚（深蓝收尾） */
-footer{background:linear-gradient(180deg,var(--navy1),var(--navy0));padding:44px 0 50px;margin-top:0}
+footer{background:linear-gradient(180deg,var(--navy1),var(--navy0));padding:44px 0 calc(50px + env(safe-area-inset-bottom,0px));margin-top:0}
 .foot{display:flex;flex-direction:column;gap:8px}
 .foot-brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:16.5px;color:#fff}
 .foot-brand img{width:28px;height:28px;border-radius:8px}
@@ -331,6 +336,13 @@ footer{background:linear-gradient(180deg,var(--navy1),var(--navy0));padding:44px
   .dl-meta{grid-template-columns:1fr}
   .orbit{display:none}
   .contact-card{padding:24px 20px}
+  .shot figure{height:250px}
+  .sha{flex-direction:column;align-items:stretch;gap:8px}
+  .sha code{min-width:0}
+  .sha .copy-btn{align-self:flex-end}
+  .glow{filter:blur(64px)}
+  .arcs-a{width:420px;height:420px}
+  .arcs-b{width:360px;height:360px}
 }
 @media (max-width:520px){
   .cards{grid-template-columns:1fr}
@@ -338,6 +350,15 @@ footer{background:linear-gradient(180deg,var(--navy1),var(--navy0));padding:44px
   .hero-dl-stack{width:100%}
   .hero-btns .btn{width:100%;justify-content:center}
   .hero{padding:52px 0 60px}
+}
+/* 触屏点按目标：小按钮与文字链接在粗指针设备上放大命中区（桌面不受影响） */
+@media (pointer:coarse){
+  .lang-btn{min-height:40px;padding:8px 14px}
+  .btn-nav-primary{min-height:40px}
+  .copy-btn{min-height:40px;padding:8px 16px}
+  .card-link{display:inline-block;padding:8px 4px}
+  .dl-history{display:inline-block;padding:8px 4px}
+  .foot-links a{display:inline-block;padding:10px 4px}
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.001s!important;transition-duration:.001s!important}
