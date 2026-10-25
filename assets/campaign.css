@@ -35,12 +35,6 @@
 .camp-hero h1{
   font-size:clamp(50px,6vw,80px);line-height:1.06;font-weight:800;color:#fff;letter-spacing:1px;
 }
-.camp-hero h1 .grad{
-  font-size:.78em;letter-spacing:0;
-  background:linear-gradient(180deg,#ffffff 0%,#dceeff 34%,#a9cdfb 68%,#5ea2ff 100%);
-  -webkit-background-clip:text;background-clip:text;color:transparent;
-  filter:drop-shadow(0 2px 0 rgba(6,34,77,.55)) drop-shadow(0 10px 22px rgba(2,12,32,.40));
-}
 .camp-sub{
   margin:24px 0 30px;font-size:17.5px;line-height:1.8;color:#b9cdee;max-width:33em;
 }
@@ -133,38 +127,21 @@
   .camp-sub{font-size:16px}
 }
 
-/* ===== 关键字体视觉冲击（2026-10-25 站长令：字带主题感）=====
-   方向：远程、连接、跨越距离、掌控——呼应品牌标记「断环节点」。
-   同一套字效语言：自上而下的纵深渐变（字面如铸件，有分量）
-   ＋深蓝切面立体（硬偏移投影，不是发光）＋标题下连接线与节点。
-   不用电光、不发光晕、不扫光；字面填充始终高对比，保证看清。 */
-.fx-title{
-  background:linear-gradient(180deg,#ffffff 0%,#e2efff 30%,#a9cdfb 66%,#5ea2ff 100%);
-  -webkit-background-clip:text;background-clip:text;color:transparent;
-  filter:drop-shadow(0 2px 0 rgba(6,34,77,.55)) drop-shadow(0 10px 22px rgba(2,12,32,.40));
-}
-/* 标题下连接线：一条线跨过距离，落在橙色节点上（断环＝缺口环） */
-.camp-linkline{
-  position:relative;height:2px;width:min(430px,72%);margin:30px 0 4px;
-  background:linear-gradient(90deg,rgba(140,180,255,0) 0%,rgba(140,180,255,.55) 22%,#7db4ff 78%,#ffb03a 100%);
-  border-radius:2px;
-}
-.camp-linkline .node{
-  position:absolute;right:-5px;top:50%;transform:translateY(-50%);
-  width:11px;height:11px;border-radius:50%;background:#ff8a1e;
-  box-shadow:0 0 0 3px rgba(255,138,30,.22);
-}
-.camp-linkline .node::after{
-  content:"";position:absolute;left:50%;top:50%;width:26px;height:26px;
-  transform:translate(-50%,-50%) rotate(38deg);border-radius:50%;
-  border:2px solid rgba(255,138,30,.65);border-top-color:transparent;
-}
-/* 四大主题关键词（浅底：同系纵深渐变压深保对比＋切面硬影） */
-.theme-text h3 .fx-key{
-  background:linear-gradient(180deg,#4a97f5 0%,#2470E0 55%,#1a5cb8 100%);
-  -webkit-background-clip:text;background-clip:text;color:transparent;
-  filter:drop-shadow(0 2px 0 rgba(11,43,91,.16));
-}
+/* ===== 定制字形 · 方向B「远身近影」（2026-10-25 站长选定，替换上一版渐变字效）=====
+   每字两身：描边虚身错位在左上（远处的那台设备）、实身在眼前（它此刻就在这块屏幕里）；
+   「2.0」的点与行尾落点为橙色节点，呼应品牌标记「断环节点」。
+   字形是内嵌 SVG 矢量路径（工具链：campaign 目录 typeB/typeB.py + glyphsB.json），不是字体效果；
+   虚身线宽按渲染下限逐档反推，窄屏小字号下不断线、不糊字。 */
+.bt{display:block;line-height:0}
+.bt svg{display:block;width:auto;max-width:100%}
+.bt-a svg{height:.96em}
+.bt-b{font-size:.78em;margin-top:.14em}
+.bt-b svg{height:.92em}
+.bt-b svg+svg{margin-top:.14em}
+.bt-key{display:inline-block;line-height:0;vertical-align:-.30em}
+.bt-key svg{display:block;width:auto;height:1.30em}
+html[lang="en"] .bt-key{vertical-align:-.22em}
+html[lang="en"] .bt-key svg{height:1.14em}
 
 /* 主题 03 媒体：工具栏条展示面板 */
 .theme-shot-strip{height:200px;display:flex;align-items:center;justify-content:center;background:#fff}
