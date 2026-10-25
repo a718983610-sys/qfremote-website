@@ -1,0 +1,137 @@
+/* QFRemote 官网「2.0 大更新」宣传版增量样式（活动期）
+   宣传期加载；2.3.0 发布时按切换清单调整，3.0 发布后随首页恢复原状一并移除。
+   token 沿用 style.css 既有体系：底 #F7FAFF / 圆角 20 / 品牌蓝 #2470E0 / 深蓝 #0B2B5B / 橙 #FF8A1E。
+   冲击力来自：深蓝沉浸主视觉、巨型「2.0」字型、真实截图层叠构图与高对比，不更换色系。 */
+
+/* ===== 宣传主视觉：深蓝沉浸带 ===== */
+.camp-hero{
+  position:relative;overflow:hidden;color:#eaf1fd;
+  background:
+    radial-gradient(900px 480px at 88% -10%,rgba(63,140,255,.38),rgba(63,140,255,0) 60%),
+    radial-gradient(700px 420px at -10% 110%,rgba(255,138,30,.14),rgba(255,138,30,0) 55%),
+    linear-gradient(158deg,#0d3170 0%,#0a2658 52%,#081f47 100%);
+  padding:84px 0 92px;
+}
+.camp-hero .arcs{stroke:rgba(140,180,255,.16)}
+.camp-badge{
+  position:absolute;top:22px;right:24px;z-index:6;
+  padding:7px 16px;border-radius:999px;
+  background:linear-gradient(135deg,var(--orange),#ff7a1a);color:#fff;
+  font-size:13.5px;font-weight:700;letter-spacing:1.5px;
+  box-shadow:0 10px 24px rgba(255,122,26,.45);
+}
+.camp-giant{
+  position:absolute;top:6px;right:-30px;font-weight:800;line-height:.8;
+  font-size:clamp(300px,34vw,470px);letter-spacing:-10px;color:transparent;
+  -webkit-text-stroke:1.5px rgba(140,180,255,.20);pointer-events:none;user-select:none;
+}
+.camp-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:54px;align-items:center;position:relative}
+.camp-pill{
+  display:inline-flex;align-items:center;gap:9px;padding:7px 16px;border-radius:999px;
+  background:rgba(255,255,255,.08);border:1px solid rgba(140,180,255,.35);
+  font-size:14px;font-weight:600;color:#cfe0fa;letter-spacing:1.5px;margin-bottom:26px;
+}
+.camp-pill .dot-live{background:#2fe08c}
+.camp-hero h1{
+  font-size:clamp(50px,6vw,80px);line-height:1.06;font-weight:800;color:#fff;letter-spacing:1px;
+}
+.camp-hero h1 .grad{
+  font-size:.78em;letter-spacing:0;
+  background:linear-gradient(92deg,#7db4ff 5%,#3f8cff 48%,#ffb03a 125%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.camp-sub{
+  margin:24px 0 30px;font-size:17.5px;line-height:1.8;color:#b9cdee;max-width:33em;
+}
+.camp-meta{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:30px}
+.ver-chip{
+  display:inline-flex;align-items:baseline;gap:8px;padding:8px 16px;border-radius:12px;
+  background:rgba(255,255,255,.07);border:1px solid rgba(140,180,255,.30);color:#cfe0fa;font-size:14px;
+}
+.ver-chip b{color:#fff;font-size:17px;font-weight:800;letter-spacing:.5px}
+.camp-hero .btn-glass{background:rgba(255,255,255,.06);border-color:rgba(140,180,255,.4);color:#fff;box-shadow:none}
+.camp-hero .btn-glass:hover{border-color:#7db4ff;color:#fff}
+.camp-note{margin-top:20px;color:#8fa5c9;font-size:14px}
+
+/* 主视觉截图构图：桌面窗 + 手机框层叠 */
+.camp-visual{position:relative;min-height:430px}
+.camp-visual .win-frame{box-shadow:0 40px 90px rgba(2,12,32,.55),0 6px 22px rgba(2,12,32,.4)}
+.phone-frame{
+  position:absolute;right:-6px;bottom:-38px;width:172px;border-radius:30px;overflow:hidden;
+  border:1px solid rgba(140,180,255,.45);background:#0b2b5b;padding:7px;
+  box-shadow:0 34px 70px rgba(2,12,32,.6);
+}
+.phone-frame img{border-radius:23px;width:100%}
+.camp-chip{
+  position:absolute;display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;
+  background:rgba(255,255,255,.96);border:1px solid var(--line);color:var(--txt);
+  font-size:13.5px;font-weight:600;box-shadow:0 16px 36px rgba(2,12,32,.35);
+}
+.camp-chip-a{left:-14px;top:34px}
+.camp-chip-b{left:-22px;bottom:56px}
+.camp-chip .dot-live{background:#22b573}
+
+/* ===== 数据条 ===== */
+.num-strip{background:#fff;border-bottom:1px solid var(--line)}
+.num-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.num-item{padding:30px 28px;text-align:center;border-left:1px solid var(--line)}
+.num-item:first-child{border-left:none}
+.num-item b{display:block;font-size:40px;font-weight:800;color:var(--ink);line-height:1.15}
+.num-item b em{font-style:normal;color:var(--blue)}
+.num-item span{display:block;margin-top:5px;color:var(--txt2);font-size:14.5px}
+
+/* ===== 更新重点：四大主题（少而重，大块排版） ===== */
+.theme{
+  display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;
+  padding:44px 0;border-bottom:1px solid var(--line);
+}
+.theme:first-of-type{margin-top:14px}
+.theme:last-child{border-bottom:none;padding-bottom:6px}
+.theme-alt .theme-text{order:2}
+.theme-alt .theme-media{order:1}
+.theme-no{
+  display:block;font-size:15px;font-weight:800;letter-spacing:3px;color:var(--orange-txt);margin-bottom:10px;
+}
+.theme-text h3{font-size:clamp(23px,2.8vw,30px);font-weight:800;color:var(--ink);line-height:1.35;margin-bottom:14px}
+.theme-text p{color:var(--txt2);font-size:16px;line-height:1.8;max-width:34em}
+.theme-points{list-style:none;margin-top:18px;display:flex;flex-direction:column;gap:9px}
+.theme-points li{
+  position:relative;padding-left:26px;color:var(--txt);font-size:15px;font-weight:500;
+}
+.theme-points li::before{
+  content:"";position:absolute;left:0;top:7px;width:14px;height:8px;
+  border-left:2.5px solid var(--blue);border-bottom:2.5px solid var(--blue);transform:rotate(-45deg);
+}
+.theme-shot{
+  border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--bg-soft);
+  box-shadow:0 22px 52px rgba(13,49,112,.15);
+}
+.theme-shot img{width:100%;height:100%;object-fit:contain}
+
+/* ===== 响应式 ===== */
+@media (max-width:1020px){
+  .camp-grid{grid-template-columns:1fr;gap:64px}
+  .camp-visual{min-height:0}
+  .theme{grid-template-columns:1fr;gap:26px;padding:36px 0}
+  .theme-alt .theme-text{order:1}
+  .theme-alt .theme-media{order:2}
+}
+@media (max-width:760px){
+  .camp-hero{padding:58px 0 74px}
+  .camp-giant{font-size:230px;top:auto;bottom:-30px;right:-16px}
+  .camp-badge{top:14px;right:16px}
+  .num-grid{grid-template-columns:1fr}
+  .num-item{border-left:none;border-top:1px solid var(--line);padding:22px}
+  .num-item:first-child{border-top:none}
+  .phone-frame{width:138px;bottom:-30px}
+  .camp-chip-a{left:2px;top:12px}
+  .camp-chip-b{left:2px;bottom:26px}
+}
+@media (max-width:520px){
+  .camp-hero h1{font-size:47px}
+  .camp-sub{font-size:16px}
+}
+
+/* 主题 03 媒体：工具栏条展示面板 */
+.theme-shot-strip{height:200px;display:flex;align-items:center;justify-content:center;background:#fff}
+.theme-shot-strip img{width:92%;height:auto;object-fit:contain}

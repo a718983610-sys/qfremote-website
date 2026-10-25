@@ -8,6 +8,7 @@
 <link rel="icon" href="favicon.ico?v=5">
 <link rel="apple-touch-icon" href="assets/icon.png?v=5">
 <link rel="stylesheet" href="assets/style.css?v=7">
+<link rel="stylesheet" href="assets/campaign.css?v=1">
 <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
 </head>
 <body>
@@ -54,31 +55,114 @@
 
 <main id="top">
 
-  <!-- ===== 品牌区 ===== -->
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div class="hero-text reveal">
-        <div class="hero-badge"><span class="dot-live"></span><span data-i18n="hero_badge">自主运营的服务器与品牌</span></div>
-        <h1><span data-i18n="hero_h1a">您的电脑，</span><br><span class="grad" data-i18n="hero_h1b">随时远程连接。</span></h1>
-        <p class="hero-sub" data-i18n="hero_sub">QFRemote 为自主研发的远程控制软件。在被控电脑上完成一次安装后，即可通过电脑客户端或手机浏览器连接该电脑，查看实时画面并进行远程操作。</p>
+  <!-- ===== 2.0 大更新宣传主视觉（活动期·预热） ===== -->
+  <section class="camp-hero">
+    <svg class="arcs arcs-a" viewBox="0 0 300 300" fill="none" aria-hidden="true"><circle cx="300" cy="0" r="120"/><circle cx="300" cy="0" r="190"/><circle cx="300" cy="0" r="260"/></svg>
+    <div class="camp-giant" aria-hidden="true">2.0</div>
+    <div class="camp-badge" data-i18n="camp_badge">新版本即将发布</div>
+    <div class="wrap camp-grid">
+      <div class="camp-text reveal">
+        <div class="camp-pill"><span class="dot-live"></span><span data-i18n="camp_pill">QFRemote 2.0 大更新</span></div>
+        <h1><span data-i18n="camp_h1a">2.0 大更新</span><br><span class="grad" data-i18n="camp_h1b">一次登录，畅行无阻</span></h1>
+        <p class="camp-sub" data-i18n="camp_sub">即将发布的版本 2.3.0 集中于四项核心改进：连接更稳定，中断后自动恢复；登录一次，全部功能直接使用；底层组件全面升级，运行更为流畅；远程画面实时清晰，操作与在本机前一致。</p>
+        <div class="camp-meta">
+          <span class="ver-chip"><span data-i18n="camp_ver_pre">新版本</span> <b>2.3.0</b> <span data-i18n="camp_ver_post">即将发布</span></span>
+          <span class="ver-chip" data-i18n="camp_sync">电脑版 · 安卓版 · 网页版同步更新</span>
+        </div>
         <div class="hero-btns">
           <div class="hero-dl-stack">
             <a class="btn btn-primary" href="#download"><svg viewBox="0 0 24 24" class="btn-ic btn-ic-win" aria-hidden="true"><path fill="#0078D4" d="M0 0h11.377v11.372H0zM12.623 0H24v11.372H12.623zM0 12.623h11.377V24H0zM12.623 12.623H24V24H12.623z"/></svg><span data-i18n="hero_dl">下载 Windows 版</span><span class="btn-ver" data-ver></span></a>
             <a class="btn btn-primary" id="heroDlA" href="#download" style="display:none"><svg viewBox="4.2 2.75 15.6 9.55" class="btn-ic btn-ic-and" aria-hidden="true"><g fill="none" stroke="#3DDC84" stroke-width="1.5" stroke-linecap="round"><path d="M7.4 5.7 6 3.5"/><path d="M16.6 5.7 18 3.5"/></g><path fill="#3DDC84" d="M12 5.2c-4.3 0-7.8 2.9-7.8 6.6 0 .3.2.5.5.5h14.6c.3 0 .5-.2.5-.5 0-3.7-3.5-6.6-7.8-6.6z"/><circle cx="8.7" cy="9.4" r="1.05" fill="#fff"/><circle cx="15.3" cy="9.4" r="1.05" fill="#fff"/></svg><span data-i18n="hero_dl_a">下载 Android 版</span></a>
           </div>
-          <a class="btn btn-glass" href="#reconnect" data-i18n="hero_reconnect">连接中断后自动恢复</a>
+          <a class="btn btn-glass" href="#highlights" data-i18n="camp_view">查看本次更新重点</a>
         </div>
-        <p class="hero-note" data-i18n="hero_note">手机端无需安装软件，浏览器即可控制 · 被控电脑无需开启端口或额外配置</p>
+        <p class="camp-note" data-i18n="camp_note">现行版本可正常下载使用；新版本发布后，已安装用户可直接在软件内完成更新。完整更新内容将在发布时于本页更新日志公布。</p>
       </div>
-      <div class="hero-visual reveal">
+      <div class="camp-visual reveal">
         <div class="win-frame">
           <div class="win-bar"><span class="wdot r"></span><span class="wdot y"></span><span class="wdot g"></span><span class="win-title">QFRemote</span><span class="win-light" title="服务器在线"><i></i></span></div>
-          <img src="assets/shots/connecting.png" alt="QFRemote 连接中界面" data-i18n-alt="hero_img_alt">
+          <img src="assets/shots/console-desktop.png" alt="QFRemote 网页控制台设备页面">
         </div>
+        <div class="phone-frame"><img src="assets/shots/friends-mobile.png" alt="QFRemote 好友页面（手机版）"></div>
         <div class="orbit" aria-hidden="true"><span class="orbit-ring"></span><span class="orbit-dot"></span></div>
-        <div class="chip chip-a"><span class="dot-live"></span><span data-i18n="chip_a">连接状态实时显示</span></div>
-        <div class="chip chip-b"><span data-i18n="chip_b">正在自动重连…</span><span class="chip-bar"><i></i></span></div>
+        <div class="camp-chip camp-chip-a"><span class="dot-live"></span><span data-i18n="chip_a">连接状态实时显示</span></div>
+        <div class="camp-chip camp-chip-b" data-i18n="camp_chip_b">断线后自动重连</div>
       </div>
+    </div>
+  </section>
+
+  <!-- ===== 数据条 ===== -->
+  <section class="num-strip">
+    <div class="wrap num-grid">
+      <div class="num-item reveal"><b>30<em> 天</em></b><span data-i18n="camp_n1l">登录状态最长保持时长</span></div>
+      <div class="num-item reveal"><b>1<em> 次</em></b><span data-i18n="camp_n2l">登录即可使用全部功能</span></div>
+      <div class="num-item reveal"><b>3<em> 端</em></b><span data-i18n="camp_n3l">电脑、安卓与网页将同步更新</span></div>
+    </div>
+  </section>
+
+  <!-- ===== 更新重点：四大主题 ===== -->
+  <section id="highlights" class="section">
+    <div class="wrap">
+      <p class="kicker reveal" data-i18n="camp_hl_kicker">本次更新</p>
+      <h2 class="sec-title reveal" data-i18n="camp_hl_title">2.0 大更新，重点只有四项</h2>
+      <p class="sec-lead reveal" data-i18n="camp_hl_lead">即将发布的版本 2.3.0 不追求功能数量，集中力量改进四件对日常使用影响最大的事项。其余细项改进将在发布时记录于本页更新日志，不在此逐项列举。</p>
+
+      <div class="theme reveal">
+        <div class="theme-text">
+          <span class="theme-no">01</span>
+          <h3 data-i18n="camp_t1t">断了？它自己连回来。</h3>
+          <p data-i18n="camp_t1p">远程控制的前提是连接可靠。QFRemote 以三层机制保障连接：被控端组件随系统自动启动并回连，服务器服务异常时自动恢复，控制端在会话中断后自动重连。连接中断后无需人工干预即可恢复，且不退出登录状态。</p>
+          <a class="card-link" href="#reconnect" data-i18n="camp_t1_link">查看自动重连机制说明 →</a>
+        </div>
+        <div class="theme-media">
+          <figure class="theme-shot"><img src="assets/shots/offline-dark.png" alt="QFRemote 断线自动重连界面"></figure>
+        </div>
+      </div>
+
+      <div class="theme theme-alt reveal">
+        <div class="theme-text">
+          <span class="theme-no">02</span>
+          <h3 data-i18n="camp_t2t">登录一次，三十天畅行。</h3>
+          <p data-i18n="camp_t2p">新版本只需登录一次：登录状态最长保持三十天，软件重启、断线重连或服务器重启后自动恢复；好友、聊天、论坛、积分与管理等功能直接使用，不再逐项重复验证；相关页面在软件窗口内直接打开，聊天打开即可查看记录。</p>
+          <ul class="theme-points">
+            <li data-i18n="camp_t2p1">记住此设备：三十天内无需再次登录</li>
+            <li data-i18n="camp_t2p2">记住账号密码：加密保存在本机，登录时自动填写</li>
+            <li data-i18n="camp_t2p3">全部功能一次通行：不再出现重复的密码输入</li>
+          </ul>
+        </div>
+        <div class="theme-media">
+          <figure class="theme-shot"><img src="assets/shots/splash-dark.png" alt="QFRemote 启动画面"></figure>
+        </div>
+      </div>
+
+      <div class="theme reveal">
+        <div class="theme-text">
+          <span class="theme-no">03</span>
+          <h3 data-i18n="camp_t3t">换芯升级，快到飞起。</h3>
+          <p data-i18n="camp_t3p">新版本将三端核心组件升级至当前稳定版本，并针对界面渲染、长列表滚动与页面切换逐项优化。升级遵循成熟产品的通行做法，以系统级组件与硬件加速为基础，而非仅调整表面样式，确保三端的响应速度与操作手感保持一致。</p>
+          <ul class="theme-points">
+            <li data-i18n="camp_t3p1">电脑端与安卓端核心组件同步升级</li>
+            <li data-i18n="camp_t3p2">界面渲染与滚动性能专项优化</li>
+            <li data-i18n="camp_t3p3">三端同一套设计标准与交互规范</li>
+          </ul>
+        </div>
+        <div class="theme-media">
+          <figure class="theme-shot theme-shot-strip"><img src="assets/shots/status-light.png" alt="QFRemote 工具栏与服务器状态指示灯"></figure>
+        </div>
+      </div>
+
+      <div class="theme theme-alt reveal">
+        <div class="theme-text">
+          <span class="theme-no">04</span>
+          <h3 data-i18n="camp_t4t">远在天边，近在眼前。</h3>
+          <p data-i18n="camp_t4p">被控电脑的画面实时传输至控制端，鼠标与键盘操作与在本机前使用一致；文件管理与远程终端随画面一并提供，临时处理问题或长期无人值守均可胜任。手机浏览器、安卓应用与电脑客户端呈现同一套界面，换设备使用无需重新适应。</p>
+          <a class="card-link" href="#shots" data-i18n="camp_t4_link">查看软件界面展示 →</a>
+        </div>
+        <div class="theme-media">
+          <figure class="theme-shot"><img src="assets/shots/connecting.png" alt="QFRemote 连接中界面"></figure>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -293,6 +377,6 @@
   </div>
 </footer>
 
-<script src="assets/app.js?v=6"></script>
+<script src="assets/app.js?v=7"></script>
 </body>
 </html>
