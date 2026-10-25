@@ -1,6 +1,28 @@
 {
   "changelog": [
     {
+      "version": "2.3.0",
+      "date": "2026-10-25",
+      "zh": [
+        "新增登录状态自动恢复：已记住设备的用户在软件重启、会话失效等情况下将自动恢复登录，无需重复输入密码。",
+        "新增「记住账号密码」选项：账号与密码经本机加密保存，打开软件时自动填写；退出登录时可一并清除。",
+        "新增「退出登录」功能：退出后将清除本机保存的登录信息，再次使用时需重新登录。",
+        "好友、聊天与论坛改为在软件框架内直接打开，页面切换更连贯；打开聊天记录时不再要求再次输入密码。",
+        "新增智能客服：可自助查询常见问题，也可转接人工客服处理。",
+        "优化软件内更新：更新时显示下载进度；下载或安装出现异常时给出明确提示，不再停留在无响应状态；更新继续安装至当前目录。",
+        "统一三端界面细节与文案表述，优化运行流畅性，并修复若干已知问题。"
+      ],
+      "en": [
+        "Automatic sign-in recovery: on devices you chose to remember, your session is restored automatically after an app restart or session expiry, without entering your password again.",
+        "A new \"remember account and password\" option: credentials are stored encrypted on this device and filled in automatically; they are cleared when you sign out.",
+        "A new \"Sign out\" action: signing out clears the sign-in information saved on this device, and the next use requires signing in again.",
+        "Friends, chat and the forum now open directly inside the app frame with smoother transitions; opening chat history no longer asks for your password again.",
+        "New smart support: look up common questions on your own, or transfer to a human support agent.",
+        "Improved in-app updates: download progress is shown; errors during download or installation produce a clear message instead of an unresponsive state; updates continue to install into the current folder.",
+        "Unified interface details and wording across all three platforms, improved smoothness, and fixed a number of known issues."
+      ]
+    },
+    {
       "version": "2.2.0",
       "date": "2026-10-25",
       "zh": [
@@ -167,31 +189,31 @@
   ],
   "platforms": {
     "android": {
-      "downloadUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/dl/QFRemote-v2.2.0.apk",
-      "fileName": "QFRemote-v2.2.0.apk",
+      "downloadUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/dl/QFRemote-v2.3.0.apk",
+      "fileName": "QFRemote-v2.3.0.apk",
       "releaseDate": "2026-10-25",
       "requirements": {
         "en": "Android phone or tablet",
         "zh": "Android 手机或平板"
       },
-      "sha256": "48a82941325a6321843c159b0e6f6c3f458ea3626328b6eb179b6beae400e9b4",
-      "sizeBytes": 23341624,
-      "sizeText": "22.3 MB",
-      "version": "2.2.0"
+      "sha256": "7939409ea6cb768cd47555e83acc5f3fb49512894a1e2925422ca3fcf266a8ba",
+      "sizeBytes": 53687539,
+      "sizeText": "51.2 MB",
+      "version": "2.3.0"
     },
     "windows": {
-      "downloadUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/dl/QFRemote-Setup-v2.2.0.exe",
-      "fileName": "QFRemote-Setup-v2.2.0.exe",
+      "downloadUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/dl/QFRemote-Setup-v2.3.0.exe",
+      "fileName": "QFRemote-Setup-v2.3.0.exe",
       "releaseDate": "2026-10-25",
       "releasePageUrl": "#changes",
       "requirements": {
         "en": "Windows 10 / 11 (64-bit)",
         "zh": "Windows 10 / 11（64 位）"
       },
-      "sha256": "d5b7d408068cebd18c1b878c1485686ea5ce3c8467b1cde6ce130750049031b8",
-      "sizeBytes": 83487011,
-      "sizeText": "79.6 MB",
-      "version": "2.2.0"
+      "sha256": "33587ba486318e9cc9fbbef1c1a02ace0feaec05c0e3978f6736580c832ecef1",
+      "sizeBytes": 120739949,
+      "sizeText": "115.2 MB",
+      "version": "2.3.0"
     }
   },
   "product": "QFRemote",
@@ -199,36 +221,36 @@
   "screenshots": [
     {
       "en": "Web console — Devices page",
-      "src": "assets/shots/console-desktop.png",
+      "src": "assets/shots/console-desktop.png?v=230",
       "zh": "网页控制台设备页面"
     },
     {
       "en": "Connection screen",
-      "src": "assets/shots/connecting.png",
+      "src": "assets/shots/connecting.png?v=230",
       "zh": "连接中界面"
     },
     {
       "en": "Friends page (mobile)",
-      "src": "assets/shots/friends-mobile.png",
+      "src": "assets/shots/friends-mobile.png?v=230",
       "zh": "好友页面（手机版）"
     },
     {
       "en": "Disconnection and automatic reconnection screen",
-      "src": "assets/shots/offline-dark.png",
+      "src": "assets/shots/offline-dark.png?v=230",
       "zh": "断线自动重连界面"
     },
     {
       "en": "Startup screen",
-      "src": "assets/shots/splash-dark.png",
+      "src": "assets/shots/splash-dark.png?v=230",
       "zh": "启动画面"
     },
     {
       "en": "Toolbar and server status light",
-      "src": "assets/shots/status-light.png",
+      "src": "assets/shots/status-light.png?v=230",
       "zh": "工具栏与服务器状态指示灯"
     }
   ],
-  "version": "2.2.0",
+  "version": "2.3.0",
   "web": {
     "feedbackUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/api/feedback",
     "forumUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/forum",
