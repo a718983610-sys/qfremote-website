@@ -27,20 +27,20 @@ const I18N = {
     camp_n1l: "登录状态最长保持时长", camp_n2l: "登录即可使用全部功能", camp_n3l: "电脑、安卓与网页将同步更新",
     camp_hl_kicker: "本次更新", camp_hl_title: "2.0 大更新，重点只有四项",
     camp_hl_lead: "即将发布的版本 2.3.0 不追求功能数量，集中力量改进四件对日常使用影响最大的事项。其余细项改进将在发布时记录于本页更新日志，不在此逐项列举。",
-    camp_t1t: "断了？它自己连回来。",
+    camp_t1t: "断了？<span class=\"fx-key\">它自己连回来</span>。",
     camp_t1p: "远程控制的前提是连接可靠。QFRemote 以三层机制保障连接：被控端组件随系统自动启动并回连，服务器服务异常时自动恢复，控制端在会话中断后自动重连。连接中断后无需人工干预即可恢复，且不退出登录状态。",
     camp_t1_link: "查看自动重连机制说明 →",
-    camp_t2t: "登录一次，三十天畅行。",
+    camp_t2t: "登录一次，<span class=\"fx-key\">三十天</span>畅行。",
     camp_t2p: "新版本只需登录一次：登录状态最长保持三十天，软件重启、断线重连或服务器重启后自动恢复；好友、聊天、论坛、积分与管理等功能直接使用，不再逐项重复验证；相关页面在软件窗口内直接打开，聊天打开即可查看记录。",
     camp_t2p1: "记住此设备：三十天内无需再次登录",
     camp_t2p2: "记住账号密码：加密保存在本机，登录时自动填写",
     camp_t2p3: "全部功能一次通行：不再出现重复的密码输入",
-    camp_t3t: "换芯升级，快到飞起。",
+    camp_t3t: "换芯升级，<span class=\"fx-key\">快到飞起</span>。",
     camp_t3p: "新版本将三端核心组件升级至当前稳定版本，并针对界面渲染、长列表滚动与页面切换逐项优化。升级遵循成熟产品的通行做法，以系统级组件与硬件加速为基础，而非仅调整表面样式，确保三端的响应速度与操作手感保持一致。",
     camp_t3p1: "电脑端与安卓端核心组件同步升级",
     camp_t3p2: "界面渲染与滚动性能专项优化",
     camp_t3p3: "三端同一套设计标准与交互规范",
-    camp_t4t: "远在天边，近在眼前。",
+    camp_t4t: "远在天边，<span class=\"fx-key\">近在眼前</span>。",
     camp_t4p: "被控电脑的画面实时传输至控制端，鼠标与键盘操作与在本机前使用一致；文件管理与远程终端随画面一并提供，临时处理问题或长期无人值守均可胜任。手机浏览器、安卓应用与电脑客户端呈现同一套界面，换设备使用无需重新适应。",
     camp_t4_link: "查看软件界面展示 →",
     feat_kicker: "核心功能", feat_title: "一次安装，随时连接",
@@ -110,20 +110,20 @@ const I18N = {
     camp_n1l: "Maximum sign-in persistence", camp_n2l: "Sign in once to use all features", camp_n3l: "Windows, Android, and Web updated together",
     camp_hl_kicker: "This Update", camp_hl_title: "The 2.0 update focuses on four things only",
     camp_hl_lead: "Version 2.3.0, coming soon, does not chase feature counts. It concentrates on the four matters that affect everyday use the most. Smaller refinements will be recorded in the changelog on this page at release time and are not listed here one by one.",
-    camp_t1t: "Dropped? It reconnects by itself.",
+    camp_t1t: "Dropped? <span class=\"fx-key\">It reconnects by itself</span>.",
     camp_t1p: "Reliable connection is the precondition of remote control. QFRemote safeguards it with three layers: the controlled-side component starts with the system and reconnects on its own; server services recover automatically when abnormal; and the control side reconnects by itself when a session drops. Recovery needs no manual action and does not sign you out.",
     camp_t1_link: "How automatic reconnection works →",
-    camp_t2t: "Sign in once. Set for thirty days.",
+    camp_t2t: "Sign in once. Set for <span class=\"fx-key\">thirty days</span>.",
     camp_t2p: "The new version requires only one sign-in: the signed-in state persists for up to thirty days and is restored automatically after an app restart, a reconnection, or a server restart. Friends, Chat, Forum, Points, and administration are directly usable without repeated verification; related pages open inside the app window, and chat history is available the moment Chat is opened.",
     camp_t2p1: "Remember this device: no sign-in needed for thirty days",
     camp_t2p2: "Remember account and password: stored encrypted on this device and filled in automatically",
     camp_t2p3: "All features with one sign-in: no repeated password prompts",
-    camp_t3t: "New core. Noticeably faster.",
+    camp_t3t: "New core. <span class=\"fx-key\">Noticeably faster</span>.",
     camp_t3p: "The new version upgrades the core components on all three ends to current stable releases, and optimizes interface rendering, long-list scrolling, and page transitions item by item. Following the established practice of mature products, the upgrade builds on system-level components and hardware acceleration rather than surface styling alone, keeping response speed and handling consistent across all three ends.",
     camp_t3p1: "Core components upgraded on desktop and Android together",
     camp_t3p2: "Dedicated optimization of rendering and scrolling performance",
     camp_t3p3: "One design standard and interaction specification across all ends",
-    camp_t4t: "Miles away. Right in front of you.",
+    camp_t4t: "Miles away. <span class=\"fx-key\">Right in front of you</span>.",
     camp_t4p: "The controlled computer's screen is streamed to the control side in real time, and mouse and keyboard operation feels the same as working at the machine. File management and the remote terminal accompany the picture, serving both urgent fixes and long-term unattended operation. The mobile browser, the Android app, and the desktop client present the same interface, so switching devices requires no relearning.",
     camp_t4_link: "View the software interface →",
     feat_kicker: "Core Features", feat_title: "Install once, connect at any time",
@@ -203,7 +203,11 @@ function applyLang() {
   const dict = I18N[LANG] || I18N.zh;
   document.querySelectorAll("[data-i18n]").forEach(function (el) {
     const key = el.getAttribute("data-i18n");
-    if (dict[key]) el.textContent = dict[key];
+    if (dict[key]) {
+      // 带 data-i18n-html 的元素允许词条内嵌标记（如主题标题关键词字效 span）；词条均为站内静态文本
+      if (el.hasAttribute("data-i18n-html")) el.innerHTML = dict[key];
+      else el.textContent = dict[key];
+    }
   });
   document.querySelectorAll("[data-i18n-ph]").forEach(function (el) {
     const key = el.getAttribute("data-i18n-ph");
