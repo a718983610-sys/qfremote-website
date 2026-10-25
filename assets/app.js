@@ -43,6 +43,7 @@ const I18N = {
     dl_tip_a: "下载后可对照上方公布的 SHA-256 校验码，确认安装包完整且未被篡改。首次安装时如被系统拦截，请允许本次安装后继续（本软件暂未上架应用商店）。",
     dl_note: "请仅通过本页面下载 QFRemote，以确保安装包完整可靠。",
     cl_kicker: "更新日志", cl_title: "版本更新记录", cl_latest: "最新",
+    cl_more: "查看更早的更新记录", cl_less: "收起",
     faq_kicker: "常见问题", faq_title: "常见问题解答",
     ct_kicker: "联系我们", ct_title: "与我们联系",
     ct_mail_label: "联系邮箱：",
@@ -97,6 +98,7 @@ const I18N = {
     dl_tip_a: "After downloading, compare the package against the SHA-256 checksum published above to confirm that it is complete and untampered. If the system blocks the first installation, allow this installation to proceed (the software is not yet listed on an app store).",
     dl_note: "Please download QFRemote only from this page to keep your package genuine and intact.",
     cl_kicker: "Changelog", cl_title: "Release History", cl_latest: "Latest",
+    cl_more: "View earlier release records", cl_less: "Collapse",
     faq_kicker: "FAQ", faq_title: "Frequently Asked Questions",
     ct_kicker: "Contact", ct_title: "Contact Us",
     ct_mail_label: "Email: ",
@@ -225,16 +227,50 @@ function renderDynamic() {
     }).join("");
   }
 
+  /* 更新日志：默认只展示最新 10 条，其余折叠（按条数判定，不写死版本号） */
   const tl = document.getElementById("timeline");
   if (tl) {
-    tl.innerHTML = (P.changelog || []).map(function (c, i) {
+    const CL_VISIBLE = 10;
+    const clList = P.changelog || [];
+    function clItem(c, i) {
       const notes = c[LANG] || c.zh || [];
       return '<div class="tl-item' + (i === 0 ? " latest" : "") + '">' +
         '<div class="tl-head"><span class="tl-ver">v' + esc(c.version) + "</span>" +
         (i === 0 ? '<span class="tl-badge">' + esc(t("cl_latest")) + "</span>" : "") +
         '<span class="tl-date">' + esc(c.date) + "</span></div>" +
         "<ul>" + notes.map(function (n) { return "<li>" + esc(n) + "</li>"; }).join("") + "</ul></div>";
-    }).join("");
+    }
+    tl.innerHTML = clList.slice(0, CL_VISIBLE).map(clItem).join("") +
+      (clList.length > CL_VISIBLE
+        ? '<div class="tl-more" hidden>' + clList.slice(CL_VISIBLE).map(function (c, j) { return clItem(c, CL_VISIBLE + j); }).join("") + "</div>"
+        : "");
+    let tg = document.getElementById("tlToggle");
+    if (clList.length > CL_VISIBLE) {
+      if (!tg) {
+        tg = document.createElement("button");
+        tg.type = "button";
+        tg.id = "tlToggle";
+        tg.className = "tl-toggle";
+        tl.after(tg);
+      }
+      tg.textContent = t("cl_more");
+      tg.setAttribute("aria-expanded", "false");
+      tg.onclick = function () {
+        const more = tl.querySelector(".tl-more");
+        if (!more) return;
+        if (more.hasAttribute("hidden")) {
+          more.removeAttribute("hidden");
+          tg.textContent = t("cl_less");
+          tg.setAttribute("aria-expanded", "true");
+        } else {
+          more.setAttribute("hidden", "");
+          tg.textContent = t("cl_more");
+          tg.setAttribute("aria-expanded", "false");
+        }
+      };
+    } else if (tg) {
+      tg.remove();
+    }
   }
 
   const faq = document.getElementById("faqList");
