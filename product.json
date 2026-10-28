@@ -1,0 +1,230 @@
+{
+  "changelog": [
+    {
+      "date": "2026-10-25",
+      "en": [
+        "New paid license keys: four plans (1 day, 7 days, 30 days and permanent), with a free 3-day trial for new accounts; keys support gifting, renewal stacking, device rebinding and self-service status lookup, and day-plan time pauses during an account ban.",
+        "A fully rebuilt web console: sign-in lands directly on the home page, with devices, friends, chat, the forum and support switching inside one frame; navigation and menus are unified across all three ends.",
+        "Smarter support: an AI question-answering engine now handles product questions and everyday questions alike, with hand-off to a human agent when needed.",
+        "New points and rewards centre: daily check-ins and usage time earn points that can be exchanged for usage time; a Redeem KEY entry and order management have been added."
+      ],
+      "version": "2.3.1",
+      "zh": [
+        "新增付费密钥体系：提供 1 日、7 日、30 日与永久四档套餐，新用户注册可免费试用 3 天；支持密钥转赠、续购叠加、设备换绑与账户状态自助查询，封禁期间按天套餐暂停计时。",
+        "网页控制台全新改版：登录后直接进入首页，设备、好友、聊天、论坛与客服在同一界面内切换；三端导航与菜单同步统一。",
+        "智能客服升级：接入智能问答引擎，产品使用问题与日常问题均可直接咨询，需要时可转人工客服。",
+        "新增积分与福利中心：每日签到与使用时长积累积分，积分可兑换使用时长；新增「兑换 KEY」入口与我的订单管理。"
+      ]
+    },
+    {
+      "date": "2026-10-25",
+      "en": [
+        "Friends, chat and the forum now open directly inside the app frame with smoother transitions; opening chat history no longer asks for your password again.",
+        "New smart support: look up common questions on your own, or transfer to a human support agent."
+      ],
+      "version": "2.3.0",
+      "zh": [
+        "好友、聊天与论坛改为在软件框架内直接打开，页面切换更连贯；打开聊天记录时不再要求再次输入密码。",
+        "新增智能客服：可自助查询常见问题，也可转接人工客服处理。"
+      ]
+    },
+    {
+      "date": "2026-10-25",
+      "en": [
+        "The installation location can now be selected during setup; subsequent upgrades will automatically use the selected location.",
+        "Added usage time and points: 1 point is earned for every 2 hours of cumulative use. Days of use and the current points balance can be viewed on the About page.",
+        "Added an administrator page for the site owner, supporting account management and appeal handling.",
+        "Added the privacy lock: after enabling it for a computer and setting a one-time password, the computer's local screen can be locked."
+      ],
+      "version": "2.2.0",
+      "zh": [
+        "安装时可选择安装位置；后续升级将自动沿用所选位置进行安装。",
+        "新增使用时长与积分功能：累计使用满 2 小时积 1 分，可在「关于」页面查看已使用天数与当前积分。",
+        "新增站长管理页面，支持账号管理与申诉处理。",
+        "新增隐私锁功能：为电脑开启隐私锁并设置一次性密码后，即可锁定该电脑的本地屏幕。"
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "en": [
+        "The friends feature is connected: after signing in once, selecting “Friends” in the app or the web console opens it directly, with no second sign-in."
+      ],
+      "version": "2.1.0",
+      "zh": [
+        "好友功能打通：登录一次后，在软件与网页中点「好友」即可直接打开，无需再次登录。"
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "en": [
+        "A registration entry has been added: new accounts can now be created directly from the sign-in screen."
+      ],
+      "version": "2.0.1",
+      "zh": [
+        "新增注册入口：可在登录界面直接注册新账号。"
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "en": [
+        "Version 2.0.0: a Forum entry has been added to the app; select “Forum” in the toolbar to open it.",
+        "The device page has gained a privacy-lock switch, available once the companion component on the controlled computer is deployed (the component is distributed with this release)."
+      ],
+      "version": "2.0.0",
+      "zh": [
+        "发布 2.0.0 版本：软件内新增论坛入口，点工具栏的「论坛」即可进入。",
+        "设备页面新增隐私锁开关：被控电脑上的配套组件部署完成后即可使用（组件随本版本一同下发）。"
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "en": [
+        "A new brand mark has been adopted — a blue broken ring with an orange dot — now used consistently in the Windows app, the Android app, and the console; this release contains no functional changes."
+      ],
+      "version": "1.0.6",
+      "zh": [
+        "启用全新品牌标志：蓝色断环加橙色圆点，电脑版、手机版与网页控制台统一采用；本版本无功能变化。"
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "en": [
+        "Friends have been added: select “Friends” in the toolbar, search by the other party's account name, and send a request; once accepted, you are friends.",
+        "A group of your computers can be shared with a friend for assistance: view-only by default (the screen can be viewed but not operated); whether operation is allowed is chosen at sharing time. Removing the friend withdraws the sharing automatically and immediately.",
+        "Friends can chat with end-to-end encryption throughout; the server stores no plaintext. The friends list also includes official support, answered by the site owner personally.",
+        "The Android app has been updated to 1.0.5 in step, including friends, sharing, and chat, with in-app update checks connected."
+      ],
+      "version": "1.0.5",
+      "zh": [
+        "新增好友功能：可在工具栏点「好友」打开，按对方账号搜索并发送申请，对方同意后即成为好友。",
+        "支持将自己的一组电脑共享给好友协助处理：默认仅可查看（可看屏幕、不可操作），是否允许操作由共享时选择；删除好友后，共享立即自动收回。",
+        "好友之间支持聊天，内容全程端到端加密，服务器不保存明文；好友列表中设有官方客服，由站长本人回复。",
+        "安卓版同步更新至 1.0.5：包含好友、共享与聊天功能，并已接入软件内更新检查。"
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "en": [
+        "Update rules have changed: while the app is running, a new version is announced by a reminder only and never interrupts use; the next time the app is reopened after being closed, the new version is installed first; if the server is unreachable when the app is opened, it can still be entered and used, and the app is never locked."
+      ],
+      "version": "1.0.4",
+      "zh": [
+        "调整软件更新规则：运行期间发现新版本仅作提醒，不中断使用；退出后再次打开时，先完成新版本安装再进入；若打开软件时无法连接服务器，仍可进入使用，不会锁定软件。"
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "en": [
+        "In-app updates have been added: the app checks for new versions on launch and can be checked manually from the About panel; a download is verified for integrity before installation is offered."
+      ],
+      "version": "1.0.3",
+      "zh": [
+        "新增软件内更新：打开软件时自动检查新版本，「关于」中也可手动检查；下载完成后先校验完整性，确认无误才提示安装。"
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "en": [
+        "Added dual toolbar themes, a server status light, and one-click screenshots, and completed the About panel."
+      ],
+      "version": "1.0.2",
+      "zh": [
+        "新增工具栏双主题、服务器状态指示灯与一键截图功能，并补全「关于」面板。"
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "en": [
+        "Two-layer automatic reconnection: full-page drops retry automatically on a countdown; session drops reconnect automatically — unlimited retries, no pop-ups, and no return to the sign-in page."
+      ],
+      "version": "1.0.1",
+      "zh": [
+        "断线自动重连双重保障：整页断开时按倒计时自动重试；会话断开时自动重新连接，不限次数、不弹窗打扰、不退出登录。"
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "en": [
+        "The first QFRemote Windows app: double-click to open the console directly — no browser and no certificate prompts."
+      ],
+      "version": "1.0.0",
+      "zh": [
+        "QFRemote 首个 Windows 软件版发布：双击即可打开并直接进入控制台，无需再开浏览器或处理证书提示。"
+      ]
+    }
+  ],
+  "platforms": {
+    "android": {
+      "downloadUrl": "https://app.qfremote.top/dl/QFRemote-v2.3.1.apk",
+      "fileName": "QFRemote-v2.3.1.apk",
+      "releaseDate": "2026-10-25",
+      "requirements": {
+        "en": "Android phone or tablet",
+        "zh": "Android 手机或平板"
+      },
+      "sha256": "f9caeff0d0ab09ebe508a949cddf89b26125097c8f66da93d86a1f68c3e26b43",
+      "sizeBytes": 54080719,
+      "sizeText": "51.6 MB",
+      "version": "2.3.1"
+    },
+    "windows": {
+      "downloadUrl": "https://app.qfremote.top/dl/QFRemote-Setup-v2.3.1.exe",
+      "fileName": "QFRemote-Setup-v2.3.1.exe",
+      "releaseDate": "2026-10-25",
+      "releasePageUrl": "#changes",
+      "requirements": {
+        "en": "Windows 10 / 11 (64-bit)",
+        "zh": "Windows 10 / 11（64 位）"
+      },
+      "sha256": "ed4135e157985b6f2849ff6bd90471652ffe3e2361376f1639c77c1acac15316",
+      "sizeBytes": 121167881,
+      "sizeText": "115.6 MB",
+      "version": "2.3.1"
+    }
+  },
+  "product": "QFRemote",
+  "releaseDate": "2026-10-25",
+  "screenshots": [
+    {
+      "en": "Web console — Devices page",
+      "src": "assets/shots/console-desktop.png?v=231",
+      "zh": "网页控制台设备页面"
+    },
+    {
+      "en": "Connection screen",
+      "src": "assets/shots/connecting.png?v=231",
+      "zh": "连接中界面"
+    },
+    {
+      "en": "Friends page (mobile)",
+      "src": "assets/shots/friends-mobile.png?v=231",
+      "zh": "好友页面（手机版）"
+    },
+    {
+      "en": "Disconnection and automatic reconnection screen",
+      "src": "assets/shots/offline-dark.png?v=231",
+      "zh": "断线自动重连界面"
+    },
+    {
+      "en": "Startup screen",
+      "src": "assets/shots/splash-dark.png?v=231",
+      "zh": "启动画面"
+    },
+    {
+      "en": "Toolbar and server status light",
+      "src": "assets/shots/status-light.png?v=231",
+      "zh": "工具栏与服务器状态指示灯"
+    }
+  ],
+  "version": "2.3.1",
+  "web": {
+    "adminUrl": "https://app.qfremote.top/admin",
+    "feedbackUrl": "https://app.qfremote.top/api/feedback",
+    "forumUrl": "https://app.qfremote.top/forum",
+    "friendsUrl": "https://app.qfremote.top/friends",
+    "loginUrl": "https://app.qfremote.top",
+    "pointsUrl": "https://app.qfremote.top/points",
+    "registerUrl": "https://app.qfremote.top/register",
+    "termsUrl": "https://app.qfremote.top/terms"
+  }
+}
