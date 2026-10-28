@@ -337,6 +337,8 @@ footer{background:linear-gradient(180deg,var(--navy1),var(--navy0));padding:44px
 }
 
 /* ===== 2026-10-29 官网评审落地：画廊控制 + 触控目标 ===== */
+.win-frame>img{height:auto}
+.phone-frame img{height:auto}
 a,button{touch-action:manipulation}
 .gal-nav{display:flex;gap:10px;justify-content:flex-end;margin-top:14px}
 .gal-btn{width:42px;height:42px;border-radius:50%;border:1px solid var(--line2);background:#fff;color:var(--ink);font-size:22px;line-height:1;cursor:pointer;box-shadow:0 2px 10px rgba(13,49,112,.06);transition:border-color .18s,color .18s,transform .18s}
