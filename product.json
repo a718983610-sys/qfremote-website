@@ -155,7 +155,7 @@
   ],
   "platforms": {
     "android": {
-      "downloadUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/dl/QFRemote-v2.3.1.apk",
+      "downloadUrl": "https://app.qfremote.top/dl/QFRemote-v2.3.1.apk",
       "fileName": "QFRemote-v2.3.1.apk",
       "releaseDate": "2026-10-25",
       "requirements": {
@@ -168,7 +168,7 @@
       "version": "2.3.1"
     },
     "windows": {
-      "downloadUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/dl/QFRemote-Setup-v2.3.1.exe",
+      "downloadUrl": "https://app.qfremote.top/dl/QFRemote-Setup-v2.3.1.exe",
       "fileName": "QFRemote-Setup-v2.3.1.exe",
       "releaseDate": "2026-10-25",
       "releasePageUrl": "#changes",
@@ -218,13 +218,13 @@
   ],
   "version": "2.3.1",
   "web": {
-    "adminUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/admin",
-    "feedbackUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/api/feedback",
-    "forumUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/forum",
-    "friendsUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/friends",
-    "loginUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com",
-    "pointsUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/points",
-    "registerUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/register",
-    "termsUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/terms"
+    "adminUrl": "https://app.qfremote.top/admin",
+    "feedbackUrl": "https://app.qfremote.top/api/feedback",
+    "forumUrl": "https://app.qfremote.top/forum",
+    "friendsUrl": "https://app.qfremote.top/friends",
+    "loginUrl": "https://app.qfremote.top",
+    "pointsUrl": "https://app.qfremote.top/points",
+    "registerUrl": "https://app.qfremote.top/register",
+    "termsUrl": "https://app.qfremote.top/terms"
   }
 }
