@@ -5,7 +5,7 @@
 
 const I18N = {
   zh: {
-    nav_features: "功能", nav_reconnect: "自动重连", nav_shots: "界面", nav_download: "下载",
+    nav_features: "功能", nav_reconnect: "自动重连", nav_shots: "界面", nav_price: "价格", nav_download: "下载",
     nav_changes: "更新日志", nav_faq: "常见问题", nav_contact: "联系", nav_login: "网页版登录", nav_register: "注册",
     hero_badge: "自主运营的服务器与品牌",
     hero_h1a: "您的电脑，", hero_h1b: "随时远程连接。",
@@ -31,16 +31,16 @@ const I18N = {
     price_th1: "套餐", price_th2: "价格", price_th3: "有效期",
     price_p1: "QFRemote 永久套餐", price_t1: "一次性付清，终生免费更新",
     price_p2: "QFRemote 30日套餐", price_p3: "QFRemote 7日套餐", price_p4: "QFRemote 1日套餐",
-    price_bind: "一枚密钥可绑定两台电脑与一部手机，电脑端与手机端同时可用。真实付费购买密钥后，网页版同步免费开通，不受设备数量限制，可在任何设备的浏览器中登录使用；免费试用期间可以登录网页版，与软件端共用试用期限；赠送、活动发放、积分兑换等免费获得的密钥不开通网页版，仅可使用电脑端与手机端软件。已注册用户在升级至 2.3.1 后，同样需要购买密钥激活后继续使用。",
+    price_bind: "一枚密钥可绑定两台电脑与一部手机，电脑端与手机端同时可用。付费购买密钥后，网页版同步免费开通，不受设备数量限制，可在任何设备的浏览器中登录使用；免费试用期间可以登录网页版，与软件端共用试用期限；赠送、活动发放、积分兑换等免费获得的密钥不开通网页版，仅可使用电脑端与手机端软件。已注册用户升级至 2.3.1 后，同样需购买密钥激活，方可继续使用。",
     price_buy: "购买方式：购买前请先使用账号与密码登录，在购买页选择套餐并使用微信支付或支付宝付款，然后按页面提示上传付款账单截图；审核通过后，密钥发放至购买账号，可在软件内的「付费与激活」区随时查看。",
     price_trial_t: "新用户免费试用 3 天",
-    price_trial_p: "新注册用户可免费试用 3 天（自注册时刻起满 72 小时），注册成功即自动发放试用密钥。试用范围为电脑端与手机端软件及网页版，试用期内功能与正式用户一致；免费试用期间可以登录网页版，与软件端共用试用期限。试用到期后，如需继续使用，请购买密钥激活；试用期间的账号数据将完整保留，购买后即可恢复使用。按天套餐自激活起计时：1 日套餐自激活起 24 小时有效、7 日套餐自激活起 168 小时有效、30 日套餐自激活起 720 小时有效，未激活不计时。",
+    price_trial_p: "新注册用户可免费试用 3 天（自注册时刻起满 72 小时），注册成功即自动发放试用密钥。试用范围为电脑端与手机端软件及网页版（与软件端共用试用期限），试用期内功能与正式用户一致。试用到期后，如需继续使用，请购买密钥激活；试用期间的账号数据将完整保留，购买后即可恢复使用。按天套餐自激活起计时：1 日套餐自激活起 24 小时有效、7 日套餐自激活起 168 小时有效、30 日套餐自激活起 720 小时有效，未激活不计时。",
     price_rules_t: "密钥使用说明",
     price_r1: "绑定规则：一枚密钥仅可绑定两台电脑与一部手机。绑定新设备时如槽位已满，页面将提示该密钥已被绑定；如需在更多设备上使用，请另行购买密钥。",
     price_r2: "按天套餐到期：按天套餐到期后，密钥自动收回，账号暂时无法登录，登录时将显示「密钥已过期」。续购新密钥后即可恢复使用，原有数据不受影响。",
     price_r3: "密钥发放：密钥由系统随机生成，审核通过后发放至购买账号。一经作废或收回的密钥不再重新启用。",
     price_r4: "状态查询：三端登录页均设有「查询密钥」入口，使用账号与密码核验后，即可查看本账号的密钥信息（套餐名称、密钥编号、创建时间与当前状态）；查看完整密钥需再次输入账号密码确认。",
-    price_r5: "网页版开通条件：网页版在真实付费购买密钥后开通（全价、折价购买均可，权益相同）；免费试用期间可以登录网页版，与软件端共用试用期限；赠送、活动发放、积分兑换等免费获得的密钥不开通网页版，仅可使用电脑端与手机端软件。",
+    price_r5: "网页版开通条件：网页版在付费购买密钥后开通（全价、折价购买均可，权益相同）；免费试用期间可以登录网页版，与软件端共用试用期限；赠送、活动发放、积分兑换等免费获得的密钥不开通网页版，仅可使用电脑端与手机端软件。",
     price_r6: "续购叠加：按天套餐未到期时续购按天套餐，时长叠加顺延至当前密钥，不换钥、不重绑；已持有永久套餐的不能重复购买永久套餐。持按天套餐改购永久套餐的，按天剩余时效在下单前明示作废、以永久套餐为准。",
     price_r7: "试用转付费：试用期内购买付费套餐后，系统发放全新付费密钥（新串、创建时间以购买时间为准），原试用密钥退役；新密钥自动承继试用时已绑定的电脑与手机名额，无需重新绑定。",
     price_r8: "密钥转赠：付费购买的密钥可转赠一次（免费获得的密钥不可转赠）。对方在登录页「查询密钥」核验后复制密钥串、登录时粘贴即可领取；领取前转出方照常使用、可随时撤销，待领取有效期 3 天；领取完成后转出方失去该密钥权益（领取时其在线会话同时结束），按天套餐剩余时长按领取时点原样随密钥转移。",
@@ -80,10 +80,10 @@ const I18N = {
     rc1t: "被控端自动回连", rc1p: "安装在被控电脑上的组件以系统服务方式运行：被控电脑重启、系统更新或服务器重启后，组件随开机自动启动并重新连接。经实测，服务器重启后，被控端可在数秒内自动恢复连接，全程无需人工操作。",
     rc2t: "服务器自动恢复", rc2p: "服务器端服务设有崩溃自动重启与开机自启，并每小时执行一次自检，发现异常先行自我修复。经实测，受控重启一次后，网页控制台约 6 秒恢复访问。",
     rc3t: "控制端自动重连", rc3p: "控制软件内置连接监护机制：识别到会话断开后自动发起重连，直至恢复为止；整页连接中断时，页面按倒计时自动重试。恢复期间仅在工具栏显示状态提示，用户无需进行任何操作。",
-    shot_kicker: "界面预览", shot_title: "软件界面展示", shot_lead: "以下图片均为软件实际运行画面，非效果图。",
+    shot_kicker: "界面预览", shot_title: "软件界面展示", gal_prev: "上一组截图", gal_next: "下一组截图", shot_lead: "以下图片均为软件实际运行画面，非效果图。",
     dl_kicker: "下载", dl_title: "下载 QFRemote", dl_win: "Windows 版",
     dl_ver: "当前版本", dl_date: "发布日期", dl_size: "安装包大小", dl_file: "文件名",
-    dl_copy: "复制", dl_copied: "已复制",
+    dl_copy: "复制", dl_copied: "已复制", dl_copy_fail: "复制失败，请手动复制",
     dl_tip: "下载后可对照上方公布的 SHA-256 校验码，确认安装包完整且未被篡改。首次打开时如出现 Windows 安全提示，请点「更多信息 → 仍要运行」（本软件暂未购买代码签名证书）。",
     dl_btn: "下载最新版", dl_history: "查看全部历史版本",
     dl_android: "Android 版", dl_btn_a: "下载 Android 版", dl_reg_link: "尚未注册？请先注册账号",
@@ -107,7 +107,7 @@ const I18N = {
     foot_privacy: "隐私说明"
   },
   en: {
-    nav_features: "Features", nav_reconnect: "Auto-Reconnect", nav_shots: "Interface", nav_download: "Download",
+    nav_features: "Features", nav_reconnect: "Auto-Reconnect", nav_shots: "Interface", nav_price: "Pricing", nav_download: "Download",
     nav_changes: "Changelog", nav_faq: "FAQ", nav_contact: "Contact", nav_login: "Web Login", nav_register: "Sign Up",
     hero_badge: "Self-operated server and brand",
     hero_h1a: "Your computer,", hero_h1b: "remote access, anytime.",
@@ -133,16 +133,16 @@ const I18N = {
     price_th1: "Plan", price_th2: "Price", price_th3: "Term",
     price_p1: "QFRemote Permanent plan", price_t1: "One-time payment, free updates for life",
     price_p2: "QFRemote 30-day plan", price_p3: "QFRemote 7-day plan", price_p4: "QFRemote 1-day plan",
-    price_bind: "One key can be bound to two computers and one phone, usable on desktop and mobile at the same time. After a genuine paid purchase, the web console is included at no extra cost with no device limit, in any browser. During the free trial, the web console is available and shares the same trial period as the apps; keys obtained for free through gifts, promotions, or point redemptions do not include the web console and work in the desktop and mobile apps only. Existing users upgrading to 2.3.1 also need a key to continue.",
+    price_bind: "One key can be bound to two computers and one phone, usable on desktop and mobile at the same time. After a paid purchase, the web console is included at no extra cost with no device limit, in any browser. During the free trial, the web console is available and shares the same trial period as the apps; keys obtained for free through gifts, promotions, or point redemptions do not include the web console and work in the desktop and mobile apps only. Existing users upgrading to 2.3.1 also need a key to continue.",
     price_buy: "How to buy: sign in with your account first, choose a plan on the purchase page and pay by WeChat Pay or Alipay, then upload a screenshot of the payment bill as prompted. Once the review passes, the key is issued to the purchasing account and can be viewed any time in the in-app Paid & Activation area.",
     price_trial_t: "Free 3-day trial for new users",
-    price_trial_p: "New accounts get a free 3-day trial (a full 72 hours from registration), with a trial key issued automatically on sign-up. The trial covers the desktop and mobile apps and the web console, with the full feature set; during the free trial, the web console is available and shares the same trial period as the apps. After the trial ends, buy a key to continue — your account data is kept intact and becomes available again after purchase. Day plans count from activation: the 1-day plan is valid for 24 hours from activation, the 7-day plan for 168 hours and the 30-day plan for 720 hours; unactivated keys do not consume time.",
+    price_trial_p: "New accounts get a free 3-day trial (a full 72 hours from registration), with a trial key issued automatically on sign-up. The trial covers the desktop and mobile apps and the web console (sharing the same trial period as the apps), with the full feature set. After the trial ends, buy a key to continue — your account data is kept intact and becomes available again after purchase. Day plans count from activation: the 1-day plan is valid for 24 hours from activation, the 7-day plan for 168 hours and the 30-day plan for 720 hours; unactivated keys do not consume time.",
     price_rules_t: "How keys work",
     price_r1: "Binding: one key can be bound to at most two computers and one phone. If the slots are full when binding a new device, the page will state that the key is already bound; buy another key to use more devices.",
-    price_r2: "Day-plan expiry: when a day plan expires, the key is reclaimed and the account cannot sign in for the time being; sign-in shows \u201cKey expired\u201d. Buying a new key restores access, and existing data is unaffected.",
+    price_r2: "Day-plan expiry: when a day plan expires, the key is reclaimed and the account cannot sign in temporarily; sign-in shows \u201cKey expired\u201d. Buying a new key restores access, and existing data is unaffected.",
     price_r3: "Issuance: keys are generated randomly by the system and issued to the purchasing account after the payment review passes. A voided or reclaimed key is never re-enabled.",
-    price_r4: "Status lookup: the sign-in screens on all three ends provide a key-status entry. After verifying with your account and password you can view your key details (plan name, key ID, creation time and current status); viewing the full key requires entering the account password again.",
-    price_r5: "Web console eligibility: the web console is included only after a genuine paid purchase (full-price and discounted purchases carry identical rights). During the free trial, the web console is available and shares the same trial period as the apps; keys obtained for free through gifts, promotions, or point redemptions do not include the web console and work in the desktop and mobile apps only.",
+    price_r4: "Status lookup: the sign-in screens on all three platforms provide a key-status entry. After verifying with your account and password you can view your key details (plan name, key ID, creation time and current status); viewing the full key requires entering the account password again.",
+    price_r5: "Web console eligibility: the web console is included only after a paid purchase (full-price and discounted purchases carry identical rights). During the free trial, the web console is available and shares the same trial period as the apps; keys obtained for free through gifts, promotions, or point redemptions do not include the web console and work in the desktop and mobile apps only.",
     price_r6: "Renewal stacking: renewing a day plan before expiry stacks the added time onto the current key — no new key and no rebinding. A permanent plan cannot be bought twice. When switching from a day plan to the permanent plan, the remaining day-plan time is shown as voided before ordering and the permanent plan prevails.",
     price_r7: "Trial to paid: buying a paid plan during the trial issues a brand-new paid key (new string, creation time set to the purchase time) and retires the trial key; the new key automatically inherits the computer and phone slots bound during the trial, with no rebinding needed.",
     price_r8: "Gifting: a paid key can be gifted once (free keys cannot be gifted). The recipient verifies via the sign-in screen key-status entry, copies the key string, and pastes it at sign-in to claim it. Before the claim, the giver keeps full use and may revoke at any time; a pending gift lasts 3 days. After the claim, the giver loses the key (any live session ends at that moment), and a day plan's remaining time transfers as it stands at the claim moment.",
@@ -157,7 +157,7 @@ const I18N = {
     camp_t2p2: "Unsolved issues hand over to a human, described only once",
     camp_t2p3: "Works while signed out; check frozen or banned status",
     camp_t3t: "New core. <span class=\"bt-key\"><svg class=\"bt-svg\" viewBox=\"0 0 8458 1097\" role=\"img\" aria-label=\"Noticeably faster\" xmlns=\"http://www.w3.org/2000/svg\"><g transform=\"translate(-40,863) scale(1,-1)\"><path d=\"M91 0H232V297C232 382 219 475 213 555H218L293 396L506 0H657V741H517V445C517 361 529 263 537 186H532L457 346L242 741H91Z\" transform=\"translate(-22,22)\" fill=\"none\" stroke=\"#2470E0\" stroke-width=\"38\" stroke-linejoin=\"round\" stroke-linecap=\"round\" opacity=\"0.95\"/><path d=\"M313 -14C453 -14 582 94 582 280C582 466 453 574 313 574C172 574 44 466 44 280C44 94 172 -14 313 -14ZM313 106C236 106 194 174 194 280C194 385 236 454 313 454C389 454 432 385 432 280C432 174 389 106 313 106Z\" transform=\"translate(729,22)\" fill=\"none\" stroke=\"#2470E0\" stroke-width=\"38\" stroke-linejoin=\"round\" stroke-linecap=\"round\" opacity=\"0.95\"/><path d=\"M284 -14C333 -14 372 -2 403 7L378 114C363 108 341 102 323 102C273 102 246 132 246 196V444H385V560H246V711H125L108 560L21 553V444H100V195C100 71 151 -14 284 -14Z\" transform=\"translate(1357,22)\" fill=\"none\" stroke=\"#2470E0\" stroke-width=\"38\" stroke-linejoin=\"round\" stroke-linecap=\"round\" opacity=\"0.95\"/><path d=\"M79 0H226V560H79ZM153 651C203 651 238 682 238 731C238 779 203 811 153 811C101 811 68 779 68 731C68 682 101 651 153 651Z\" transform=\"translate(1780,22)\" fill=\"none\" stroke=\"#2470E0\" stroke-width=\"38\" stroke-linejoin=\"round\" stroke-linecap=\"round\" opacity=\"0.95\"/><path d=\"M317 -14C379 -14 447 7 500 54L442 151C411 125 374 106 333 106C252 106 194 174 194 280C194 385 252 454 338 454C369 454 395 441 423 418L493 511C452 548 399 574 330 574C178 574 44 466 44 280C44 94 163 -14 317 -14Z\" transform=\"translate(2086,22)\" fill=\"none\" stroke=\"#2470E0\" stroke-width=\"38\" stroke-linejoin=\"round\" stroke-linecap=\"round\" opacity=\"0.95\"/><path d=\"M323 -14C392 -14 463 10 518 48L468 138C427 113 388 100 343 100C259 100 199 147 187 238H532C536 252 539 279 539 306C539 462 459 574 305 574C172 574 44 461 44 280C44 95 166 -14 323 -14ZM184 337C196 418 248 460 307 460C380 460 413 412 413 337Z\" transform=\"translate(2615,22)\" fill=\"none\" stroke=\"#2470E0\" stroke-width=\"38\" stroke-linejoin=\"round\" stroke-linecap=\"round\" opacity=\"0.95\"/><path d=\"M216 -14C281 -14 337 17 385 60H390L400 0H520V327C520 489 447 574 305 574C217 574 137 540 72 500L124 402C176 433 226 456 278 456C347 456 371 414 373 359C148 335 51 272 51 153C51 57 116 -14 216 -14ZM265 101C222 101 191 120 191 164C191 215 236 252 373 268V156C338 121 307 101 265 101Z\" transform=\"translate(3198,22)\" fill=\"none\" stroke=\"#2470E0\" stroke-width=\"38\" stroke-linejoin=\"round\" stroke-linecap=\"round\" opacity=\"0.95\"/><path d=\"M360 -14C483 -14 598 97 598 290C598 461 515 574 377 574C322 574 266 547 221 507L226 597V798H79V0H194L206 59H211C256 12 310 -14 360 -14ZM328 107C297 107 260 118 226 149V396C264 434 298 453 336 453C413 453 447 394 447 287C447 165 394 107 328 107Z\" transform=\"translate(3791,22)\" fill=\"none\" stroke=\"#2470E0\" stroke-width=\"38\" stroke-linejoin=\"round\" stroke-linecap=\"round\" opacity=\"0.95\"/><path d=\"M218 -14C252 -14 276 -8 293 -1L275 108C265 106 261 106 255 106C241 106 226 117 226 151V798H79V157C79 53 115 -14 218 -14Z\" transform=\"translate(4437,22)\" fill=\"none\" stroke=\"#2470E0\" stroke-width=\"38\" stroke-linejoin=\"round\" stroke-linecap=\"round\" opacity=\"0.95\"/><path d=\"M128 -224C253 -224 313 -149 362 -17L561 560H420L343 300C329 248 315 194 303 142H298C282 196 268 250 251 300L162 560H14L232 11L222 -23C206 -72 174 -108 117 -108C104 -108 88 -104 78 -101L51 -214C73 -220 95 -224 128 -224Z\" transform=\"translate(4754,22)\" fill=\"none\" stroke=\"#2470E0\" stroke-width=\"38\" stroke-linejoin=\"round\" stroke-linecap=\"round\" opacity=\"0.95\"/><path d=\"M28 444H104V0H250V444H357V560H250V608C250 670 275 696 318 696C338 696 359 692 378 683L405 793C380 803 342 812 298 812C158 812 104 721 104 605V559L28 553Z\" transform=\"translate(5559,22)\" fill=\"none\" stroke=\"#2470E0\" stroke-width=\"38\" stroke-linejoin=\"round\" stroke-linecap=\"round\" opacity=\"0.95\"/><path d=\"M216 -14C281 -14 337 17 385 60H390L400 0H520V327C520 489 447 574 305 574C217 574 137 540 72 500L124 402C176 433 226 456 278 456C347 456 371 414 373 359C148 335 51 272 51 153C51 57 116 -14 216 -14ZM265 101C222 101 191 120 191 164C191 215 236 252 373 268V156C338 121 307 101 265 101Z\" transform=\"translate(5933,22)\" fill=\"none\" stroke=\"#2470E0\" stroke-width=\"38\" stroke-linejoin=\"round\" stroke-linecap=\"round\" opacity=\"0.95\"/><path d=\"M239 -14C384 -14 462 64 462 163C462 266 380 304 306 332C246 354 195 369 195 410C195 442 219 464 270 464C311 464 350 444 390 416L456 505C410 541 347 574 266 574C138 574 57 503 57 403C57 309 136 266 207 239C266 216 324 197 324 155C324 120 299 96 243 96C190 96 143 119 93 157L26 64C82 18 164 -14 239 -14Z\" transform=\"translate(6526,22)\" fill=\"none\" stroke=\"#2470E0\" stroke-width=\"38\" stroke-linejoin=\"round\" stroke-linecap=\"round\" opacity=\"0.95\"/><path d=\"M284 -14C333 -14 372 -2 403 7L378 114C363 108 341 102 323 102C273 102 246 132 246 196V444H385V560H246V711H125L108 560L21 553V444H100V195C100 71 151 -14 284 -14Z\" transform=\"translate(7023,22)\" fill=\"none\" stroke=\"#2470E0\" stroke-width=\"38\" stroke-linejoin=\"round\" stroke-linecap=\"round\" opacity=\"0.95\"/><path d=\"M323 -14C392 -14 463 10 518 48L468 138C427 113 388 100 343 100C259 100 199 147 187 238H532C536 252 539 279 539 306C539 462 459 574 305 574C172 574 44 461 44 280C44 95 166 -14 323 -14ZM184 337C196 418 248 460 307 460C380 460 413 412 413 337Z\" transform=\"translate(7446,22)\" fill=\"none\" stroke=\"#2470E0\" stroke-width=\"38\" stroke-linejoin=\"round\" stroke-linecap=\"round\" opacity=\"0.95\"/><path d=\"M79 0H226V334C258 415 310 444 353 444C377 444 393 441 413 435L437 562C421 569 403 574 372 574C314 574 254 534 213 461H210L199 560H79Z\" transform=\"translate(8029,22)\" fill=\"none\" stroke=\"#2470E0\" stroke-width=\"38\" stroke-linejoin=\"round\" stroke-linecap=\"round\" opacity=\"0.95\"/><path d=\"M91 0H232V297C232 382 219 475 213 555H218L293 396L506 0H657V741H517V445C517 361 529 263 537 186H532L457 346L242 741H91Z\" transform=\"translate(0,0)\" fill=\"#0E4DA4\"/><path d=\"M313 -14C453 -14 582 94 582 280C582 466 453 574 313 574C172 574 44 466 44 280C44 94 172 -14 313 -14ZM313 106C236 106 194 174 194 280C194 385 236 454 313 454C389 454 432 385 432 280C432 174 389 106 313 106Z\" transform=\"translate(751,0)\" fill=\"#0E4DA4\"/><path d=\"M284 -14C333 -14 372 -2 403 7L378 114C363 108 341 102 323 102C273 102 246 132 246 196V444H385V560H246V711H125L108 560L21 553V444H100V195C100 71 151 -14 284 -14Z\" transform=\"translate(1379,0)\" fill=\"#0E4DA4\"/><path d=\"M79 0H226V560H79ZM153 651C203 651 238 682 238 731C238 779 203 811 153 811C101 811 68 779 68 731C68 682 101 651 153 651Z\" transform=\"translate(1802,0)\" fill=\"#0E4DA4\"/><path d=\"M317 -14C379 -14 447 7 500 54L442 151C411 125 374 106 333 106C252 106 194 174 194 280C194 385 252 454 338 454C369 454 395 441 423 418L493 511C452 548 399 574 330 574C178 574 44 466 44 280C44 94 163 -14 317 -14Z\" transform=\"translate(2108,0)\" fill=\"#0E4DA4\"/><path d=\"M323 -14C392 -14 463 10 518 48L468 138C427 113 388 100 343 100C259 100 199 147 187 238H532C536 252 539 279 539 306C539 462 459 574 305 574C172 574 44 461 44 280C44 95 166 -14 323 -14ZM184 337C196 418 248 460 307 460C380 460 413 412 413 337Z\" transform=\"translate(2637,0)\" fill=\"#0E4DA4\"/><path d=\"M216 -14C281 -14 337 17 385 60H390L400 0H520V327C520 489 447 574 305 574C217 574 137 540 72 500L124 402C176 433 226 456 278 456C347 456 371 414 373 359C148 335 51 272 51 153C51 57 116 -14 216 -14ZM265 101C222 101 191 120 191 164C191 215 236 252 373 268V156C338 121 307 101 265 101Z\" transform=\"translate(3220,0)\" fill=\"#0E4DA4\"/><path d=\"M360 -14C483 -14 598 97 598 290C598 461 515 574 377 574C322 574 266 547 221 507L226 597V798H79V0H194L206 59H211C256 12 310 -14 360 -14ZM328 107C297 107 260 118 226 149V396C264 434 298 453 336 453C413 453 447 394 447 287C447 165 394 107 328 107Z\" transform=\"translate(3813,0)\" fill=\"#0E4DA4\"/><path d=\"M218 -14C252 -14 276 -8 293 -1L275 108C265 106 261 106 255 106C241 106 226 117 226 151V798H79V157C79 53 115 -14 218 -14Z\" transform=\"translate(4459,0)\" fill=\"#0E4DA4\"/><path d=\"M128 -224C253 -224 313 -149 362 -17L561 560H420L343 300C329 248 315 194 303 142H298C282 196 268 250 251 300L162 560H14L232 11L222 -23C206 -72 174 -108 117 -108C104 -108 88 -104 78 -101L51 -214C73 -220 95 -224 128 -224Z\" transform=\"translate(4776,0)\" fill=\"#0E4DA4\"/><path d=\"M28 444H104V0H250V444H357V560H250V608C250 670 275 696 318 696C338 696 359 692 378 683L405 793C380 803 342 812 298 812C158 812 104 721 104 605V559L28 553Z\" transform=\"translate(5581,0)\" fill=\"#0E4DA4\"/><path d=\"M216 -14C281 -14 337 17 385 60H390L400 0H520V327C520 489 447 574 305 574C217 574 137 540 72 500L124 402C176 433 226 456 278 456C347 456 371 414 373 359C148 335 51 272 51 153C51 57 116 -14 216 -14ZM265 101C222 101 191 120 191 164C191 215 236 252 373 268V156C338 121 307 101 265 101Z\" transform=\"translate(5955,0)\" fill=\"#0E4DA4\"/><path d=\"M239 -14C384 -14 462 64 462 163C462 266 380 304 306 332C246 354 195 369 195 410C195 442 219 464 270 464C311 464 350 444 390 416L456 505C410 541 347 574 266 574C138 574 57 503 57 403C57 309 136 266 207 239C266 216 324 197 324 155C324 120 299 96 243 96C190 96 143 119 93 157L26 64C82 18 164 -14 239 -14Z\" transform=\"translate(6548,0)\" fill=\"#0E4DA4\"/><path d=\"M284 -14C333 -14 372 -2 403 7L378 114C363 108 341 102 323 102C273 102 246 132 246 196V444H385V560H246V711H125L108 560L21 553V444H100V195C100 71 151 -14 284 -14Z\" transform=\"translate(7045,0)\" fill=\"#0E4DA4\"/><path d=\"M323 -14C392 -14 463 10 518 48L468 138C427 113 388 100 343 100C259 100 199 147 187 238H532C536 252 539 279 539 306C539 462 459 574 305 574C172 574 44 461 44 280C44 95 166 -14 323 -14ZM184 337C196 418 248 460 307 460C380 460 413 412 413 337Z\" transform=\"translate(7468,0)\" fill=\"#0E4DA4\"/><path d=\"M79 0H226V334C258 415 310 444 353 444C377 444 393 441 413 435L437 562C421 569 403 574 372 574C314 574 254 534 213 461H210L199 560H79Z\" transform=\"translate(8051,0)\" fill=\"#0E4DA4\"/></g></svg></span>.",
-    camp_t3p: "This version upgrades the core components on all three ends to current stable releases, and optimizes interface rendering, long-list scrolling, and page transitions item by item. Following the established practice of mature products, the upgrade builds on system-level components and hardware acceleration rather than surface styling alone, keeping response speed and handling consistent across all three ends.",
+    camp_t3p: "This version upgrades the core components on all three platforms to current stable releases, and optimizes interface rendering, long-list scrolling, and page transitions item by item. Following the established practice of mature products, the upgrade builds on system-level components and hardware acceleration rather than surface styling alone, keeping response speed and handling consistent across all three platforms.",
     camp_t3p1: "Core components upgraded on desktop and Android together",
     camp_t3p2: "Dedicated optimization of rendering and scrolling performance",
     camp_t3p3: "One design standard and interaction specification across all ends",
@@ -182,10 +182,10 @@ const I18N = {
     rc1t: "The controlled side reconnects automatically", rc1p: "The component installed on the controlled computer runs as a system service: after the computer restarts, a system update completes, or the server restarts, it starts on boot and reconnects on its own. In testing, after a server restart the controlled side restored its connection within seconds, with no manual action required.",
     rc2t: "The server recovers automatically", rc2p: "The server-side services are configured to restart on crash and start on boot, and a self-check runs every hour to repair anomalies first. In testing, the web console became accessible again about 6 seconds after a controlled restart.",
     rc3t: "The control side reconnects automatically", rc3p: "The control software includes a connection monitor: when a session drop is detected, it initiates reconnection automatically and keeps trying until the connection is restored; if the whole page disconnects, it retries automatically on a countdown. During recovery, only a status notice is shown in the toolbar, and no action is required from the user.",
-    shot_kicker: "Interface Preview", shot_title: "Software Interface", shot_lead: "All images below show the software in actual operation; none are renderings.",
+    shot_kicker: "Interface Preview", shot_title: "Software Interface", gal_prev: "Previous screenshots", gal_next: "Next screenshots", shot_lead: "All images below show the software in actual operation; none are renderings.",
     dl_kicker: "Download", dl_title: "Download QFRemote", dl_win: "Windows",
     dl_ver: "Current version", dl_date: "Release date", dl_size: "Package size", dl_file: "File name",
-    dl_copy: "Copy", dl_copied: "Copied",
+    dl_copy: "Copy", dl_copied: "Copied", dl_copy_fail: "Copy failed — please copy it manually",
     dl_tip: "After downloading, compare the package against the SHA-256 checksum published above to confirm that it is complete and untampered. If Windows shows a security prompt on first launch, select \u201CMore info \u2192 Run anyway\u201D (the software does not yet carry a purchased code-signing certificate).",
     dl_btn: "Download Latest", dl_history: "See all previous versions",
     dl_android: "Android", dl_btn_a: "Download for Android", dl_reg_link: "Not registered yet? Create an account",
@@ -226,7 +226,7 @@ const FAQ = {
     ["What happens if the connection is interrupted?", "No action is required. Three layers recover automatically: the controlled side reconnects, the server restores itself, and the control side reconnects, with unlimited retries. As long as the software remains running, it will keep trying until the connection is restored, and no manual handling at the controlled computer is needed."],
     ["Does the controlled computer need special network configuration?", "No. The component on the controlled computer connects to the official server on its own initiative. The computer's network use is unaffected, and no ports need to be opened or additional configuration made."],
     ["Can other people use the software?", "Yes. The software may be copied and installed freely, and anyone may register an account: usernames must be at least 8 characters and combine letters and numbers. The administrator can also create accounts directly in the backend. View and control permissions are assigned to each account item by item; once an account is revoked, it can no longer be used, effective immediately."],
-    ["How is the software updated?", "The software updates automatically. While it is running, a new version is announced by a reminder only and does not interrupt use. After the software is closed and reopened, the new version is installed before entry, with a progress bar shown during installation and an automatic integrity check afterwards. If the server cannot be reached when the software is opened, it can still be entered and used; the software is never locked. The download section on this page always provides the latest version."],
+    ["How is the software updated?", "The software updates automatically. While it is running, a new version is announced by a reminder only and does not interrupt use. After the software is closed and reopened, the new version is installed before entry, with a progress bar shown during installation and an automatic integrity check afterwards. If the server cannot be reached when the software is opened, it can still be entered and used; the software remains usable. The download section on this page always provides the latest version."],
     ["What should I do about the Windows security prompt on first launch?", "The prompt appears because the software does not yet carry a purchased code-signing certificate; this is expected. Select \u201CMore info \u2192 Run anyway\u201D in the prompt. Please download the installer only from this page, and compare it against the SHA-256 checksum published here to confirm that the package has not been tampered with."]
   ]
 };
@@ -250,6 +250,10 @@ function applyLang() {
   document.querySelectorAll("[data-i18n-ph]").forEach(function (el) {
     const key = el.getAttribute("data-i18n-ph");
     if (dict[key]) el.setAttribute("placeholder", dict[key]);
+  });
+  document.querySelectorAll("[data-i18n-aria]").forEach(function (el) {
+    const key = el.getAttribute("data-i18n-aria");
+    if (dict[key]) el.setAttribute("aria-label", dict[key]);
   });
   const heroImg = document.querySelector("[data-i18n-alt]");
   if (heroImg) heroImg.setAttribute("alt", t("hero_img_alt"));
@@ -319,9 +323,12 @@ function renderDynamic() {
 
   const gal = document.getElementById("gallery");
   if (gal) {
+    const SHOT_DIMS = { "console-desktop.png": [1440, 900], "friends-mobile.png": [780, 1688], "offline-dark.png": [1280, 772], "support-mobile.png": [780, 648], "status-light.png": [1280, 48], "connecting.png": [1280, 772] };
     gal.innerHTML = (P.screenshots || []).map(function (s) {
       const cap = s[LANG] || s.zh || "";
-      return '<div class="shot"><figure><img loading="lazy" src="' + esc(s.src) + '" alt="' + esc(cap) + '"></figure><figcaption>' + esc(cap) + "</figcaption></div>";
+      const d = SHOT_DIMS[String(s.src || "").split("/").pop()];
+      const wh = d ? ' width="' + d[0] + '" height="' + d[1] + '"' : "";
+      return '<div class="shot"><figure><img loading="lazy" src="' + esc(s.src) + '" alt="' + esc(cap) + '"' + wh + '></figure><figcaption>' + esc(cap) + "</figcaption></div>";
     }).join("");
   }
 
@@ -373,15 +380,16 @@ function renderDynamic() {
 
   const faq = document.getElementById("faqList");
   if (faq) {
-    faq.innerHTML = (FAQ[LANG] || FAQ.zh).map(function (qa) {
-      return '<div class="faq-item"><button type="button" class="faq-q"><span>' + esc(qa[0]) + '</span><span class="fx">+</span></button>' +
-        '<div class="faq-a"><p>' + esc(qa[1]) + "</p></div></div>";
+    faq.innerHTML = (FAQ[LANG] || FAQ.zh).map(function (qa, i) {
+      return '<div class="faq-item"><button type="button" class="faq-q" id="faq-q-' + i + '" aria-expanded="false" aria-controls="faq-a-' + i + '"><span>' + esc(qa[0]) + '</span><span class="fx">+</span></button>' +
+        '<div class="faq-a" id="faq-a-' + i + '" role="region" aria-labelledby="faq-q-' + i + '"><p>' + esc(qa[1]) + "</p></div></div>";
     }).join("");
     faq.querySelectorAll(".faq-q").forEach(function (btn) {
       btn.addEventListener("click", function () {
         const item = btn.parentElement;
         const ans = item.querySelector(".faq-a");
         const open = item.classList.toggle("open");
+        btn.setAttribute("aria-expanded", open ? "true" : "false");
         ans.style.maxHeight = open ? ans.scrollHeight + "px" : "0px";
       });
     });
@@ -412,9 +420,23 @@ applyLang();
       btn.textContent = t("dl_copied");
       setTimeout(function () { btn.textContent = old; }, 1600);
     }
+    function fail() {
+      const old = btn.textContent;
+      btn.textContent = t("dl_copy_fail");
+      setTimeout(function () { btn.textContent = old; }, 1600);
+    }
     if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(code).then(done).catch(done);
-    } else { done(); }
+      navigator.clipboard.writeText(code).then(done).catch(fail);
+    } else {
+      try {
+        const ta = document.createElement("textarea");
+        ta.value = code; ta.style.position = "fixed"; ta.style.opacity = "0";
+        document.body.appendChild(ta); ta.select();
+        const okCopy = document.execCommand("copy");
+        document.body.removeChild(ta);
+        if (okCopy) done(); else fail();
+      } catch (e) { fail(); }
+    }
   });
 })();
 
@@ -489,11 +511,13 @@ applyLang();
   burger.addEventListener("click", function () {
     const open = header.classList.toggle("menu-open");
     burger.setAttribute("aria-expanded", open ? "true" : "false");
+    document.body.style.overflow = open ? "hidden" : "";
   });
   panel.querySelectorAll("a").forEach(function (a) {
     a.addEventListener("click", function () {
       header.classList.remove("menu-open");
       burger.setAttribute("aria-expanded", "false");
+      document.body.style.overflow = "";
     });
   });
 })();
@@ -528,8 +552,37 @@ applyLang();
       btn.textContent = t("dl_copied");
       setTimeout(function () { btn.textContent = old; }, 1600);
     }
+    function fail() {
+      const old = btn.textContent;
+      btn.textContent = t("dl_copy_fail");
+      setTimeout(function () { btn.textContent = old; }, 1600);
+    }
     if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(code).then(done).catch(done);
-    } else { done(); }
+      navigator.clipboard.writeText(code).then(done).catch(fail);
+    } else {
+      try {
+        const ta = document.createElement("textarea");
+        ta.value = code; ta.style.position = "fixed"; ta.style.opacity = "0";
+        document.body.appendChild(ta); ta.select();
+        const okCopy = document.execCommand("copy");
+        document.body.removeChild(ta);
+        if (okCopy) done(); else fail();
+      } catch (e) { fail(); }
+    }
+  });
+})();
+
+/* ===== 画廊：左右按钮与键盘滚动 ===== */
+(function () {
+  const gal = document.getElementById("gallery");
+  if (!gal) return;
+  function step(dir) { gal.scrollBy({ left: dir * Math.min(520, gal.clientWidth * 0.85), behavior: "smooth" }); }
+  const prev = document.getElementById("galPrev");
+  const next = document.getElementById("galNext");
+  if (prev) prev.addEventListener("click", function () { step(-1); });
+  if (next) next.addEventListener("click", function () { step(1); });
+  gal.addEventListener("keydown", function (ev) {
+    if (ev.key === "ArrowLeft") { step(-1); ev.preventDefault(); }
+    else if (ev.key === "ArrowRight") { step(1); ev.preventDefault(); }
   });
 })();
