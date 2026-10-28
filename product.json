@@ -1,20 +1,6 @@
 {
   "changelog": [
     {
-      "date": "2026-10-26",
-      "version": "2.3.2",
-      "zh": [
-        "电脑端更新全程自动化：静默安装完成后自动重新打开软件并恢复连接，重要更新无需在电脑旁人工操作。",
-        "隐私锁组件支持远程自动更新，版本自动保持最新；网页控制台新增屏幕锁管理，可在设备详情中开启、关闭与修改密码。",
-        "远程会话内可将文件直接发送到同账号的其他设备，接收进度与送达状态可在「我的文件」中查看。"
-      ],
-      "en": [
-        "Fully automatic updates on Windows: after a silent install the app reopens and reconnects by itself, so important updates no longer need anyone at the computer.",
-        "The privacy-lock component now updates itself remotely and stays current; the web console gains screen-lock management on the device page (turn on, turn off, change the password).",
-        "Send files from a remote session directly to another device on the same account, with delivery progress and status in My Files."
-      ]
-    },
-    {
       "date": "2026-10-25",
       "en": [
         "New paid license keys: four plans (1 day, 7 days, 30 days and permanent), with a free 3-day trial for new accounts; keys support gifting, renewal stacking, device rebinding and self-service status lookup, and day-plan time pauses during an account ban.",
@@ -169,68 +155,68 @@
   ],
   "platforms": {
     "android": {
-      "downloadUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/dl/QFRemote-v2.3.2.apk",
-      "fileName": "QFRemote-v2.3.2.apk",
-      "releaseDate": "2026-10-26",
+      "downloadUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/dl/QFRemote-v2.3.1.apk",
+      "fileName": "QFRemote-v2.3.1.apk",
+      "releaseDate": "2026-10-25",
       "requirements": {
         "en": "Android phone or tablet",
         "zh": "Android 手机或平板"
       },
-      "sha256": "d144552cc2696525cd81ec2448947c896c27405d38186a1e3794df0d26ee76cb",
-      "sizeBytes": 54080723,
+      "sha256": "f9caeff0d0ab09ebe508a949cddf89b26125097c8f66da93d86a1f68c3e26b43",
+      "sizeBytes": 54080719,
       "sizeText": "51.6 MB",
-      "version": "2.3.2"
+      "version": "2.3.1"
     },
     "windows": {
-      "downloadUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/dl/QFRemote-Setup-v2.3.2.exe",
-      "fileName": "QFRemote-Setup-v2.3.2.exe",
-      "releaseDate": "2026-10-26",
+      "downloadUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/dl/QFRemote-Setup-v2.3.1.exe",
+      "fileName": "QFRemote-Setup-v2.3.1.exe",
+      "releaseDate": "2026-10-25",
       "releasePageUrl": "#changes",
       "requirements": {
         "en": "Windows 10 / 11 (64-bit)",
         "zh": "Windows 10 / 11（64 位）"
       },
-      "sha256": "a793b560992f1e5ca28e8bc381f7c6ce29685ddd3e601e445b806774b1f65f53",
-      "sizeBytes": 121169502,
+      "sha256": "ed4135e157985b6f2849ff6bd90471652ffe3e2361376f1639c77c1acac15316",
+      "sizeBytes": 121167881,
       "sizeText": "115.6 MB",
-      "version": "2.3.2"
+      "version": "2.3.1"
     }
   },
   "product": "QFRemote",
-  "releaseDate": "2026-10-26",
+  "releaseDate": "2026-10-25",
   "screenshots": [
     {
       "en": "Web console — Devices page",
-      "src": "assets/shots/console-desktop.png?v=232",
+      "src": "assets/shots/console-desktop.png?v=231",
       "zh": "网页控制台设备页面"
     },
     {
       "en": "Connection screen",
-      "src": "assets/shots/connecting.png?v=232",
+      "src": "assets/shots/connecting.png?v=231",
       "zh": "连接中界面"
     },
     {
       "en": "Friends page (mobile)",
-      "src": "assets/shots/friends-mobile.png?v=232",
+      "src": "assets/shots/friends-mobile.png?v=231",
       "zh": "好友页面（手机版）"
     },
     {
       "en": "Disconnection and automatic reconnection screen",
-      "src": "assets/shots/offline-dark.png?v=232",
+      "src": "assets/shots/offline-dark.png?v=231",
       "zh": "断线自动重连界面"
     },
     {
       "en": "Startup screen",
-      "src": "assets/shots/splash-dark.png?v=232",
+      "src": "assets/shots/splash-dark.png?v=231",
       "zh": "启动画面"
     },
     {
       "en": "Toolbar and server status light",
-      "src": "assets/shots/status-light.png?v=232",
+      "src": "assets/shots/status-light.png?v=231",
       "zh": "工具栏与服务器状态指示灯"
     }
   ],
-  "version": "2.3.2",
+  "version": "2.3.1",
   "web": {
     "adminUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/admin",
     "feedbackUrl": "https://bookmarks-hunting-rendering-atlas.trycloudflare.com/api/feedback",
