@@ -1,6 +1,22 @@
 {
   "changelog": [
     {
+      "date": "2026-10-30",
+      "en": [
+        "A fully rebuilt remote session experience: select a device to enter its session directly, with Desktop, Terminal and Files switching inside a single window - no intermediate pages, faster session startup and more stable connections.",
+        "New user profiles: set a nickname and avatar that are shown consistently across Friends, Chat and the Forum; profile changes take effect after review.",
+        "Improved mobile sessions: opening a remote session on a phone now presents the complete desktop-grade session interface, with optimised control areas.",
+        "More reliable installation and updating: strengthened package integrity verification and the silent-update flow for more dependable upgrades."
+      ],
+      "version": "2.4.0",
+      "zh": [
+        "远程会话全新改版：在设备列表点击设备即可直接进入远程会话，远程桌面、终端与文件三种形态在同一窗口内切换，不再经过中间页面，会话打开更快捷、连接更稳定。",
+        "新增个人资料：可设置昵称与头像，昵称与头像将在好友、聊天与论坛中统一展示；资料修改经审核后生效。",
+        "移动端会话体验优化：使用手机打开远程会话时，自动呈现完整的桌面级会话界面，操作区域同步优化。",
+        "安装与更新可靠性提升：安装包完整性校验与静默更新流程加固，更新安装更稳定可靠。"
+      ]
+    },
+    {
       "date": "2026-10-25",
       "en": [
         "New paid license keys: four plans (1 day, 7 days, 30 days and permanent), with a free 3-day trial for new accounts; keys support gifting, renewal stacking, device rebinding and self-service status lookup, and day-plan time pauses during an account ban.",
@@ -155,68 +171,68 @@
   ],
   "platforms": {
     "android": {
-      "downloadUrl": "https://app.qfremote.top/dl/QFRemote-v2.3.1.apk",
-      "fileName": "QFRemote-v2.3.1.apk",
-      "releaseDate": "2026-10-25",
+      "downloadUrl": "https://app.qfremote.top/dl/QFRemote-v2.4.0.apk",
+      "fileName": "QFRemote-v2.4.0.apk",
+      "releaseDate": "2026-10-30",
       "requirements": {
         "en": "Android phone or tablet",
         "zh": "Android 手机或平板"
       },
-      "sha256": "f9caeff0d0ab09ebe508a949cddf89b26125097c8f66da93d86a1f68c3e26b43",
-      "sizeBytes": 54080719,
-      "sizeText": "51.6 MB",
-      "version": "2.3.1"
+      "sha256": "4fcc65f962cff150a8e5d7365269f34eea6a65594ee838d9f3f3f864aca4a377",
+      "sizeBytes": 54260947,
+      "sizeText": "51.7 MB",
+      "version": "2.4.0"
     },
     "windows": {
-      "downloadUrl": "https://app.qfremote.top/dl/QFRemote-Setup-v2.3.1.exe",
-      "fileName": "QFRemote-Setup-v2.3.1.exe",
-      "releaseDate": "2026-10-25",
+      "downloadUrl": "https://app.qfremote.top/dl/QFRemote-Setup-v2.4.0.exe",
+      "fileName": "QFRemote-Setup-v2.4.0.exe",
+      "releaseDate": "2026-10-30",
       "releasePageUrl": "#changes",
       "requirements": {
         "en": "Windows 10 / 11 (64-bit)",
         "zh": "Windows 10 / 11（64 位）"
       },
-      "sha256": "ed4135e157985b6f2849ff6bd90471652ffe3e2361376f1639c77c1acac15316",
-      "sizeBytes": 121167881,
+      "sha256": "9e27769a46ec2fa0330ace338f2bc4473c2c20f0281aa69d068c1b983dc6168d",
+      "sizeBytes": 121181096,
       "sizeText": "115.6 MB",
-      "version": "2.3.1"
+      "version": "2.4.0"
     }
   },
   "product": "QFRemote",
-  "releaseDate": "2026-10-25",
+  "releaseDate": "2026-10-30",
   "screenshots": [
     {
       "en": "Web console — Devices page",
-      "src": "assets/shots/console-desktop.png?v=231",
+      "src": "assets/shots/console-desktop.png?v=240",
       "zh": "网页控制台设备页面"
     },
     {
       "en": "Connection screen",
-      "src": "assets/shots/connecting.png?v=231",
+      "src": "assets/shots/connecting.png?v=240",
       "zh": "连接中界面"
     },
     {
       "en": "Friends page (mobile)",
-      "src": "assets/shots/friends-mobile.png?v=231",
+      "src": "assets/shots/friends-mobile.png?v=240",
       "zh": "好友页面（手机版）"
     },
     {
       "en": "Disconnection and automatic reconnection screen",
-      "src": "assets/shots/offline-dark.png?v=231",
+      "src": "assets/shots/offline-dark.png?v=240",
       "zh": "断线自动重连界面"
     },
     {
       "en": "Startup screen",
-      "src": "assets/shots/splash-dark.png?v=231",
+      "src": "assets/shots/splash-dark.png?v=240",
       "zh": "启动画面"
     },
     {
       "en": "Toolbar and server status light",
-      "src": "assets/shots/status-light.png?v=231",
+      "src": "assets/shots/status-light.png?v=240",
       "zh": "工具栏与服务器状态指示灯"
     }
   ],
-  "version": "2.3.1",
+  "version": "2.4.0",
   "web": {
     "adminUrl": "https://app.qfremote.top/admin",
     "feedbackUrl": "https://app.qfremote.top/api/feedback",
