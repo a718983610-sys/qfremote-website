@@ -1,6 +1,18 @@
 {
   "changelog": [
     {
+      "date": "2026-11-09",
+      "en": [
+        "The desktop app now also checks and repairs the local remote-service connection configuration at startup, so devices come back online right after updating, with no manual steps.",
+        "Update and installation flow refinements for more stable and reliable connections; the update completes automatically when you reopen the app after closing it."
+      ],
+      "version": "2.4.4",
+      "zh": [
+        "电脑端启动时也会自动检测并修复本机远程服务的连接配置，更新完设备直接恢复在线，无需手动操作。",
+        "更新与安装流程优化，连接更稳定可靠；退出软件后重新打开将自动完成更新。"
+      ]
+    },
+    {
       "date": "2026-11-07",
       "en": [
         "The Windows updater now automatically checks and repairs the local remote-service connection configuration during updates, for more stable and reliable connections.",
@@ -209,68 +221,68 @@
   ],
   "platforms": {
     "android": {
-      "downloadUrl": "https://app.qfremote.top/dl/QFRemote-v2.4.3.apk",
-      "fileName": "QFRemote-v2.4.3.apk",
-      "releaseDate": "2026-11-07",
+      "downloadUrl": "https://app.qfremote.top/dl/QFRemote-v2.4.4.apk",
+      "fileName": "QFRemote-v2.4.4.apk",
+      "releaseDate": "2026-11-09",
       "requirements": {
         "en": "Android phone or tablet",
         "zh": "Android 手机或平板"
       },
-      "sha256": "11928d115842585e8e99f0f536491efdeb3e19e49d4b696eeefd874c92b33819",
+      "sha256": "6fe31de2109eeb166347108a70b5306df0a0a409a28e7cb52a381906cd31f651",
       "sizeBytes": 54260943,
       "sizeText": "51.7 MB",
-      "version": "2.4.3"
+      "version": "2.4.4"
     },
     "windows": {
-      "downloadUrl": "https://app.qfremote.top/dl/QFRemote-Setup-v2.4.3.exe",
-      "fileName": "QFRemote-Setup-v2.4.3.exe",
-      "releaseDate": "2026-11-07",
+      "downloadUrl": "https://app.qfremote.top/dl/QFRemote-Setup-v2.4.4.exe",
+      "fileName": "QFRemote-Setup-v2.4.4.exe",
+      "releaseDate": "2026-11-09",
       "releasePageUrl": "#changes",
       "requirements": {
         "en": "Windows 10 / 11 (64-bit)",
         "zh": "Windows 10 / 11（64 位）"
       },
-      "sha256": "1767c8d06acb1ea032869a6c837f051b020794c259cb974224e531cbeb7c9bd0",
-      "sizeBytes": 122104321,
-      "sizeText": "116.4 MB",
-      "version": "2.4.3"
+      "sha256": "e1a55075e50edcd8a3dda38fe409c15f0390527fe5a8989ea667907378cb1229",
+      "sizeBytes": 122133944,
+      "sizeText": "116.5 MB",
+      "version": "2.4.4"
     }
   },
   "product": "QFRemote",
-  "releaseDate": "2026-11-07",
+  "releaseDate": "2026-11-09",
   "screenshots": [
     {
       "en": "Web console — Devices page",
-      "src": "assets/shots/console-desktop.png?v=243",
+      "src": "assets/shots/console-desktop.png?v=244",
       "zh": "网页控制台设备页面"
     },
     {
       "en": "Connection screen",
-      "src": "assets/shots/connecting.png?v=243",
+      "src": "assets/shots/connecting.png?v=244",
       "zh": "连接中界面"
     },
     {
       "en": "Friends page (mobile)",
-      "src": "assets/shots/friends-mobile.png?v=243",
+      "src": "assets/shots/friends-mobile.png?v=244",
       "zh": "好友页面（手机版）"
     },
     {
       "en": "Disconnection and automatic reconnection screen",
-      "src": "assets/shots/offline-dark.png?v=243",
+      "src": "assets/shots/offline-dark.png?v=244",
       "zh": "断线自动重连界面"
     },
     {
       "en": "Startup screen",
-      "src": "assets/shots/splash-dark.png?v=243",
+      "src": "assets/shots/splash-dark.png?v=244",
       "zh": "启动画面"
     },
     {
       "en": "Toolbar and server status light",
-      "src": "assets/shots/status-light.png?v=243",
+      "src": "assets/shots/status-light.png?v=244",
       "zh": "工具栏与服务器状态指示灯"
     }
   ],
-  "version": "2.4.3",
+  "version": "2.4.4",
   "web": {
     "adminUrl": "https://app.qfremote.top/admin",
     "feedbackUrl": "https://app.qfremote.top/api/feedback",
